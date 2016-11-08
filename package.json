@@ -1,0 +1,22 @@
+{
+  "name": "rb-blog-template",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redbadger/blog-squarespace-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redbadger/blog-squarespace-template/issues"
+  },
+  "homepage": "https://github.com/redbadger/blog-squarespace-template#readme",
+  "dependencies": {
+    "elm": "^0.17.1",
+    "elm-css": "^0.6.0"
+  },
+  "devDependencies": {
+    "@squarespace/server": "^1.0.6"
+  }
+}
