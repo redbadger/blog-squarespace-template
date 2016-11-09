@@ -1,179 +1,42 @@
-<!doctype html>
-<html class="touch-styles">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    {.if template.mobileStylesEnabled}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {.end}
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-TileColor" content="#fc1d42">
+    <meta name="theme-color" content="#fc1d42">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fc1d42">
+    <meta name="msapplication-TileImage" content="assetsfaviconsmstile-144x144.png">
+    <meta property="og:site_name" content="Red Badger">
+    <meta property="og:title" content="Red Badger" />
+    <meta property="og:description" content="Let’s make things better. We work with you to deliver digital products that make a difference to people." />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image" itemprop="image" content="https://red-badger.com/assets-honestly/favicons/rb-logo-big.png">
+    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-57x57.png" type="image/png" sizes="57x57">
+    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-60x60.png" type="image/png" sizes="60x60">
+    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-72x72.png" type="image/png" sizes="72x72">
+    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-76x76.png" type="image/png" sizes="76x76">
+    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-114x114.png" type="image/png" sizes="114x114">
+    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-120x120.png" type="image/png" sizes="120x120">
+    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-144x144.png" type="image/png" sizes="144x144">
+    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-152x152.png" type="image/png" sizes="152x152">
+    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-180x180.png" type="image/png" sizes="180x180">
+    <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-192x192.png" type="image/png" sizes="192x192">
+    <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
+    <title>Red Badger</title> <!-- TODO: Title -->
     {squarespace-headers}
-  <script>
-    (function(){
-      var touchTest = 'ontouchstart' in window || navigator.msMaxTouchPoints;
-      if (!touchTest) {
-        document.documentElement.className = document.documentElement.className.replace(/touch\-styles/g, '');
-      }
-    })();</script>
   </head>
-  <body id="{squarespace.page-id}" class="{squarespace.page-classes}" sqs-controller="SyncHeader, AddScrollingClass, HeaderScroll, SearchToggle, BodyMinHeight">
-    <div class="nav-close-overlay">
+  <body>
 
-    </div>
-    <div class="nav-close-toggle-wrapper" id="navCloseToggleWrapper">
-      <a class="nav-toggle-close-label responsive-position--left" id="navCloseToggle" sqs-controller="NavToggle">
-        <svg class="Icon Icon--close close-icon" viewBox="0 0 18 18">
-          <use xlink:href="/assets/ui-icons.svg#close-icon-line"></use>
-        </svg>
-      </a>
-    </div>
-    <div id="sideTrayWrapper" class="sidetray-wrapper">
-      <div class="main-nav-wrapper responsive-padding--top responsive-padding--bottom" sqs-controller="NavOverflow">
-        <div class="nav-blocks-wrapper">
-          <squarespace:navigation navigationId="mainNav" template="navigation" />
-          <squarespace:block-field id="navBlocks" columns="1" label="Nav Blocks" />
-        </div>
-      </div><!--
-      --><div class="sidetray-blocks responsive-padding--top responsive-padding--bottom" sqs-controller="SidetrayBlocksOverflow">
-        <div class="sidetray-blocks-wrapper">
-          <squarespace:block-field id="sideTrayBlocks" columns="1" label="Sidetray Blocks" />
-        </div>
-      </div>
-    </div>
-
-    <form class="header-search-form" id="headerSearch" action="/search" method="get">
-      <input class="header-search-form-input" name="q" placeholder="Search" type="text" spellcheck="false" value="" autocomplete="off">
-    </form>
-
-    {.if website.socialAccounts}
-    <div class="mobile-social">
-      <nav class="sqs-template-social-icons sqs-svg-icon--list" data-content-field="connected-accounts">
-        {@|apply social-links.block}
-      </nav>
-    </div>
-    {.end}
-
-    <div id="site" class="site-container clearfix">
-
-      <div class="sqs-announcement-bar-dropzone header-announcement-wrapper responsive-padding--left responsive-padding--right" id="headerAnnouncementWrapper">
-        <header id="header" class="site-header loading" role="banner">
-          <a class="nav-toggle-label flex-item" id="navToggle" sqs-controller="NavToggle">
-            <svg class="Icon Icon--hamburger nav-toggle-label-icon" viewBox="0 0 26 18">
-              <use xlink:href="/assets/ui-icons.svg#hamburger-icon--even"></use>
-            </svg>
-          </a>
-
-          <div class="logo-wrapper flex-item">
-          {.section website}
-            <!-- if logo or site title with site tagline -->
-            {.section logoImageUrl}
-              <div class="logo-image branding" data-content-field="site-title">
-                <a href="/"><img src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /></a>
-                {.if website.siteTagLine}<div class="site-tagline-logo">{siteTagLine}</div>{.end}
-              </div>
-            {.or}
-              <div class="site-title branding" data-content-field="site-title"><a href="/"><span class="site-title-text">{siteTitle}</span>{.section siteTagLine} <span class="site-tagline">{@}</span>{.end}</a></div>
-            {.end}
-          {.end}
-          </div>
-
-          {.if website.socialAccounts}
-           <nav class="header-special-social--shown-on-collapse sqs-template-social-icons sqs-svg-icon--list">
-             {@|apply social-links.block}
-           </nav>
-          {.end}
-
-          <div class="header-special flex-item">
-            <div class="social-search-wrapper{.if showCart} cart-visible{.end}">
-              <div class="social-ellipsis" id="socialEllipsis" sqs-controller="SocialToggle">
-                <svg class="ellipsis-icon" viewBox="0 0 100 24">
-                  <use xlink:href="/assets/ui-icons.svg#ellipsis-icon"></use>
-                </svg>
-                <svg class="social-close-icon Icon Icon--close" viewBox="0 0 18 18">
-                  <use xlink:href="/assets/ui-icons.svg#close-icon-line"></use>
-                </svg>
-              </div><!--
-               {.if website.socialAccounts}
-                --><nav class="header-special-social sqs-template-social-icons sqs-svg-icon--list" data-content-field="connected-accounts">
-                  {@|apply social-links.block}
-                </nav><!--
-               {.end}
-               --><a href="/search" rel="search" class="header-search">
-                <svg class="Icon Icon--search search-icon" viewBox="0 0 20 20" shape-rendering="geometricPrecision">
-                  <use xlink:href="/assets/ui-icons.svg#search-icon"></use>
-                </svg>
-                <svg class="Icon Icon--close search-close-icon" viewBox="0 0 18 18">
-                  <use xlink:href="/assets/ui-icons.svg#close-icon-line"></use>
-                </svg>
-               </a>
-              </div><!--
-             -->{.if showCart}<a href="{shoppingCart|cart-url}" class="{squarespace.cart-classes} custom-cart">
-              <div class="custom-cart-bag">
-                <svg class="Icon Icon--bag custom-cart-bag-icon" viewBox="0 0 34 38">
-                  <use class="use--odd" xlink:href="/assets/ui-icons.svg#bag-icon--odd"></use>
-                  <use class="use--even" xlink:href="/assets/ui-icons.svg#bag-icon--even"></use>
-                </svg>
-                {shoppingCart|cart-quantity}
-              </div>
-            </a>{.end}
-          </div>
-        </header>
-      </div>
-
-      <main id="page" class="site-page loading responsive-padding--left responsive-padding--right site-page--{collection.typeName}{.equal? collection.typeName "page"}{.or}-{.section item}item{.or}list{.end}{.end}" role="main" data-content-field="main-content" sqs-controller="FadeInContent">
-
-        <!-- render page main content -->
-        {squarespace.main-content}
-
-      </main>
-
-      <footer id="footer" class="site-footer responsive-margin--top responsive-padding--left responsive-padding--right responsive-padding--top responsive-padding--bottom" role="contentinfo">
-        <!-- site wide footer via open block field -->
-        <squarespace:block-field id="footerBlocks" columns="12" label="Footer Content" />
-        <div id="footerNavWrapper" class="nav-wrapper footer-nav">
-          <squarespace:navigation navigationId="footerNav" template="navigation" />
-        </div>
-      </footer>
-
-    </div>
-
-    <div id="mobileBar" class="mobile-bar{.if showCart} mobile-bar--has-cart{.end}" sqs-controller="MobileOffset">
-      <a class="nav-toggle-label nav-toggle-label--mobile flex-item" id="navToggleMobile" sqs-controller="NavToggle">
-        <svg class="Icon Icon--hamburger nav-toggle-label-icon" viewBox="0 0 26 18">
-          <use class="use--odd" xlink:href="/assets/ui-icons.svg#hamburger-icon--odd"></use>
-          <use class="use--even" xlink:href="/assets/ui-icons.svg#hamburger-icon--even"></use>
-        </svg>
-      </a><!--
-      --><div class="social-ellipsis social-ellipsis--mobile flex-item" id="socialEllipsisMobile" sqs-controller="SocialToggle">
-        <svg class="ellipsis-icon" viewBox="0 0 25 6">
-          <use xlink:href="/assets/ui-icons.svg#ellipsis-icon"></use>
-        </svg>
-        <svg class="Icon Icon--close social-close-icon" viewBox="0 0 18 18">
-          <use xlink:href="/assets/ui-icons.svg#close-icon-line"></use>
-        </svg>
-      </div><!--
-      --><div class="search-cart--mobile flex-item">
-        <a href="/search" rel="search" class="header-search header-search--mobile" sqs-controller="SearchToggle">
-          <svg class="Icon Icon--search search-icon" viewBox="0 0 20 20">
-            <use xlink:href="/assets/ui-icons.svg#search-icon"></use>
-          </svg>
-          <svg class="Icon Icon--close search-close-icon" viewBox="0 0 18 18">
-            <use xlink:href="/assets/ui-icons.svg#close-icon-line"></use>
-          </svg>
-        </a>
-        {.if showCart}<a href="{shoppingCart|cart-url}" class="{squarespace.cart-classes} custom-cart mobile-cart">
-          <div class="custom-cart-bag">
-            <svg class="Icon Icon--bag custom-cart-bag-icon" viewBox="0 0 34 38">
-              <use class="use--odd" xlink:href="/assets/ui-icons.svg#bag-icon--odd"></use>
-              <use class="use--even" xlink:href="/assets/ui-icons.svg#bag-icon--even"></use>
-            </svg>
-            {shoppingCart|cart-quantity}
-          </div>
-        </a>{.end}
-      </div><!--
-      -->
-    </div>
+    <h1 class="serif fontXL">Hello, world!</h1>
 
     <squarespace:script src="site-bundle.js" combo="false" />
     {squarespace-footers}
-
   </body>
 </html>
