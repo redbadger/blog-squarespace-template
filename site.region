@@ -34,38 +34,38 @@
   </head>
   <body>
 
-    <header class="header" role="banner">
+    <header class="site-header__header" role="banner">
       <a to="homePage" title="Home">
-        <img src="./assets/logo.svg" class="logo" title="Red Badger logo" />
+        <img src="./assets/logo.svg" class="site-header__logo" title="Red Badger logo" />
       </a>
-      <nav class="mediumScreenNavContainer" role="navigation">
-        <ul role="listbox" class="mediumScreenNav">
+      <nav class="site-header__mediumScreenNavContainer" role="navigation">
+        <ul role="listbox" class="site-header__mediumScreenNav">
           <li><a href="https://red-badger.com/what-we-do/">What we do</a></li>
           <li><a href="https://red-badger.com/about-us/">About us</a></li>
-          <li><a href="http://red-badger.com/blog/">Blog</a></li>
+          <li><a class="activeNavLink" href="http://red-badger.com/blog/">Blog</a></li>
           <li><a href="https://red-badger.com/about-us/events/">Events</a></li>
         </ul>
       </nav>
-      <div class="smallScreenNavComponent">
-        <div class="triggerContainer">
+      <div class="site-header__smallScreenNavComponent">
+        <div class="site-header__triggerContainer">
           <label
              for="burger"
-             class="triggerLabel fontXS boldSansSerif"
+             class="site-header__triggerLabel fontXS boldSansSerif"
              >
              MENU
           </label>
         </div>
         <input
              type="checkbox"
-             class="trigger"
+             class="site-header__trigger"
              id="burger"
              />
-        <div class="overlay">
-          <div class="smallScreenNavMargin" id="smallScreenNavMargin"></div>
-          <div class="smallScreenNavWrapper">
-            <label for="burger" class="menuCloseButton fontXS boldSansSerif">Close</label>
-            <nav class="smallScreenNavContainer" role="navigation">
-              <ul role="listbox" class="smallScreenNav">
+        <div class="site-header__overlay">
+          <div class="site-header__smallScreenNavMargin" id="smallScreenNavMargin"></div>
+          <div class="site-header__smallScreenNavWrapper">
+            <label for="burger" class="site-header__menuCloseButton fontXS boldSansSerif">Close</label>
+            <nav class="site-header__smallScreenNavContainer" role="navigation">
+              <ul role="listbox" class="site-header__smallScreenNav">
                 <li><a class="fontL serif" href="https://red-badger.com/">Home</a></li>
                 <li><a class="fontL serif" href="https://red-badger.com/about-us/">About us</a></li>
                 <li><a class="fontL serif" href="https://red-badger.com/what-we-do/">What we do</a></li>

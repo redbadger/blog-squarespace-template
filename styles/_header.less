@@ -1,44 +1,44 @@
-.header {
+.site-header__header {
   display: flex;
   padding: 15px 20px;
   background-color: white;
 }
 
-.mediumScreenNavContainer {
+.site-header__mediumScreenNavContainer {
   display: none;
   width: 100%;
   justify-content: flex-end;
 }
 
-.logo {
+.site-header__logo {
   height: 35px;
 }
 
-.mediumScreenNav {
+.site-header__mediumScreenNav {
   list-style: none;
   align-self: center;
   justify-content: flex-end;
   display: flex;
 }
 
-.mediumScreenNav li {
+.site-header__mediumScreenNav li {
   display: inline-block;
   margin-left: 43px;
 }
 
-.mediumScreenNav a {
+.site-header__mediumScreenNav a {
   text-decoration: none;
   color: @badgerBlack;
   font-weight: bold;
 }
 
-.mediumScreenNav a:hover,
-.smallScreenNavContainer a,
+.site-header__mediumScreenNav a:hover,
+.site-header__smallScreenNavContainer a,
 .activeNavLink {
   border-bottom: 2px solid red;
 }
 
-.overlay {
+.site-header__overlay {
   position: fixed;
   top: 0;
   right: -100%;
@@ -49,7 +49,7 @@
   transition: left 0.3s;
 }
 
-.smallScreenNavMargin {
+.site-header__smallScreenNavMargin {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -57,7 +57,7 @@
   width: 54px;
 }
 
-.smallScreenNavWrapper {
+.site-header__smallScreenNavWrapper {
   background: @badgerBlack;
   position: absolute;
   top: 0;
@@ -66,16 +66,16 @@
   left: 54px;
 }
 
-.overlay .mediumScreenNav {
+.site-header__overlay .site-header__mediumScreenNav {
   display: block;
 }
 
-.smallScreenNavContainer {
+.site-header__smallScreenNavContainer {
   margin-top: 30px;
   text-align: center;
 }
 
-.smallScreenNav {
+.site-header__smallScreenNav {
   width: 150px;
   display: inline-block;
   padding: 0px;
@@ -84,16 +84,16 @@
   list-style-type:none
 }
 
-.smallScreenNav li {
+.site-header__smallScreenNav li {
   margin: 0 0 20px 0;
 }
 
-.smallScreenNav li a {
+.site-header__smallScreenNav li a {
   color: white;
   text-decoration: none;
 }
 
-.menuCloseButton {
+.site-header__menuCloseButton {
   position: absolute;
   top: 5px;
   left: 10px;
@@ -102,11 +102,11 @@
   cursor: pointer;
 }
 
-.smallScreenNavComponent {
+.site-header__smallScreenNavComponent {
   width: 100%;
 }
 
-.triggerContainer {
+.site-header__triggerContainer {
   width: 100%;
   height: 35px;
   display: flex;
@@ -114,7 +114,7 @@
   align-items: flex-end;
 }
 
-.triggerLabel {
+.site-header__triggerLabel {
   color: @badgerBlack;
   border-bottom: 2px solid red;
   line-height: 1em;
@@ -123,31 +123,31 @@
   font-weight: bold;
 }
 
-.trigger {
+.site-header__trigger {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-.trigger:checked + .overlay {
+.site-header__trigger:checked + .site-header__overlay {
   left: 0;
   right: 0;
 }
 
 @media screen and (min-width: 690px) {
-  .triggerContainer {
+  .site-header__triggerContainer {
     display: none;
   }
 
-  .mediumScreenNavContainer {
+  .site-header__mediumScreenNavContainer {
     display: flex;
   }
 
-  .logo {
+  .site-header__logo {
     height: 44px;
   }
 
-  .smallScreenNavComponent {
+  .site-header__smallScreenNavComponent {
     width: auto;
   }
 }
