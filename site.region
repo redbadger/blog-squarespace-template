@@ -34,9 +34,16 @@
   </head>
   <body>
 
-    <h1 class="serif fontXL">Hello, world!</h1>
-
+    <h1 class="serif fontXL">Blog</h1>
     <squarespace:script src="site-bundle.js" combo="false" />
+
+    <main id="page" class="site-page loading responsive-padding--left responsive-padding--right site-page--{collection.typeName}{.equal? collection.typeName "page"}{.or}-{.section item}item{.or}list{.end}{.end}" role="main" data-content-field="main-content" sqs-controller="FadeInContent">
+
+        <!-- render page main content -->
+        {squarespace.main-content}
+
+    </main>
+
     {squarespace-footers}
   </body>
 </html>

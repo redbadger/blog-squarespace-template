@@ -22,7 +22,42 @@
   </div>
   {.end}
   <div class="loading-spinner"></div>
-  <div class="blog-list blog-wrapper" id="blogList" sqs-controller="BlogGrid">{.repeated section items}<article class="entry entry--list h-entry grid-hidden {.main-image?} has-main-image {.end}{@|item-classes}" id="article-{id}" label="Blog Post" data-item-id="{id}" data-offset="{addedOn}"{.if pagination.nextPage}{.or} data-last-page{.end}>
+  <div class="blog-list blog-wrapper" id="blogList" sqs-controller="BlogGrid">
+  {.repeated section items}
+    <article class="entry entry--list h-entry grid-hidden {.main-image?} has-main-image {.end}{@|item-classes}" id="article-{id}" label="Blog Post" data-item-id="{id}" data-offset="{addedOn}"{.if pagination.nextPage}{.or} data-last-page{.end}>
+
+    <div class="entry-text">
+      <div class="entry-content">
+        {.section author}<div class="blog-meta-item blog-meta-author"><a href="{collection.fullUrl}?author={author.id}" class="blog-author-name">{displayName}</a> </div>{.end}
+
+        <time class="dt-published date-callout" datetime="{addedOn|date %F}" pubdate>
+          <div class="date-wrapper">
+            <span class="month">{addedOn|date %b} </span><span class="day">{addedOn|date %e}</span>
+          </div>
+        </time>
+      </div>
+    </div>
+
+    <header class="entry-header">
+      <h2 class="entry-title entry-title--list p-name" itemprop="headline" data-content-field="title" >
+        {.passthrough?}
+          <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">
+          {.or}
+          <a href="{fullUrl}" class="u-url" rel="bookmark">
+          {.end}
+          {title}
+        </a>
+      </h2>
+    </header>
+
+    <div class="entry-text">
+      <div class="entry-content">
+        {.excerpt?}
+          <div class="entry-excerpt p-summary">{excerpt}</div>
+        {.end}
+      </div>
+    </div>
+
     <div class="thumbnail-title-wrapper">
       {.main-image?}
       <div class="excerpt-thumb">
@@ -31,59 +66,7 @@
           <div class="thumb-overlay"></div>
         </a>
       </div>
-      {.or}
-      <div class="entry-title-wrapper">
-        <div class="title-bg-wrapper">
-          <h2 class="entry-title entry-title--list" data-content-field="title">
-            {.passthrough?}
-            <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">
-            {.or}
-            <a href="{fullUrl}" class="u-url" rel="bookmark">
-            {.end}
-              <time class="dt-published date-callout" datetime="{addedOn|date %F}" pubdate>
-                <div class="date-wrapper">
-                  <span class="month">{addedOn|date %b} </span><span class="day">{addedOn|date %e}</span>
-                </div>
-              </time>
-              <time class="dt-published date-highlight" itemprop="datePublished" datetime="{addedOn|date %F}" pubdate>{addedOn|date %b %e} </time>{title}
-            </a>
-          </h2>
-        </div>
-      </div>
       {.end}
-    </div>
-
-    <div class="entry-text">
-      {.main-image?}
-      <header class="entry-header">
-        <time class="dt-published date-callout" datetime="{addedOn|date %F}" pubdate>
-          <div class="date-wrapper">
-            <span class="month">{addedOn|date %b} </span><span class="day">{addedOn|date %e}</span>
-          </div>
-        </time>
-        <h2 class="entry-title entry-title--list p-name" itemprop="headline" data-content-field="title" >
-          {.passthrough?}
-          <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">
-          {.or}
-          <a href="{fullUrl}" class="u-url" rel="bookmark">
-          {.end}
-            <time class="dt-published date-highlight" datetime="{addedOn|date %F}" pubdate>{addedOn|date %b %e} </time>
-            {title}
-          </a>
-        </h2>
-      </header>
-      {.or}
-      {.end}
-
-      <div class="entry-content">
-        {.section author}<div class="blog-meta-item blog-meta-author"><a href="{collection.fullUrl}?author={author.id}" class="blog-author-name">{displayName}</a> </div>{.end}
-
-        {.section categories}<div class="blog-meta-item blog-categories">{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}" class="blog-category blog-category--{@}">{@}</a>{.alternates with}<span class="blog-meta-delimiter">, </span>{.end}</div>{.end}
-
-        {.excerpt?}
-          <div class="entry-excerpt p-summary">{excerpt}</div>
-        {.end}
-      </div>
     </div>
   </article>{.end}
 
