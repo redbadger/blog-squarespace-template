@@ -1,0 +1,153 @@
+.header {
+  display: flex;
+  padding: 15px 20px;
+  background-color: white;
+}
+
+.mediumScreenNavContainer {
+  display: none;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.logo {
+  height: 35px;
+}
+
+.mediumScreenNav {
+  list-style: none;
+  align-self: center;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.mediumScreenNav li {
+  display: inline-block;
+  margin-left: 43px;
+}
+
+.mediumScreenNav a {
+  text-decoration: none;
+  color: @badgerBlack;
+  font-weight: bold;
+}
+
+.mediumScreenNav a:hover,
+.smallScreenNavContainer a,
+.activeNavLink {
+  border-bottom: 2px solid red;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  left: 100%;
+  z-index: 100;
+  font-weight: bold;
+  transition: left 0.3s;
+}
+
+.smallScreenNavMargin {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 54px;
+}
+
+.smallScreenNavWrapper {
+  background: @badgerBlack;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 54px;
+}
+
+.overlay .mediumScreenNav {
+  display: block;
+}
+
+.smallScreenNavContainer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.smallScreenNav {
+  width: 150px;
+  display: inline-block;
+  padding: 0px;
+  text-align: left;
+  margin: 10px 0 0 20px;
+  list-style-type:none
+}
+
+.smallScreenNav li {
+  margin: 0 0 20px 0;
+}
+
+.smallScreenNav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menuCloseButton {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.smallScreenNavComponent {
+  width: 100%;
+}
+
+.triggerContainer {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.triggerLabel {
+  color: @badgerBlack;
+  border-bottom: 2px solid red;
+  line-height: 1em;
+  cursor: pointer;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.trigger {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.trigger:checked + .overlay {
+  left: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 690px) {
+  .triggerContainer {
+    display: none;
+  }
+
+  .mediumScreenNavContainer {
+    display: flex;
+  }
+
+  .logo {
+    height: 44px;
+  }
+
+  .smallScreenNavComponent {
+    width: auto;
+  }
+}

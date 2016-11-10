@@ -34,9 +34,54 @@
   </head>
   <body>
 
-    <h1 class="serif fontXL">Hello, world!</h1>
-
-    <squarespace:script src="site-bundle.js" combo="false" />
+    <header class="header" role="banner">
+      <a to="homePage" title="Home">
+        <img src="./assets/logo.svg" class="logo" title="Red Badger logo" />
+      </a>
+      <nav class="mediumScreenNavContainer" role="navigation">
+        <ul role="listbox" class="mediumScreenNav">
+          <li><a href="https://red-badger.com/what-we-do/">What we do</a></li>
+          <li><a href="https://red-badger.com/about-us/">About us</a></li>
+          <li><a href="http://red-badger.com/blog/">Blog</a></li>
+          <li><a href="https://red-badger.com/about-us/events/">Events</a></li>        
+        </ul>
+      </nav>
+      <div class="smallScreenNavComponent">
+        <div class="triggerContainer">
+          <label
+             for="burger"
+             class="triggerLabel fontXS boldSansSerif"
+             >
+             MENU
+          </label>
+        </div>
+        <input
+             type="checkbox"
+             class="trigger"
+             id="burger"
+             />
+        <div class="overlay">
+          <div class="smallScreenNavMargin" id="smallScreenNavMargin"></div>
+          <div class="smallScreenNavWrapper">
+            <label for="burger" class="menuCloseButton fontXS boldSansSerif">Close</label>
+            <nav class="smallScreenNavContainer" role="navigation">
+              <ul role="listbox" class="smallScreenNav">
+                <li><a class="fontL serif" href="https://red-badger.com/">Home</a></li>
+                <li><a class="fontL serif" href="https://red-badger.com/about-us/">About us</a></li>
+                <li><a class="fontL serif" href="https://red-badger.com/what-we-do/">What we do</a></li>
+                <li><a class="fontL serif" href="http://red-badger.com/blog/">Blog</a></li>
+                <li><a class="fontL serif" href="https://red-badger.com/about-us/events/">Events</a></li>
+                <li><a class="fontL serif" href="https://red-badger.com/about-us/join-us/">Jobs</a></li>
+                <li><a class="fontL serif" href="https://red-badger.com/about-us/contact-us/">Contact us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <h1 class="serif fontXL">Hello, jkjk, world!</h1>
     {squarespace-footers}
+    <squarespace:script src="site-bundle.js" combo="false" />
+    <squarespace:script src="index.js" combo="false" />
   </body>
 </html>
