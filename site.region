@@ -34,9 +34,59 @@
   </head>
   <body>
 
-    <h1 class="serif fontXL">Hello, world!</h1>
+    <header class="header" role="banner">
+      <a to="homePage" title="Home">
+        <img src="./assets/logo.svg" class="logo" title="Red Badger logo" />
+      </a>
+      <nav class="mediumScreenNavContainer" role="navigation">
+        <ul role="listbox" class="mediumScreenNav">
+          <li><a href="/about-us/">What we do</a></li>
+          <li><a href="/about-us/">About us</a></li>
+          <li><a href="http://red-badger.com/blog/">Blog</a></li>
+          <li><a href="/about-us/events/">Events</a></li>
+        </ul>
+      </nav>
+      <div class="smallScreenNavComponent">
+        <div class="triggerContainer">
+          <label
+             for="burger"
+             class="triggerLabel fontXS boldSansSerif"
+             >
+             MENU
+          </label>
+        </div>
+        <input
+             type="checkbox"
+             class="trigger"
+             id="burger"
+             />
+        <div class="overlay">
+          <div class="smallScreenNavMargin" id="smallScreenNavMargin"></div>
+          <div class="smallScreenNavWrapper">
+            <label for="burger" class="menuCloseButton fontXS boldSansSerif">Close</label>
+            <nav class="smallScreenNavContainer" role="navigation">
+              <ul role="listbox" class="smallScreenNav">
+                <li><a class="fontL serif" href="/">Home</a></li>
+                <li><a class="fontL serif" href="/about-us/">About us</a></li>
+                <li><a class="fontL serif" href="/what-we-do/">What we do</a></li>
+                <li><a class="fontL serif" href="http://red-badger.com/blog/">Blog</a></li>
+                <li><a class="fontL serif" href="/about-us/events/">Events</a></li>
+                <li><a class="fontL serif" href="/about-us/join-us/">Jobs</a></li>
+                <li><a class="fontL serif" href="/about-us/contact-us/">Contact us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <h1 class="serif fontXL">Hello, jkjk, world!</h1>
 
     <squarespace:script src="site-bundle.js" combo="false" />
     {squarespace-footers}
   </body>
+  <script>
+    document.getElementById("smallScreenNavMargin").addEventListener("click", function(){
+      document.getElementById('burger').click()
+    });
+  </script>
 </html>
