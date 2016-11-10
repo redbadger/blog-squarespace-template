@@ -43,7 +43,7 @@
           <li><a href="https://red-badger.com/what-we-do/">What we do</a></li>
           <li><a href="https://red-badger.com/about-us/">About us</a></li>
           <li><a href="http://red-badger.com/blog/">Blog</a></li>
-          <li><a href="https://red-badger.com/about-us/events/">Events</a></li>        
+          <li><a href="https://red-badger.com/about-us/events/">Events</a></li>
         </ul>
       </nav>
       <div class="smallScreenNavComponent">
@@ -79,8 +79,194 @@
         </div>
       </div>
     </header>
-    <h1 class="serif fontXL">Hello, jkjk, world!</h1>
-    {squarespace-footers}
+
+    <h1 class="serif fontXL">Hello, world!</h1>
+
+    <footer role="contentinfo" class="site-footer__footer">
+      <div class="site-footer__footerContainer">
+        <InlineSVG role="presentation" src={mapSVG} class="site-footer__footerMap" />
+        <div class="site-footer__footerSections">
+          <nav role="navigation" class="site-footer__section site-footer__footerLinks">
+            <ul class="serif site-footer__nav">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/about-us/">About us</a>
+              </li>
+              <li>
+                <a href="/what-we-do/">What we do</a>
+              </li>
+              <li>
+                <a href="http://red-badger.com/blog/">Blog</a>
+              </li>
+              <li>
+                <a href="/about-us/events/">Events</a>
+              </li>
+              <li>
+                <a href="/about-us/join-us/">Jobs</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="serif site-footer__section site-footer__social">
+            <span class="site-footer__screenReaderText">Email us at</span>
+            <a href="mailto:hello@red-badger.com" class="site-footer__mailtoLink">
+              hello@red-badger.com
+            </a>
+            <span class="site-footer__screenReaderText">Call us on</span>
+            <a href="tel:+442035670555" class="site-footer__telLink">
+              <span>+</span><span>4</span><span>4</span>
+              <span>(</span><span>0</span><span>)</span>
+              <span>2</span><span>0</span>
+              <span>3</span><span>5</span><span>6</span><span>7</span>
+              <span>0</span><span>5</span><span>5</span><span>5</span>
+            </a>
+            <span class="site-footer__screenReaderText">Find us on social media</span>
+            <ul class="site-footer__socialLinks">
+              <li>
+                <a
+                   href="https://github.com/redbadger"
+                   title="Red Badger Github"
+                   class="site-footer__socialIcon"
+                   >
+                  <InlineSVG
+                     src={githubSVG}
+                     title="Github"
+                     />
+                </a>
+              </li>
+              <li>
+                <a
+                   href="https://twitter.com/redbadgerteam"
+                   title="Red Badger Twitter"
+                   class="site-footer__socialIcon"
+                   >
+                  <InlineSVG
+                     src={twitterSVG}
+                     title="Twitter"
+                     />
+                </a>
+              </li>
+              <li>
+                <a
+                   href="https://redbadger.typeform.com/to/cBuJUl"
+                   title="Red Badger Slack"
+                   class="site-footer__socialIcon"
+                   >
+                  <InlineSVG
+                     src={slackSVG}
+                     title="Slack"
+                     />
+                </a>
+              </li>
+              <li>
+                <a
+                   href="https://www.linkedin.com/company/red-badger"
+                   title="Red Badger Linkedin"
+                   class="site-footer__socialIcon"
+                   >
+                  <InlineSVG
+                     src={linkedinSVG}
+                     title="Linkedin"
+                     />
+                </a>
+              </li>
+
+              <li>
+                <a
+                   href="https://www.instagram.com/redbadgerteam/"
+                   title="Red Badger Instagram"
+                   class="site-footer__socialIcon"
+                   >
+                  <InlineSVG
+                     src={instagramSVG}
+                     title="Instagram"
+                     />
+                </a>
+              </li>
+              <li>
+                <a
+                   href="https://www.facebook.com/RedBadger"
+                   title="Red Badger Facebook"
+                   class="site-footer__socialIcon"
+                   >
+                  <InlineSVG
+                     src={facebookSVG}
+                     title="Facebook"
+                     />
+                </a>
+              </li>
+              <li>
+                <a
+                   href="https://www.youtube.com/redbadgerteam"
+                   title="Red Badger Youtube"
+                   class="site-footer__socialIcon"
+                   >
+                  <InlineSVG
+                     src={youtubeSVG}
+                     title="Youtube"
+                     />
+                </a>
+              </li>
+              <li>
+                <a
+                   href="https://plus.google.com/+Redbadgerteam"
+                   title="Red Badger Google Plus"
+                   class="site-footer__socialIcon"
+                   >
+                  <InlineSVG
+                     src={gplusSVG}
+                     title="Google Plus"
+                     />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="site-footer__section site-footer__address boldSansSerif fontXS">
+          <InlineSVG role="presentation" src={mapPinSVG} class="site-footer__mapPin" />
+          <div class="site-footer__mapContainer">
+            <address>
+              <p>12 Mallow St</p>
+              <p>London</p>
+              <p>EC1Y 8RQ</p>
+              <p>UK</p>
+            </address>
+
+            <a
+               class="site-footer__mapLink"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.google.co.uk/maps?q=EC1Y+8RQ&hl=en&sll=51.528642,-0.101599&sspn=0.494671,1.20575&hnear=London+EC1Y+8RQ,+United+Kingdom&t=m&z=16"
+               >
+              Open in Google maps
+            </a>
+          </div>
+        </div>
+        <div class="site-footer__footerEndContainer">
+          <div class="boldSansSerif fontXS site-footer__section site-footer__disclaimer site-footer__noBorder">
+            <p class="site-footer__afterDivider site-footer__disclaimerParagraph">
+              &copy; Red Badger Consulting Limited 2016
+            </p>
+            <p class="site-footer__afterDivider site-footer__disclaimerParagraph">
+              Registered in England No. 7242017
+            </p>
+            <p class="site-footer__disclaimerParagraph">VAT Registration No. 990 8085 82</p>
+            <p class="site-footer__cookieWarning">
+              We use cookies on our website. For more information, view our privacy policy.
+            </p>
+          </div>
+          <InlineSVG
+             src={badgerSVG}
+             class="site-footer__badgerIcon"
+             title="Sally the Red Badger Badger"
+             />
+        </div>
+      </div>
+    </footer>
+
     <squarespace:script src="site-bundle.js" combo="false" />
     <squarespace:script src="index.js" combo="false" />
   </body>
