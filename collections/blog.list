@@ -46,7 +46,7 @@
 
           <time class="dt-published date-callout" datetime="{addedOn|date %F}" pubdate>
             <div class="date-wrapper">
-              <span class="month">{addedOn|date %b} </span><span class="day">{addedOn|date %e}</span>
+              <span class="month">{addedOn|date %b} </span><span class="day">{addedOn|date %e}, </span><span class="year">{addedOn|date %Y}</span>
             </div>
           </time>
         </div>
