@@ -29,13 +29,14 @@
     <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-96x96.png" type="image/png" sizes="96x96">
     <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-192x192.png" type="image/png" sizes="192x192">
     <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" />
     <title>Red Badger</title> <!-- TODO: Title -->
     {squarespace-headers}
   </head>
   <body>
 
 
-    <main id="page" class="site-page loading responsive-padding--left responsive-padding--right site-page--{collection.typeName}{.equal? collection.typeName "page"}{.or}-{.section item}item{.or}list{.end}{.end}" role="main" data-content-field="main-content" sqs-controller="FadeInContent">
+    <main id="page" class="site-page loading  site-page--{collection.typeName}{.equal? collection.typeName "page"}{.or}-{.section item}item{.or}list{.end}{.end}" role="main" data-content-field="main-content" sqs-controller="FadeInContent">
 
         <!-- render page main content -->
         {squarespace.main-content}

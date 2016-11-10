@@ -1,3 +1,5 @@
+  <h1 class="fontXL boldSerif">Blog</h1>
+
   <!-- Show active filters -->
   {.section categoryFilter}
   <p class="filter-heading filter-by-category loading" sqs-controller="FadeInContent">
@@ -22,13 +24,14 @@
   </div>
   {.end}
   <div class="loading-spinner"></div>
+
   <div class="blog-list blog-wrapper" id="blogList" sqs-controller="BlogGrid">
   {.repeated section items}
     <article class="entry entry--list h-entry grid-hidden {.main-image?} has-main-image {.end}{@|item-classes}" id="article-{id}" label="Blog Post" data-item-id="{id}" data-offset="{addedOn}"{.if pagination.nextPage}{.or} data-last-page{.end}>
 
     <div class="entry-text">
       <div class="entry-content">
-        {.section author}<div class="blog-meta-item blog-meta-author"><a href="{collection.fullUrl}?author={author.id}" class="blog-author-name">{displayName}</a> </div>{.end}
+        {.section author}<span class="blog-meta-item blog-meta-author"><a href="{collection.fullUrl}?author={author.id}" class="blog-author-name">{displayName}</a> </span>{.end}
 
         <time class="dt-published date-callout" datetime="{addedOn|date %F}" pubdate>
           <div class="date-wrapper">
@@ -39,7 +42,7 @@
     </div>
 
     <header class="entry-header">
-      <h2 class="entry-title entry-title--list p-name" itemprop="headline" data-content-field="title" >
+      <h2 class="entry-title entry-title--list p-name fontL boldSerif" itemprop="headline" data-content-field="title" >
         {.passthrough?}
           <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">
           {.or}
@@ -53,7 +56,7 @@
     <div class="entry-text">
       <div class="entry-content">
         {.excerpt?}
-          <div class="entry-excerpt p-summary">{excerpt}</div>
+          <div class="entry-excerpt serif p-summary">{excerpt}</div>
         {.end}
       </div>
     </div>
@@ -62,8 +65,7 @@
       {.main-image?}
       <div class="excerpt-thumb">
         <a href="{fullUrl}" class="excerpt-image content-fill">
-          <img {@|image-meta} data-load="false" />
-          <div class="thumb-overlay"></div>
+          <img src="{assetUrl}?format=500w" />
         </a>
       </div>
       {.end}
@@ -72,6 +74,6 @@
 
 </div>
 {.if pagination}
-{.if pagination.nextPage}<div class="load-more-wrapper"><a class="load-more" href="{pagination.nextPageUrl}">Load More</a></div>{.end}
+{.if pagination.nextPage}<div class="load-more-wrapper"><a class="load-more sansSerif fontStaticM" href="{pagination.nextPageUrl}">Load More</a></div>{.end}
 {.end}
 <div class="breaker"></div>

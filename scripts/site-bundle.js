@@ -2519,7 +2519,7 @@
 	/**
 	 * ​Squarespace comes with a number of built-in facilities for managing images
 	 * that are uploaded to our system. After uploading an image into a collection,
-	 * Squarespace automatically creates multiple copies of the image with different 
+	 * Squarespace automatically creates multiple copies of the image with different
 	 * sizes. Our ImageLoader will then help render images properly when they are
 	 * presented on a page, even on retina displays.
 	 *
@@ -2641,7 +2641,7 @@
 	 *
 	 * Tweaks are typically used by the developers through LESS variables, mixins,
 	 * and class names added to the <body> element.
-	 * 
+	 *
 	 * Sometimes, a developer may find it necessary to access the value of a tweak
 	 * through Javascript, or to watch for changes in that tweak and update the DOM
 	 * accordingly. The Tweak module of squarespace-core is meant to provide an
