@@ -55,7 +55,7 @@ article {
 }
 
 .entry-excerpt a {
-  color: @badgerRed;
+  color: @badgerBlack;
   text-decoration: underline;
 }
 
@@ -89,7 +89,7 @@ article {
   article {
     width: 690px !important;
     padding-bottom: 20px;
-    border-bottom: 2px solid @linesOnWhite;
+    border-bottom: 1px solid @linesOnWhite;
   }
 
   .medium-large-screen {
@@ -103,6 +103,32 @@ article {
 
   .excerpt-thumb img {
     max-width: 335px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1100px;
   }
 
+  .blog-list {
+    margin-top: 90px;
+  }
+
+  article {
+    width: 1100px !important;
+  }
+
+  .excerpt-thumb img {
+    max-width: 244px;
+  }
+
+  .entry-excerpt {
+    max-width: 800px
+  }
+
+  .entry-title {
+    margin-top: 0;
+  }
 }
