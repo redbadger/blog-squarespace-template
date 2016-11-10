@@ -72,3 +72,37 @@ article {
   text-decoration: none;
   font-weight: bold;
 }
+
+.medium-large-screen {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .small-screen {
+    display: none;
+  }
+
+  main {
+    max-width: 690px;
+  }
+
+  article {
+    width: 690px !important;
+    padding-bottom: 20px;
+    border-bottom: 2px solid @linesOnWhite;
+  }
+
+  .medium-large-screen {
+    display: block;
+  }
+
+  .thumbnail-title-wrapper {
+    float: right;
+    margin-left: 20px;
+  }
+
+  .excerpt-thumb img {
+    max-width: 335px;
+  }
+
+}
