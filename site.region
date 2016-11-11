@@ -35,6 +35,51 @@
   </head>
   <body>
 
+    <header class="site-header__header" role="banner">
+      <a to="homePage" title="Home">
+        <img src="./assets/logo.svg" class="site-header__logo" title="Red Badger logo" />
+      </a>
+      <nav class="site-header__mediumScreenNavContainer" role="navigation">
+        <ul role="listbox" class="site-header__mediumScreenNav">
+          <li><a href="https://red-badger.com/what-we-do/">What we do</a></li>
+          <li><a href="https://red-badger.com/about-us/">About us</a></li>
+          <li><a class="activeNavLink" href="http://red-badger.com/blog/">Blog</a></li>
+          <li><a href="https://red-badger.com/about-us/events/">Events</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__smallScreenNavComponent">
+        <div class="site-header__triggerContainer">
+          <label
+             for="burger"
+             class="site-header__triggerLabel fontXS boldSansSerif"
+             >
+             MENU
+          </label>
+        </div>
+        <input
+             type="checkbox"
+             class="site-header__trigger"
+             id="burger"
+             />
+        <div class="site-header__overlay">
+          <div class="site-header__smallScreenNavMargin" id="smallScreenNavMargin"></div>
+          <div class="site-header__smallScreenNavWrapper">
+            <label for="burger" class="site-header__menuCloseButton fontXS boldSansSerif">Close</label>
+            <nav class="site-header__smallScreenNavContainer" role="navigation">
+              <ul role="listbox" class="site-header__smallScreenNav">
+                <li><a class="fontL serif" href="https://red-badger.com/">Home</a></li>
+                <li><a class="fontL serif" href="https://red-badger.com/about-us/">About us</a></li>
+                <li><a class="fontL serif" href="https://red-badger.com/what-we-do/">What we do</a></li>
+                <li><a class="fontL serif" href="http://red-badger.com/blog/">Blog</a></li>
+                <li><a class="fontL serif" href="https://red-badger.com/about-us/events/">Events</a></li>
+                <li><a class="fontL serif" href="https://red-badger.com/about-us/join-us/">Jobs</a></li>
+                <li><a class="fontL serif" href="https://red-badger.com/about-us/contact-us/">Contact us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main id="page" class="site-page loading  site-page--{collection.typeName}{.equal? collection.typeName "page"}{.or}-{.section item}item{.or}list{.end}{.end}" role="main" data-content-field="main-content" sqs-controller="FadeInContent">
 
@@ -45,27 +90,29 @@
 
     <footer role="contentinfo" class="site-footer__footer">
       <div class="site-footer__footerContainer">
-        <InlineSVG role="presentation" src={mapSVG} class="site-footer__footerMap" />
+        <div role="presentation" class="site-footer__footerMap">
+          <img src="/assets/map.svg">
+        </div>
         <div class="site-footer__footerSections">
           <nav role="navigation" class="site-footer__section site-footer__footerLinks">
             <ul class="serif site-footer__nav">
               <li>
-                <a href="/">Home</a>
+                <a href="https://red-badger/com/">Home</a>
               </li>
               <li>
-                <a href="/about-us/">About us</a>
+                <a href="https://red-badger/com/about-us/">About us</a>
               </li>
               <li>
-                <a href="/what-we-do/">What we do</a>
+                <a href="https://red-badger/com/what-we-do/">What we do</a>
               </li>
               <li>
                 <a href="http://red-badger.com/blog/">Blog</a>
               </li>
               <li>
-                <a href="/about-us/events/">Events</a>
+                <a href="https://red-badger/com/about-us/events/">Events</a>
               </li>
               <li>
-                <a href="/about-us/join-us/">Jobs</a>
+                <a href="https://red-badger/com/about-us/join-us/">Jobs</a>
               </li>
             </ul>
           </nav>
@@ -91,10 +138,7 @@
                    title="Red Badger Github"
                    class="site-footer__socialIcon"
                    >
-                  <InlineSVG
-                     src={githubSVG}
-                     title="Github"
-                     />
+                  <img src="/assets/github.svg" title="Github" >
                 </a>
               </li>
               <li>
@@ -103,10 +147,7 @@
                    title="Red Badger Twitter"
                    class="site-footer__socialIcon"
                    >
-                  <InlineSVG
-                     src={twitterSVG}
-                     title="Twitter"
-                     />
+                  <img src="/assets/twitter.svg" title="Twitter">
                 </a>
               </li>
               <li>
@@ -115,10 +156,7 @@
                    title="Red Badger Slack"
                    class="site-footer__socialIcon"
                    >
-                  <InlineSVG
-                     src={slackSVG}
-                     title="Slack"
-                     />
+                  <img src="/assets/slack.svg" title="Slack">
                 </a>
               </li>
               <li>
@@ -127,10 +165,7 @@
                    title="Red Badger Linkedin"
                    class="site-footer__socialIcon"
                    >
-                  <InlineSVG
-                     src={linkedinSVG}
-                     title="Linkedin"
-                     />
+                  <img src="/assets/linked-in.svg" title="Linkedin">
                 </a>
               </li>
 
@@ -140,10 +175,7 @@
                    title="Red Badger Instagram"
                    class="site-footer__socialIcon"
                    >
-                  <InlineSVG
-                     src={instagramSVG}
-                     title="Instagram"
-                     />
+                  <img src="/assets/instagram.svg" title="Instagram">
                 </a>
               </li>
               <li>
@@ -152,10 +184,7 @@
                    title="Red Badger Facebook"
                    class="site-footer__socialIcon"
                    >
-                  <InlineSVG
-                     src={facebookSVG}
-                     title="Facebook"
-                     />
+                  <img src="/assets/facebook.svg" title="Facebook">
                 </a>
               </li>
               <li>
@@ -164,10 +193,7 @@
                    title="Red Badger Youtube"
                    class="site-footer__socialIcon"
                    >
-                  <InlineSVG
-                     src={youtubeSVG}
-                     title="Youtube"
-                     />
+                  <img src="/assets/youtube.svg" title="Youtube">
                 </a>
               </li>
               <li>
@@ -176,10 +202,7 @@
                    title="Red Badger Google Plus"
                    class="site-footer__socialIcon"
                    >
-                  <InlineSVG
-                     src={gplusSVG}
-                     title="Google Plus"
-                     />
+                  <img src="/assets/g-plus.svg" title="Google Plus">
                 </a>
               </li>
             </ul>
@@ -187,7 +210,9 @@
 
         </div>
         <div class="site-footer__section site-footer__address boldSansSerif fontXS">
-          <InlineSVG role="presentation" src={mapPinSVG} class="site-footer__mapPin" />
+          <div role="presentation" class="site-footer__mapPin">
+            <img src="/assets/map-pin.svg">
+          </div>
           <div class="site-footer__mapContainer">
             <address>
               <p>12 Mallow St</p>
@@ -219,16 +244,14 @@
               We use cookies on our website. For more information, view our privacy policy.
             </p>
           </div>
-          <InlineSVG
-             src={badgerSVG}
-             class="site-footer__badgerIcon"
-             title="Sally the Red Badger Badger"
-             />
+          <div class="site-footer__badgerIcon" title="Sally the Red Badger Badger">
+            <img src="/assets/badger-on-black.svg">
+          </div>
         </div>
       </div>
     </footer>
 
     <squarespace:script src="site-bundle.js" combo="false" />
-    {squarespace-footers}
+    <squarespace:script src="index.js" combo="false" />
   </body>
 </html>
