@@ -29,6 +29,7 @@
     <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-96x96.png" type="image/png" sizes="96x96">
     <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-192x192.png" type="image/png" sizes="192x192">
     <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" />
     <title>Red Badger</title> <!-- TODO: Title -->
     {squarespace-headers}
   </head>
@@ -36,7 +37,7 @@
 
     <header class="site-header__header" role="banner">
       <a to="homePage" title="Home">
-        <img src="./assets/logo.svg" class="site-header__logo" title="Red Badger logo" />
+        <img src="/assets/logo.svg" class="site-header__logo" title="Red Badger logo" />
       </a>
       <nav class="site-header__mediumScreenNavContainer" role="navigation">
         <ul role="listbox" class="site-header__mediumScreenNav">
@@ -80,7 +81,12 @@
       </div>
     </header>
 
-    <h1 class="serif fontXL">Hello, world!</h1>
+    <main id="page" class="site-page loading  site-page--{collection.typeName}{.equal? collection.typeName "page"}{.or}-{.section item}item{.or}list{.end}{.end}" role="main" data-content-field="main-content" sqs-controller="FadeInContent">
+
+        <!-- render page main content -->
+        {squarespace.main-content}
+
+    </main>
 
     <footer role="contentinfo" class="site-footer__footer">
       <div class="site-footer__footerContainer">
@@ -89,7 +95,7 @@
         </div>
         <div class="site-footer__footerSections">
           <nav role="navigation" class="site-footer__section site-footer__footerLinks">
-            <ul class="serif site-footer__nav">
+            <ul class="boldSerif site-footer__nav">
               <li>
                 <a href="https://red-badger/com/">Home</a>
               </li>
@@ -111,7 +117,7 @@
             </ul>
           </nav>
 
-          <div class="serif site-footer__section site-footer__social">
+          <div class="boldSerif site-footer__section site-footer__social">
             <span class="site-footer__screenReaderText">Email us at</span>
             <a href="mailto:hello@red-badger.com" class="site-footer__mailtoLink">
               hello@red-badger.com
@@ -244,8 +250,6 @@
         </div>
       </div>
     </footer>
-
-    <squarespace:script src="site-bundle.js" combo="false" />
     <squarespace:script src="index.js" combo="false" />
   </body>
 </html>
