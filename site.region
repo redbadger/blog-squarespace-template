@@ -40,10 +40,10 @@
       </a>
       <nav class="site-header__mediumScreenNavContainer" role="navigation">
         <ul role="listbox" class="site-header__mediumScreenNav">
-          <li><a href="https://red-badger.com/what-we-do/">What we do</a></li>
-          <li><a href="https://red-badger.com/about-us/">About us</a></li>
-          <li><a class="activeNavLink" href="http://red-badger.com/blog/">Blog</a></li>
-          <li><a href="https://red-badger.com/about-us/events/">Events</a></li>
+          <li><a class="boldSansSerif" href="https://red-badger.com/what-we-do/">What we do</a></li>
+          <li><a class="boldSansSerif" href="https://red-badger.com/about-us/">About us</a></li>
+          <li><a class="boldSansSerif" class="activeNavLink" href="http://red-badger.com/blog/">Blog</a></li>
+          <li><a class="boldSansSerif" href="https://red-badger.com/about-us/events/">Events</a></li>
         </ul>
       </nav>
       <div class="site-header__smallScreenNavComponent">
