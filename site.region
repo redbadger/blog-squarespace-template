@@ -1,251 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-TileColor" content="#fc1d42">
-    <meta name="theme-color" content="#fc1d42">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#fc1d42">
-    <meta name="msapplication-TileImage" content="assetsfaviconsmstile-144x144.png">
-    <meta property="og:site_name" content="Red Badger">
-    <meta property="og:title" content="Red Badger" />
-    <meta property="og:description" content="Let’s make things better. We work with you to deliver digital products that make a difference to people." />
-    <meta property="og:image:width" content="800" />
-    <meta property="og:image:height" content="800" />
-    <meta property="og:image" itemprop="image" content="https://red-badger.com/assets-honestly/favicons/rb-logo-big.png">
-    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-57x57.png" type="image/png" sizes="57x57">
-    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-60x60.png" type="image/png" sizes="60x60">
-    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-72x72.png" type="image/png" sizes="72x72">
-    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-76x76.png" type="image/png" sizes="76x76">
-    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-114x114.png" type="image/png" sizes="114x114">
-    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-120x120.png" type="image/png" sizes="120x120">
-    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-144x144.png" type="image/png" sizes="144x144">
-    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-152x152.png" type="image/png" sizes="152x152">
-    <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-180x180.png" type="image/png" sizes="180x180">
-    <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-16x16.png" type="image/png" sizes="16x16">
-    <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-32x32.png" type="image/png" sizes="32x32">
-    <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-96x96.png" type="image/png" sizes="96x96">
-    <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-192x192.png" type="image/png" sizes="192x192">
-    <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
-    <title>Red Badger</title> <!-- TODO: Title -->
-    {squarespace-headers}
-  </head>
-  <body>
 
-    <header class="site-header__header" role="banner">
-      <a to="homePage" title="Home">
-        <img src="./assets/logo.svg" class="site-header__logo" title="Red Badger logo" />
-      </a>
-      <nav class="site-header__mediumScreenNavContainer" role="navigation">
-        <ul role="listbox" class="site-header__mediumScreenNav">
-          <li><a class="boldSansSerif" href="https://red-badger.com/what-we-do/">What we do</a></li>
-          <li><a class="boldSansSerif" href="https://red-badger.com/about-us/">About us</a></li>
-          <li><a class="boldSansSerif" class="activeNavLink" href="http://red-badger.com/blog/">Blog</a></li>
-          <li><a class="boldSansSerif" href="https://red-badger.com/about-us/events/">Events</a></li>
-        </ul>
-      </nav>
-      <div class="site-header__smallScreenNavComponent">
-        <div class="site-header__triggerContainer">
-          <label
-             for="burger"
-             class="site-header__triggerLabel fontXS boldSansSerif"
-             >
-             MENU
-          </label>
-        </div>
-        <input
-             type="checkbox"
-             class="site-header__trigger"
-             id="burger"
-             />
-        <div class="site-header__overlay">
-          <div class="site-header__smallScreenNavMargin" id="smallScreenNavMargin"></div>
-          <div class="site-header__smallScreenNavWrapper">
-            <label for="burger" class="site-header__menuCloseButton fontXS boldSansSerif">Close</label>
-            <nav class="site-header__smallScreenNavContainer" role="navigation">
-              <ul role="listbox" class="site-header__smallScreenNav">
-                <li><a class="fontL serif" href="https://red-badger.com/">Home</a></li>
-                <li><a class="fontL serif" href="https://red-badger.com/about-us/">About us</a></li>
-                <li><a class="fontL serif" href="https://red-badger.com/what-we-do/">What we do</a></li>
-                <li><a class="fontL serif" href="http://red-badger.com/blog/">Blog</a></li>
-                <li><a class="fontL serif" href="https://red-badger.com/about-us/events/">Events</a></li>
-                <li><a class="fontL serif" href="https://red-badger.com/about-us/join-us/">Jobs</a></li>
-                <li><a class="fontL serif" href="https://red-badger.com/about-us/contact-us/">Contact us</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-TileColor" content="#fc1d42">
+  <meta name="theme-color" content="#fc1d42">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#fc1d42">
+  <meta name="msapplication-TileImage" content="assetsfaviconsmstile-144x144.png">
+  <meta property="og:site_name" content="Red Badger">
+  <meta property="og:title" content="Red Badger" />
+  <meta property="og:description" content="Let’s make things better. We work with you to deliver digital products that make a difference to people."
+  />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="800" />
+  <meta property="og:image" itemprop="image" content="https://red-badger.com/assets-honestly/favicons/rb-logo-big.png">
+  <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-57x57.png"
+    type="image/png" sizes="57x57">
+  <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-60x60.png"
+    type="image/png" sizes="60x60">
+  <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-72x72.png"
+    type="image/png" sizes="72x72">
+  <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-76x76.png"
+    type="image/png" sizes="76x76">
+  <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-114x114.png"
+    type="image/png" sizes="114x114">
+  <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-120x120.png"
+    type="image/png" sizes="120x120">
+  <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-144x144.png"
+    type="image/png" sizes="144x144">
+  <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-152x152.png"
+    type="image/png" sizes="152x152">
+  <link rel="apple-touch-icon" href="https://red-badger.com/assets-honestly/favicons/apple-touch-icon-180x180.png"
+    type="image/png" sizes="180x180">
+  <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-16x16.png"
+    type="image/png" sizes="16x16">
+  <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-32x32.png"
+    type="image/png" sizes="32x32">
+  <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-96x96.png"
+    type="image/png" sizes="96x96">
+  <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-192x192.png"
+    type="image/png" sizes="192x192">
+  <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-194x194.png"
+    type="image/png" sizes="194x194">
+  <title>Red Badger</title>
+  <!-- TODO: Title -->
+  {squarespace-headers}
+</head>
+
+<body>
+
+  <header class="site-header__header" role="banner">
+    <a to="homePage" title="Home">
+      <img src="./assets/logo.svg" class="site-header__logo" title="Red Badger logo" />
+    </a>
+    <nav class="site-header__mediumScreenNavContainer" role="navigation">
+      <ul role="listbox" class="site-header__mediumScreenNav">
+        <li><a class="boldSansSerif" href="https://red-badger.com/what-we-do/">What we do</a></li>
+        <li><a class="boldSansSerif" href="https://red-badger.com/about-us/">About us</a></li>
+        <li><a class="boldSansSerif" class="activeNavLink" href="http://red-badger.com/blog/">Blog</a></li>
+        <li><a class="boldSansSerif" href="https://red-badger.com/about-us/events/">Events</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__smallScreenNavComponent">
+      <div class="site-header__triggerContainer">
+        <label for="burger" class="site-header__triggerLabel fontXS boldSansSerif">
+          MENU
+        </label>
       </div>
-    </header>
-
-    <h1 class="serif fontXL">Hello, world!</h1>
-
-    <footer role="contentinfo" class="site-footer__footer">
-      <div class="site-footer__footerContainer">
-        <div role="presentation" class="site-footer__footerMap">
-          <img src="/assets/map.svg">
-        </div>
-        <div class="site-footer__footerSections">
-          <nav role="navigation" class="site-footer__section site-footer__footerLinks">
-            <ul class="serif site-footer__nav">
-              <li>
-                <a href="https://red-badger/com/">Home</a>
-              </li>
-              <li>
-                <a href="https://red-badger/com/about-us/">About us</a>
-              </li>
-              <li>
-                <a href="https://red-badger/com/what-we-do/">What we do</a>
-              </li>
-              <li>
-                <a href="http://red-badger.com/blog/">Blog</a>
-              </li>
-              <li>
-                <a href="https://red-badger/com/about-us/events/">Events</a>
-              </li>
-              <li>
-                <a href="https://red-badger/com/about-us/join-us/">Jobs</a>
-              </li>
+      <input type="checkbox" class="site-header__trigger" id="burger" />
+      <div class="site-header__overlay">
+        <div class="site-header__smallScreenNavMargin" id="smallScreenNavMargin"></div>
+        <div class="site-header__smallScreenNavWrapper">
+          <label for="burger" class="site-header__menuCloseButton fontXS boldSansSerif">Close</label>
+          <nav class="site-header__smallScreenNavContainer" role="navigation">
+            <ul role="listbox" class="site-header__smallScreenNav">
+              <li><a class="fontL serif" href="https://red-badger.com/">Home</a></li>
+              <li><a class="fontL serif" href="https://red-badger.com/about-us/">About us</a></li>
+              <li><a class="fontL serif" href="https://red-badger.com/what-we-do/">What we do</a></li>
+              <li><a class="fontL serif" href="http://red-badger.com/blog/">Blog</a></li>
+              <li><a class="fontL serif" href="https://red-badger.com/about-us/events/">Events</a></li>
+              <li><a class="fontL serif" href="https://red-badger.com/about-us/join-us/">Jobs</a></li>
+              <li><a class="fontL serif" href="https://red-badger.com/about-us/contact-us/">Contact us</a></li>
             </ul>
           </nav>
+        </div>
+      </div>
+    </div>
+  </header>
 
-          <div class="serif site-footer__section site-footer__social">
-            <span class="site-footer__screenReaderText">Email us at</span>
-            <a href="mailto:hello@red-badger.com" class="site-footer__mailtoLink">
+  <h1 class="serif fontXL">Hello, world!</h1>
+
+  <h3 class="author">Gussie Watson</h3>
+  <h3 class="role">Project Manager</h3>
+
+  <div class="link-container boldSansSerif">
+    <h3 class="link">More from Gussie</h3>
+    <a to="homePage" title="Home">
+      <img src="./assets/arrow.svg" class="arrow-icon boldSansSerif" title="Arrow" />
+    </a>
+  </div>
+
+
+  <footer role="contentinfo" class="site-footer__footer">
+    <div class="site-footer__footerContainer">
+      <div role="presentation" class="site-footer__footerMap">
+        <img src="/assets/map.svg">
+      </div>
+      <div class="site-footer__footerSections">
+        <nav role="navigation" class="site-footer__section site-footer__footerLinks">
+          <ul class="serif site-footer__nav">
+            <li>
+              <a href="https://red-badger/com/">Home</a>
+            </li>
+            <li>
+              <a href="https://red-badger/com/about-us/">About us</a>
+            </li>
+            <li>
+              <a href="https://red-badger/com/what-we-do/">What we do</a>
+            </li>
+            <li>
+              <a href="http://red-badger.com/blog/">Blog</a>
+            </li>
+            <li>
+              <a href="https://red-badger/com/about-us/events/">Events</a>
+            </li>
+            <li>
+              <a href="https://red-badger/com/about-us/join-us/">Jobs</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="serif site-footer__section site-footer__social">
+          <span class="site-footer__screenReaderText">Email us at</span>
+          <a href="mailto:hello@red-badger.com" class="site-footer__mailtoLink">
               hello@red-badger.com
             </a>
-            <span class="site-footer__screenReaderText">Call us on</span>
-            <a href="tel:+442035670555" class="site-footer__telLink">
-              <span>+</span><span>4</span><span>4</span>
-              <span>(</span><span>0</span><span>)</span>
-              <span>2</span><span>0</span>
-              <span>3</span><span>5</span><span>6</span><span>7</span>
-              <span>0</span><span>5</span><span>5</span><span>5</span>
-            </a>
-            <span class="site-footer__screenReaderText">Find us on social media</span>
-            <ul class="site-footer__socialLinks">
-              <li>
-                <a
-                   href="https://github.com/redbadger"
-                   title="Red Badger Github"
-                   class="site-footer__socialIcon"
-                   >
-                  <img src="/assets/github.svg" title="Github" >
-                </a>
-              </li>
-              <li>
-                <a
-                   href="https://twitter.com/redbadgerteam"
-                   title="Red Badger Twitter"
-                   class="site-footer__socialIcon"
-                   >
-                  <img src="/assets/twitter.svg" title="Twitter">
-                </a>
-              </li>
-              <li>
-                <a
-                   href="https://redbadger.typeform.com/to/cBuJUl"
-                   title="Red Badger Slack"
-                   class="site-footer__socialIcon"
-                   >
-                  <img src="/assets/slack.svg" title="Slack">
-                </a>
-              </li>
-              <li>
-                <a
-                   href="https://www.linkedin.com/company/red-badger"
-                   title="Red Badger Linkedin"
-                   class="site-footer__socialIcon"
-                   >
-                  <img src="/assets/linked-in.svg" title="Linkedin">
-                </a>
-              </li>
+          <span class="site-footer__screenReaderText">Call us on</span>
+          <a href="tel:+442035670555" class="site-footer__telLink">
+            <span>+</span><span>4</span><span>4</span>
+            <span>(</span><span>0</span><span>)</span>
+            <span>2</span><span>0</span>
+            <span>3</span><span>5</span><span>6</span><span>7</span>
+            <span>0</span><span>5</span><span>5</span><span>5</span>
+          </a>
+          <span class="site-footer__screenReaderText">Find us on social media</span>
+          <ul class="site-footer__socialLinks">
+            <li>
+              <a href="https://github.com/redbadger" title="Red Badger Github" class="site-footer__socialIcon">
+                <img src="/assets/github.svg" title="Github">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/redbadgerteam" title="Red Badger Twitter" class="site-footer__socialIcon">
+                <img src="/assets/twitter.svg" title="Twitter">
+              </a>
+            </li>
+            <li>
+              <a href="https://redbadger.typeform.com/to/cBuJUl" title="Red Badger Slack" class="site-footer__socialIcon">
+                <img src="/assets/slack.svg" title="Slack">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/red-badger" title="Red Badger Linkedin"
+                class="site-footer__socialIcon">
+                <img src="/assets/linked-in.svg" title="Linkedin">
+              </a>
+            </li>
 
-              <li>
-                <a
-                   href="https://www.instagram.com/redbadgerteam/"
-                   title="Red Badger Instagram"
-                   class="site-footer__socialIcon"
-                   >
-                  <img src="/assets/instagram.svg" title="Instagram">
-                </a>
-              </li>
-              <li>
-                <a
-                   href="https://www.facebook.com/RedBadger"
-                   title="Red Badger Facebook"
-                   class="site-footer__socialIcon"
-                   >
-                  <img src="/assets/facebook.svg" title="Facebook">
-                </a>
-              </li>
-              <li>
-                <a
-                   href="https://www.youtube.com/redbadgerteam"
-                   title="Red Badger Youtube"
-                   class="site-footer__socialIcon"
-                   >
-                  <img src="/assets/youtube.svg" title="Youtube">
-                </a>
-              </li>
-              <li>
-                <a
-                   href="https://plus.google.com/+Redbadgerteam"
-                   title="Red Badger Google Plus"
-                   class="site-footer__socialIcon"
-                   >
-                  <img src="/assets/g-plus.svg" title="Google Plus">
-                </a>
-              </li>
-            </ul>
-          </div>
-
+            <li>
+              <a href="https://www.instagram.com/redbadgerteam/" title="Red Badger Instagram" class="site-footer__socialIcon">
+                <img src="/assets/instagram.svg" title="Instagram">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/RedBadger" title="Red Badger Facebook" class="site-footer__socialIcon">
+                <img src="/assets/facebook.svg" title="Facebook">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/redbadgerteam" title="Red Badger Youtube" class="site-footer__socialIcon">
+                <img src="/assets/youtube.svg" title="Youtube">
+              </a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/+Redbadgerteam" title="Red Badger Google Plus" class="site-footer__socialIcon">
+                <img src="/assets/g-plus.svg" title="Google Plus">
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="site-footer__section site-footer__address boldSansSerif fontXS">
-          <div role="presentation" class="site-footer__mapPin">
-            <img src="/assets/map-pin.svg">
-          </div>
-          <div class="site-footer__mapContainer">
-            <address>
+
+      </div>
+      <div class="site-footer__section site-footer__address boldSansSerif fontXS">
+        <div role="presentation" class="site-footer__mapPin">
+          <img src="/assets/map-pin.svg">
+        </div>
+        <div class="site-footer__mapContainer">
+          <address>
               <p>12 Mallow St</p>
               <p>London</p>
               <p>EC1Y 8RQ</p>
               <p>UK</p>
             </address>
 
-            <a
-               class="site-footer__mapLink"
-               target="_blank"
-               rel="noopener noreferrer"
-               href="https://www.google.co.uk/maps?q=EC1Y+8RQ&hl=en&sll=51.528642,-0.101599&sspn=0.494671,1.20575&hnear=London+EC1Y+8RQ,+United+Kingdom&t=m&z=16"
-               >
-              Open in Google maps
+          <a class="site-footer__mapLink" target="_blank" rel="noopener noreferrer" href="https://www.google.co.uk/maps?q=EC1Y+8RQ&hl=en&sll=51.528642,-0.101599&sspn=0.494671,1.20575&hnear=London+EC1Y+8RQ,+United+Kingdom&t=m&z=16">
+               Open in Google maps
             </a>
-          </div>
-        </div>
-        <div class="site-footer__footerEndContainer">
-          <div class="boldSansSerif fontXS site-footer__section site-footer__disclaimer site-footer__noBorder">
-            <p class="site-footer__afterDivider site-footer__disclaimerParagraph">
-              &copy; Red Badger Consulting Limited 2016
-            </p>
-            <p class="site-footer__afterDivider site-footer__disclaimerParagraph">
-              Registered in England No. 7242017
-            </p>
-            <p class="site-footer__disclaimerParagraph">VAT Registration No. 990 8085 82</p>
-            <p class="site-footer__cookieWarning">
-              We use cookies on our website. For more information, view our privacy policy.
-            </p>
-          </div>
-          <div class="site-footer__badgerIcon" title="Sally the Red Badger Badger">
-            <img src="/assets/badger-on-black.svg">
-          </div>
         </div>
       </div>
-    </footer>
+      <div class="site-footer__footerEndContainer">
+        <div class="boldSansSerif fontXS site-footer__section site-footer__disclaimer site-footer__noBorder">
+          <p class="site-footer__afterDivider site-footer__disclaimerParagraph">
+            &copy; Red Badger Consulting Limited 2016
+          </p>
+          <p class="site-footer__afterDivider site-footer__disclaimerParagraph">
+            Registered in England No. 7242017
+          </p>
+          <p class="site-footer__disclaimerParagraph">VAT Registration No. 990 8085 82</p>
+          <p class="site-footer__cookieWarning">
+            We use cookies on our website. For more information, view our privacy policy.
+          </p>
+        </div>
+        <div class="site-footer__badgerIcon" title="Sally the Red Badger Badger">
+          <img src="/assets/badger-on-black.svg">
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <squarespace:script src="site-bundle.js" combo="false" />
-    <squarespace:script src="index.js" combo="false" />
-  </body>
+  <squarespace:script src="site-bundle.js" combo="false" />
+  <squarespace:script src="index.js" combo="false" />
+</body>
+
 </html>
