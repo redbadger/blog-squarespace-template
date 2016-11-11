@@ -250,8 +250,6 @@
         </div>
       </div>
     </footer>
-
-    <squarespace:script src="site-bundle.js" combo="false" />
     <squarespace:script src="index.js" combo="false" />
   </body>
 </html>
