@@ -49,10 +49,7 @@
       </nav>
       <div class="site-header__smallScreenNavComponent">
         <div class="site-header__triggerContainer">
-          <label
-             for="burger"
-             class="site-header__triggerLabel fontXS boldSansSerif"
-             >
+          <label for="burger" class="site-header__triggerLabel fontXS boldSansSerif">
              MENU
           </label>
         </div>
@@ -82,10 +79,7 @@
     </header>
 
     <main id="page" class="site-page loading  site-page--{collection.typeName}{.equal? collection.typeName "page"}{.or}-{.section item}item{.or}list{.end}{.end}" role="main" data-content-field="main-content" sqs-controller="FadeInContent">
-
-        <!-- render page main content -->
-        {squarespace.main-content}
-
+      {squarespace.main-content}
     </main>
 
     <footer role="contentinfo" class="site-footer__footer">
