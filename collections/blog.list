@@ -53,7 +53,7 @@
       </div>
 
       <header class="entry-header">
-        <h2 class="entry-title entry-title--list p-name fontL boldSerif" itemprop="headline" data-content-field="title" >
+        <h2 class="entry-title entry-title--list p-name fontS boldSerif" itemprop="headline" data-content-field="title" >
           {.passthrough?}
             <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">
             {.or}
