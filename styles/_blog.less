@@ -42,9 +42,12 @@ article {
 }
 
 .entry-title a {
-  font-size: 24px;
   color: @badgerBlack;
   text-decoration: none;
+}
+
+.entry-title a:hover {
+  border-bottom: 2px solid @badgerRed;
 }
 
 .entry-excerpt {
@@ -76,6 +79,10 @@ article {
 
 .medium-large-screen {
   display: none;
+}
+
+.filter-heading {
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 750px) {
