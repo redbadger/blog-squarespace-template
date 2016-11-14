@@ -2,20 +2,20 @@
 
   <!-- Show active filters -->
   {.section categoryFilter}
-  <p class="filter-heading filter-by-category loading" sqs-controller="FadeInContent">
+  <p class="filter-heading sansSerif fontS filter-by-category loading" sqs-controller="FadeInContent">
     All in <span class="category-name">{@}</span>
   </p>
   {.end}
 
   {.section tagFilter}
-  <p class="filter-heading filter-by-tag loading" sqs-controller="FadeInContent">
+  <p class="filter-heading sansSerif fontS filter-by-tag loading" sqs-controller="FadeInContent">
     All tagged <span class="category-name">{@}</span>
   </p>
   {.end}
 
   {.if authorFilter}
-  <div class="filter-heading filter-by-author loading" sqs-controller="FadeInContent">
-    <p>All by {author.displayName}</p>
+  <div class="filter-heading sansSerif fontS filter-by-author loading" sqs-controller="FadeInContent">
+    <p>All posts by {author.displayName}</p>
     {.if author.avatarId}
     <div class="author-avatar content-fill">
       <img class="author-avatar-image" data-src="{author.avatarAssetUrl}" data-image="{author.avatarAssetUrl}" data-image-focal-point="0.5,0.5">
@@ -51,7 +51,7 @@
       </div>
 
       <header class="entry-header">
-        <h2 class="entry-title entry-title--list p-name fontS boldSerif" itemprop="headline" data-content-field="title" >
+        <h2 class="entry-title entry-title--list p-name fontM boldSerif" itemprop="headline" data-content-field="title" >
           {.passthrough?}
             <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">
             {.or}
@@ -86,6 +86,6 @@
 
 </div>
 {.if pagination}
-{.if pagination.nextPage}<div class="load-more-wrapper"><a class="load-more sansSerif fontStaticM" href="{pagination.nextPageUrl}">Load More</a></div>{.end}
+{.if pagination.nextPage}<div class="load-more-wrapper"><a class="load-more boldSansSerif fontStaticM" href="{pagination.nextPageUrl}">Next page</a></div>{.end}
 {.end}
 <div class="breaker"></div>
