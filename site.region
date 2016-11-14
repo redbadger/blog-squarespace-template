@@ -40,7 +40,7 @@
         <img src="/assets/logo.svg" class="site-header__logo" title="Red Badger logo" />
       </a>
       <nav class="site-header__mediumScreenNavContainer" role="navigation">
-        <ul role="listbox" class="site-header__mediumScreenNav">
+        <ul role="listbox" class="site-header__mediumScreenNav boldSansSerif">
           <li><a href="https://red-badger.com/what-we-do/">What we do</a></li>
           <li><a href="https://red-badger.com/about-us/">About us</a></li>
           <li><a class="activeNavLink" href="http://red-badger.com/blog/">Blog</a></li>
@@ -63,14 +63,14 @@
           <div class="site-header__smallScreenNavWrapper">
             <label for="burger" class="site-header__menuCloseButton fontXS boldSansSerif">Close</label>
             <nav class="site-header__smallScreenNavContainer" role="navigation">
-              <ul role="listbox" class="site-header__smallScreenNav">
-                <li><a class="fontL serif" href="https://red-badger.com/">Home</a></li>
-                <li><a class="fontL serif" href="https://red-badger.com/about-us/">About us</a></li>
-                <li><a class="fontL serif" href="https://red-badger.com/what-we-do/">What we do</a></li>
-                <li><a class="fontL serif" href="http://red-badger.com/blog/">Blog</a></li>
-                <li><a class="fontL serif" href="https://red-badger.com/about-us/events/">Events</a></li>
-                <li><a class="fontL serif" href="https://red-badger.com/about-us/join-us/">Jobs</a></li>
-                <li><a class="fontL serif" href="https://red-badger.com/about-us/contact-us/">Contact us</a></li>
+              <ul role="listbox" class="boldSerif site-header__smallScreenNav">
+                <li><a class="fontL" href="https://red-badger.com/">Home</a></li>
+                <li><a class="fontL" href="https://red-badger.com/about-us/">About us</a></li>
+                <li><a class="fontL" href="https://red-badger.com/what-we-do/">What we do</a></li>
+                <li><a class="fontL" href="http://red-badger.com/blog/">Blog</a></li>
+                <li><a class="fontL" href="https://red-badger.com/about-us/events/">Events</a></li>
+                <li><a class="fontL" href="https://red-badger.com/about-us/join-us/">Jobs</a></li>
+                <li><a class="fontL" href="https://red-badger.com/about-us/contact-us/">Contact us</a></li>
               </ul>
             </nav>
           </div>
