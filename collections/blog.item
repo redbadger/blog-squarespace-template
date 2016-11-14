@@ -1,3 +1,4 @@
+<h1 class="fontXL boldSerif">Blog</h1>
 {.section item}
 <div class="blog-article">
 
@@ -11,7 +12,7 @@
     </time>
   </div>
 
-  <h1 class="blog-article__title fontL serif" data-content-field="title">
+  <h2 class="blog-article__title fontM boldSerif" data-content-field="title">
     {title}
   </h1>
 
@@ -20,7 +21,9 @@
   {.or}
   {.end}
 
-  <div class="blog-article__body serif">{.section body}{@}{.end}</div>
+  <div class="blog-article__body serif">
+    {.section body}{@}{.end}
+  </div>
 
 </div>
 {.end}

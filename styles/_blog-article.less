@@ -1,6 +1,6 @@
 .blog-article {
   background-color: @badgerWhite;
-  padding: 35px 25px 40px 25px;
+  padding: 35px 0 40px 0;
 }
 
 .blog-article__details {
@@ -11,7 +11,7 @@
 .blog-article__author-name {
   color: @badgerRed;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .blog-article__time {
@@ -28,4 +28,37 @@
   width: 100%;
   margin-bottom: 20px;
   color: @badgerBlack;
+}
+
+.blog-article__body {
+  font-size: 20px;
+  line-height: 1.4em;
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 800;
+    margin-top: 20px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  a {
+    color: @badgerBlack;
+    text-decoration: underline;
+  }
+
+  em {
+    font-weight: 800;
+  }
+}
+
+.image-caption {
+  font-family: 'ProximaNova-Light', sans-serif;
+  color: @badgerBlack;
+  font-size: 14px;
+}
+
+.image-caption-wrapper {
+  padding-top: 0 !important;
 }
