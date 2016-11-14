@@ -15,7 +15,7 @@
 
   {.if authorFilter}
   <div class="filter-heading sansSerif fontS filter-by-author loading" sqs-controller="FadeInContent">
-    <p>All by {author.displayName}</p>
+    <p>All posts by {author.displayName}</p>
     {.if author.avatarId}
     <div class="author-avatar content-fill">
       <img class="author-avatar-image" data-src="{author.avatarAssetUrl}" data-image="{author.avatarAssetUrl}" data-image-focal-point="0.5,0.5">
