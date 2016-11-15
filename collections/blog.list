@@ -86,6 +86,21 @@
 
 </div>
 {.if pagination}
-{.if pagination.nextPage}<div class="load-more-wrapper"><a class="load-more boldSansSerif fontStaticM" href="{pagination.nextPageUrl}">Next page</a></div>{.end}
+  <div class="pagination-buttons">
+    {.if pagination.prevPage}
+      <div class="load-more-wrapper">
+        <a class="prev-page boldSansSerif fontStaticM" href="{pagination.prevPageUrl}">
+          Previous
+        </a>
+      </div>
+    {.end}
+    {.if pagination.nextPage}
+      <div class="load-more-wrapper">
+        <a class="load-more boldSansSerif fontStaticM" href="{pagination.nextPageUrl}">
+          Next page
+        </a>
+      </div>
+    {.end}
+  </div>
 {.end}
 <div class="breaker"></div>

@@ -62,18 +62,41 @@ article {
   text-decoration: underline;
 }
 
-.load-more-wrapper {
+.pagination-buttons {
   text-align: center;
+  height: 60px;
+}
+
+.load-more-wrapper {
+  display: inline;
+
+  &:first-child {
+    margin-right: 10px;
+  }
+
+  &:last-child {
+    margin-left: 10px;
+  }
+}
+
+.load-more, .prev-page {
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .load-more {
   background-color: @badgerRed;
-  display: inline-block;
   color: white;
-  padding: 20px 30px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
+  border: 3px solid @badgerRed;
+}
+
+
+.prev-page {
+  background-color: @badgerWhite;
+  color: @badgerBlack;
+  border: 3px solid @badgerBlack;
 }
 
 .medium-large-screen {
