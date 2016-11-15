@@ -1,4 +1,6 @@
-<h1 class="fontXL boldSerif">Blog</h1>
+<a href="/" title="Red Badger blog index" class="blogHeader">
+  <h1 class="fontXL boldSerif">Blog</h1>
+</a>
 {.section item}
 <div class="blog-article">
 

@@ -36,7 +36,7 @@
   <body>
 
     <header class="site-header__header" role="banner">
-      <a to="homePage" title="Home">
+      <a href="https://red-badger.com" title="Red Badger Homepage">
         <img src="/assets/logo.svg" class="site-header__logo" title="Red Badger logo" />
       </a>
       <nav class="site-header__mediumScreenNavContainer" role="navigation">

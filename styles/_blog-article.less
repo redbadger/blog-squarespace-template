@@ -1,3 +1,7 @@
+.blogHeader {
+  text-decoration: none;
+}
+
 .blog-article {
   background-color: @badgerWhite;
   padding: 35px 0 40px 0;
@@ -61,4 +65,41 @@
 
 .image-caption-wrapper {
   padding-top: 0 !important;
+}
+
+.blog-article__body {
+  blockquote {
+    max-width: 305px;
+    position: relative;
+    padding-left: 30px;
+    color: @badgerBlack;
+
+    span {
+      font-size: 40px;
+      color: @badgerRed;
+      display: inline-block;
+      font-family: Sentinel A, Sentinel B;
+      font-weight: 800;
+      position: absolute;
+
+      &:first-child {
+        left: 0px;
+      }
+
+      &:last-child {
+        top: 90%;
+        right: 0;
+      }
+    }
+  }
+
+  figcaption.source {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 16px;
+    color: @badgerBlack;
+    margin-left: 30px;
+  }
 }
