@@ -1,20 +1,16 @@
-<a href="/" title="Red Badger blog index" class="blogHeader">
-  <h1 class="fontXL boldSerif">Blog</h1>
-</a>
 {.section item}
 <div class="blog-article">
-
   <div class="blog-article__details">
     {.section author}
-    <a class="blog-article__author-name fontS sansSerif" href="{collection.fullUrl}?author={author.id}">{displayName}</a>
+    <a class="blog-article__author-name fontXS sansSerif" href="{collection.fullUrl}?author={author.id}">{displayName}</a>
     {.end}
 
-    <time class="blog-article__time fontS sansSerif" datetime="{addedOn|date %F}" pubdate>
+    <time class="blog-article__time fontXS sansSerif" datetime="{addedOn|date %F}" pubdate>
       {addedOn|timesince}
     </time>
   </div>
 
-  <h2 class="blog-article__title fontM boldSerif" data-content-field="title">
+  <h2 class="blog-article__title fontL boldSerif" data-content-field="title">
     {title}
   </h1>
 
@@ -26,6 +22,22 @@
   <div class="blog-article__body serif">
     {.section body}{@}{.end}
   </div>
+  {.section author}
+    <div class="author">
+      <div class="author__name">
+        <a href="/?author={author.id}" class="boldSansSerif">
+          <span>{author.firstName}</span>
+          <span>{author.lastName}</span>
+        </a>
+      </div>
+      <div class="author__bio sansSerif">
+        {author.bio}
+      </div>
+      <a href="/?author={author.id}" class="boldSansSerif author__profile">
+        More from {author.firstName}
+      </a>
+    </div>
+  {.end}
 
 </div>
 {.end}

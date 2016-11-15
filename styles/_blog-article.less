@@ -40,7 +40,7 @@
 
   h1, h2, h3, h4, h5 {
     font-weight: 800;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   p {
@@ -49,18 +49,13 @@
 
   a {
     color: @badgerBlack;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid @badgerRed
   }
 
   em {
     font-weight: 800;
   }
-}
-
-.image-caption {
-  font-family: 'ProximaNova-Light', sans-serif;
-  color: @badgerBlack;
-  font-size: 14px;
 }
 
 .image-caption-wrapper {
@@ -115,6 +110,32 @@
     font-size: 16px;
     color: @badgerBlack;
     margin-left: 30px;
+  }
+}
+
+.author {
+  border-top: 1px solid @linesOnWhite;
+  border-bottom: 1px solid @linesOnWhite;
+  padding: 30px 0;
+  margin-top: 40px;
+
+  .author__name {
+    margin-bottom: 10px;
+
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      border-bottom: 1px solid @badgerRed;
+    }
+  }
+
+  .author__bio {
+    margin-bottom: 30px;
+  }
+
+  .author__profile {
+    font-size: 16px;
+    text-decoration: none;
   }
 }
 
