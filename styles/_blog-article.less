@@ -73,6 +73,15 @@
     padding: 0 0 0 45px;
   }
 
+  ol {
+    list-style-type: decimal;
+    padding: 0 0 0 45px;
+  }
+
+  li {
+    padding-left: 10px;
+  }
+
   blockquote {
     max-width: 305px;
     position: relative;
@@ -106,5 +115,15 @@
     font-size: 16px;
     color: @badgerBlack;
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-page--blog-item {
+    max-width: 920px;
+
+    .sqs-block-content p {
+      max-width: 675px;
+    }
   }
 }
