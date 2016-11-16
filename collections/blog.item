@@ -34,7 +34,10 @@
         {author.bio}
       </div>
       <a href="/?author={author.id}" class="boldSansSerif author__profile">
-        More from {author.firstName}
+        <span>
+          More from {author.firstName}
+        </span>
+        <img class="arrow" src="/assets/arrow.svg" />
       </a>
     </div>
   {.end}
