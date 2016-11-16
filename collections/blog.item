@@ -23,25 +23,36 @@
     <div class="blog-article__body serif">
       {.section body}{@}{.end}
     </div>
-    {.section author}
-      <div class="author">
-        <div class="author__name">
-          <a href="/?author={author.id}" class="boldSansSerif">
-            <span>{author.firstName}</span>
-            <span>{author.lastName}</span>
+    <div class="meta-block">
+      {.section author}
+        <div class="author">
+          <div class="author__name">
+            <a href="/?author={author.id}" class="boldSansSerif">
+              <span>{author.firstName}</span>
+              <span>{author.lastName}</span>
+            </a>
+          </div>
+          <div class="author__bio sansSerif">
+            {author.bio}
+          </div>
+          <a href="/?author={author.id}" class="boldSansSerif author__profile">
+            <span>
+              More from {author.firstName}
+            </span>
+            <img class="arrow" src="/assets/arrow.svg" />
           </a>
         </div>
-        <div class="author__bio sansSerif">
-          {author.bio}
-        </div>
-        <a href="/?author={author.id}" class="boldSansSerif author__profile">
-          <span>
-            More from {author.firstName}
-          </span>
-          <img class="arrow" src="/assets/arrow.svg" />
-        </a>
-      </div>
-    {.end}
+      {.end}
+      {.section tags}
+        <ul class="tags-list boldSansSerif">
+          {.repeated section @}
+            <li>
+              <a href="/?tag={@|url-encode}">{@}</a>
+            </li>
+          {.end}
+        </ul>
+      {.end}
+    </div>
   </div>
 
 </div>
