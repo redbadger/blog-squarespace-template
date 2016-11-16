@@ -19,28 +19,30 @@
   {.or}
   {.end}
 
-  <div class="blog-article__body serif">
-    {.section body}{@}{.end}
-  </div>
-  {.section author}
-    <div class="author">
-      <div class="author__name">
-        <a href="/?author={author.id}" class="boldSansSerif">
-          <span>{author.firstName}</span>
-          <span>{author.lastName}</span>
+  <div class="body-author__container">
+    <div class="blog-article__body serif">
+      {.section body}{@}{.end}
+    </div>
+    {.section author}
+      <div class="author">
+        <div class="author__name">
+          <a href="/?author={author.id}" class="boldSansSerif">
+            <span>{author.firstName}</span>
+            <span>{author.lastName}</span>
+          </a>
+        </div>
+        <div class="author__bio sansSerif">
+          {author.bio}
+        </div>
+        <a href="/?author={author.id}" class="boldSansSerif author__profile">
+          <span>
+            More from {author.firstName}
+          </span>
+          <img class="arrow" src="/assets/arrow.svg" />
         </a>
       </div>
-      <div class="author__bio sansSerif">
-        {author.bio}
-      </div>
-      <a href="/?author={author.id}" class="boldSansSerif author__profile">
-        <span>
-          More from {author.firstName}
-        </span>
-        <img class="arrow" src="/assets/arrow.svg" />
-      </a>
-    </div>
-  {.end}
+    {.end}
+  </div>
 
 </div>
 {.end}
