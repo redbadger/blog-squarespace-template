@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: @badgerWhite;
 }
@@ -7,6 +11,7 @@ main {
   max-width: 335px;
   margin: 0 auto 50px auto;
   padding-top: 40px;
+  width: 90%;
 }
 
 article {
@@ -14,7 +19,13 @@ article {
 }
 
 .blog-list {
-  margin-top: 30px;
+  margin: 30px 0 70px 0;
+}
+
+.category-name {
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: capitalize;
 }
 
 .excerpt-thumb img {
@@ -28,6 +39,7 @@ article {
 .entry-content time {
   display: inline-block;
   color: @badgerBlack;
+  margin-left: 5px;
 }
 
 .blog-author-name {
@@ -51,8 +63,6 @@ article {
 }
 
 .entry-excerpt {
-  font-weight: 300;
-  color: @badgerBlack;
   font-size: 20px;
   line-height: 1.4em;
   margin-bottom: 20px;
@@ -63,18 +73,41 @@ article {
   text-decoration: underline;
 }
 
-.load-more-wrapper {
+.pagination-buttons {
   text-align: center;
+  height: 60px;
+}
+
+.load-more-wrapper {
+  display: inline;
+
+  &:first-child {
+    margin-right: 10px;
+  }
+
+  &:last-child {
+    margin-left: 10px;
+  }
+}
+
+.load-more, .prev-page {
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .load-more {
   background-color: @badgerRed;
-  display: inline-block;
   color: white;
-  padding: 20px 30px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
+  border: 3px solid @badgerRed;
+}
+
+
+.prev-page {
+  background-color: @badgerWhite;
+  color: @badgerBlack;
+  border: 3px solid @badgerBlack;
 }
 
 .medium-large-screen {
@@ -122,7 +155,6 @@ article {
 
   main {
     max-width: 1100px;
-    padding-top: 60px;
   }
 
   .blog-list {

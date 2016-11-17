@@ -8,3 +8,8 @@ Minimalistic Red Badger branded template. Universal. Works with and without Java
 npm install
 make start
 ```
+
+## Supported post elements
+
+All Squarespace block elements are tested and should work as expected. You will need JS enabled client for some of the interactive elements.
+

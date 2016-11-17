@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-TileColor" content="#fc1d42">
-    <meta name="theme-color" content="#fc1d42">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#fc1d42">
+    <meta name="msapplication-TileColor" content="#212121">
+    <meta name="theme-color" content="#212121">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#212121">
     <meta name="msapplication-TileImage" content="assetsfaviconsmstile-144x144.png">
     <meta property="og:site_name" content="Red Badger">
     <meta property="og:title" content="Red Badger" />
@@ -36,7 +36,7 @@
   <body>
 
     <header class="site-header__header" role="banner">
-      <a to="homePage" title="Home">
+      <a href="https://red-badger.com" title="Red Badger Homepage">
         <img src="/assets/logo.svg" class="site-header__logo" title="Red Badger logo" />
       </a>
       <nav class="site-header__mediumScreenNavContainer" role="navigation">
@@ -49,10 +49,7 @@
       </nav>
       <div class="site-header__smallScreenNavComponent">
         <div class="site-header__triggerContainer">
-          <label
-             for="burger"
-             class="site-header__triggerLabel fontXS boldSansSerif"
-             >
+          <label for="burger" class="site-header__triggerLabel fontXS boldSansSerif">
              MENU
           </label>
         </div>
@@ -82,10 +79,7 @@
     </header>
 
     <main id="page" class="site-page loading  site-page--{collection.typeName}{.equal? collection.typeName "page"}{.or}-{.section item}item{.or}list{.end}{.end}" role="main" data-content-field="main-content" sqs-controller="FadeInContent">
-
-        <!-- render page main content -->
-        {squarespace.main-content}
-
+      {squarespace.main-content}
     </main>
 
     <footer role="contentinfo" class="site-footer__footer">

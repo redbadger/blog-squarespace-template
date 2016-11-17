@@ -1,4 +1,6 @@
+<a href="/" title="Red Badger blog index" class="blogHeader">
   <h1 class="fontXL boldSerif">Blog</h1>
+</a>
 
   <!-- Show active filters -->
   {.section categoryFilter}
@@ -45,9 +47,7 @@
           {.section author}<span class="blog-meta-item blog-meta-author"><a href="{collection.fullUrl}?author={author.id}" class="blog-author-name">{displayName}</a> </span>{.end}
 
           <time class="dt-published date-callout" datetime="{addedOn|date %F}" pubdate>
-            <div class="date-wrapper">
-              <span class="month">{addedOn|date %b} </span><span class="day">{addedOn|date %e}, </span><span class="year">{addedOn|date %Y}</span>
-            </div>
+            {addedOn|timesince}
           </time>
         </div>
       </div>
@@ -88,6 +88,21 @@
 
 </div>
 {.if pagination}
-{.if pagination.nextPage}<div class="load-more-wrapper"><a class="load-more boldSansSerif fontStaticM" href="{pagination.nextPageUrl}">Next page</a></div>{.end}
+  <div class="pagination-buttons">
+    {.if pagination.prevPage}
+      <div class="load-more-wrapper">
+        <a class="prev-page boldSansSerif fontStaticM" href="{pagination.prevPageUrl}">
+          Previous
+        </a>
+      </div>
+    {.end}
+    {.if pagination.nextPage}
+      <div class="load-more-wrapper">
+        <a class="load-more boldSansSerif fontStaticM" href="{pagination.nextPageUrl}">
+          Next page
+        </a>
+      </div>
+    {.end}
+  </div>
 {.end}
 <div class="breaker"></div>
