@@ -118,6 +118,46 @@ article {
   margin-top: 30px;
 }
 
+.active-category {
+  background-color: @badgerRed;
+  color: @badgerWhite;
+}
+
+.non-active-category {
+  background-color: @badgerWhite;
+  color: @badgerRed;
+}
+
+.category-list {
+  margin-bottom: 40px;
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 60px;
+
+    a {
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border: 2px solid @badgerRed;
+      text-decoration: none;
+      color: @badgerRed;
+
+      &.all-items {
+        .active-category();
+      }
+    }
+  }
+}
+
+.category-list.badger-life li a.badger-life, .category-list.blog li a.blog, .category-list.leadership li a.leadership, .category-list.news li a.news, .category-list.process li a.process, .category-list.strategy li a.strategy, .category-list.technology li a.technology, .category-list.ux-amp-design li a.ux-design {
+  .active-category();
+}
+
+.category-list.badger-life li a.all-items, .category-list.blog li a.all-items, .category-list.leadership li a.all-items, .category-list.news li a.all-items, .category-list.process li a.all-items, .category-list.strategy li a.all-items, .category-list.technology li a.all-items, .category-list.ux-amp-design li a.all-items {
+  .non-active-category();
+}
+
 @media screen and (min-width: 750px) {
   .small-screen {
     display: none;
