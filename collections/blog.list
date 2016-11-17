@@ -3,11 +3,6 @@
 </a>
 
   <!-- Show active filters -->
-  {.section categoryFilter}
-    <p class="filter-heading sansSerif fontS filter-by-category loading" sqs-controller="FadeInContent">
-      All in <span class="category-name">{@}</span>
-    </p>
-  {.end}
 
   {.section tagFilter}
     <p class="filter-heading sansSerif fontS filter-by-tag loading" sqs-controller="FadeInContent">
