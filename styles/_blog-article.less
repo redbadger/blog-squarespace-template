@@ -59,6 +59,13 @@
   em {
     font-weight: 800;
   }
+
+  .sqs-block-html:first-child > .sqs-block-content > p:first-letter {
+    font-size: 105px;
+    float: left;
+    padding: 25px 10px 10px 0;
+    font-weight: bold;
+  }
 }
 
 .image-caption-wrapper {
@@ -196,5 +203,11 @@
     margin-top: 0;
     padding-top: 0;
     border-top: none;
+  }
+}
+
+@-moz-document url-prefix() {
+  .blog-article__body .sqs-block-html:first-child > .sqs-block-content > p:first-letter {
+    padding: 10px 10px 0 0;
   }
 }
