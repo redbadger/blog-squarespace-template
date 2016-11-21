@@ -27,7 +27,7 @@
   {.section collection.categories}
     <ul class="category-list boldSansSerif {categoryFilter|slugify}">
       <li>
-        <a class="all-items" href="/">All</a>
+        <a class="all-items" href="/blog/">All</a>
       </li>
       {.repeated section @}
         <li>
