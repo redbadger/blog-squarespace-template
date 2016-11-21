@@ -31,7 +31,7 @@
       </li>
       {.repeated section @}
         <li>
-          <a class="{@|slugify}" href="/?category={@|url-encode}">{@}</a>
+          <a class="{@|slugify}" href="/blog/?category={@|url-encode}">{@}</a>
         </li>
       {.end}
     </ul>
