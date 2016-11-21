@@ -43,6 +43,15 @@
           </a>
         </div>
       {.end}
+      {.section categories}
+        <ul class="category-list boldSansSerif">
+          {.repeated section @}
+            <li>
+              <a href="/?tag={@|url-encode}">{@}</a>
+            </li>
+          {.end}
+        </ul>
+      {.end}
       {.section tags}
         <ul class="tags-list boldSansSerif">
           {.repeated section @}

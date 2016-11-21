@@ -3,16 +3,11 @@
 </a>
 
   <!-- Show active filters -->
-  {.section categoryFilter}
-  <p class="filter-heading sansSerif fontS filter-by-category loading" sqs-controller="FadeInContent">
-    All in <span class="category-name">{@}</span>
-  </p>
-  {.end}
 
   {.section tagFilter}
-  <p class="filter-heading sansSerif fontS filter-by-tag loading" sqs-controller="FadeInContent">
-    All tagged <span class="category-name">{@}</span>
-  </p>
+    <p class="filter-heading sansSerif fontS filter-by-tag loading" sqs-controller="FadeInContent">
+      All tagged <span class="category-name">{@}</span>
+    </p>
   {.end}
 
   {.if authorFilter}
@@ -27,7 +22,20 @@
   {.end}
   <div class="loading-spinner"></div>
 
+
   <div class="blog-list blog-wrapper" id="blogList" sqs-controller="BlogGrid">
+  {.section collection.categories}
+    <ul class="category-list boldSansSerif {categoryFilter|slugify}">
+      <li>
+        <a class="all-items" href="/blog/">All</a>
+      </li>
+      {.repeated section @}
+        <li>
+          <a class="{@|slugify}" href="/blog/?category={@|url-encode}">{@}</a>
+        </li>
+      {.end}
+    </ul>
+  {.end}
   {.repeated section items}
     <article class="entry entry--list h-entry grid-hidden {.main-image?} has-main-image {.end}{@|item-classes}" id="article-{id}" label="Blog Post" data-item-id="{id}" data-offset="{addedOn}"{.if pagination.nextPage}{.or} data-last-page{.end}>
 
@@ -91,14 +99,14 @@
   <div class="pagination-buttons">
     {.if pagination.prevPage}
       <div class="load-more-wrapper">
-        <a class="prev-page boldSansSerif fontStaticM" href="{pagination.prevPageUrl}">
+        <a class="prev-page boldSansSerif fontStaticM" href="/blog/{pagination.prevPageUrl}">
           Previous
         </a>
       </div>
     {.end}
     {.if pagination.nextPage}
       <div class="load-more-wrapper">
-        <a class="load-more boldSansSerif fontStaticM" href="{pagination.nextPageUrl}">
+        <a class="load-more boldSansSerif fontStaticM" href="/blog/{pagination.nextPageUrl}">
           Next page
         </a>
       </div>
