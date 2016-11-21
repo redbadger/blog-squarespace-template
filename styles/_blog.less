@@ -32,12 +32,34 @@ article {
   color: @badgerBlack;
 }
 
-.sqs-search-ui-button-wrapper.badger-glass {
-  border: solid 1px #aaa;
-}
-
 .sqs-search-container-item .sqs-main-image-container {
   display: none;
+}
+
+.sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result .sqs-search-ui-item .sqs-title {
+  font-family: Sentinel A, Sentinel B;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .sqs-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 70px;
+  font-family: Sentinel-Light;
+  font-size: 20px;
+  font-color: @badgerBlack;
+}
+
+@media (min-width: 1200px) {
+  .sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result {
+    margin-left: 95px;
+    margin-right: 95px;
+  }
+
+  .sqs-search-container-item .sqs-main-content {
+    padding-right: 210px;
+  }
 }
 
 .blog-list {
