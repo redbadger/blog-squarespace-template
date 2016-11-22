@@ -166,6 +166,10 @@ article {
   .non-active-category();
 }
 
+.sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result {
+  border: none;
+}
+
 @media screen and (min-width: 750px) {
   .category-list {
     display: block;
@@ -252,8 +256,22 @@ article {
 }
 
 .sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result.clear {
-  margin-left: 50px;
-  margin-right: 95px;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result.clear:after {
+  content:"";
+  bottom: 0;
+  left: 0;
+  margin-left: 65px;
+  margin-right: 65px;
+  right: 0;
+  height: 0px;
+  border-top: 1px solid #ccc;
+  z-index: -1;
+  visibility: visible;
 }
 
 .sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result .sqs-search-ui-item .sqs-title {
@@ -266,16 +284,18 @@ article {
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 82px;
-  font-family: Sentinel-Light;
+  font-family: Sentinel A, Sentinel B;
   font-size: 20px;
   color: @badgerBlack;
 }
 
 .sqs-search-preview-ui .sqs-search-ui-result .search-result-notice {
   background-color: #f8f8f8;
-  font-size: 24px;
+  font-size: 16px;
   font-family: 'ProximaNova-Light', sans-serif;
   font-weight: bold;
+  padding-top: 10px;
+  padding-left: 0px;
 }
 
 .sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result .sqs-search-ui-item .sqs-content {
@@ -286,13 +306,26 @@ article {
   border: none;
 }
 
+.sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result.selected, .sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result:hover
+{
+  background-color: #eee;
+}
+
+
+.sqs-search-container-item .sqs-main-content {
+  padding-left: 65px;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
 @media (min-width: 1200px) {
   .sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result {
     margin-left: 95px;
     margin-right: 95px;
   }
-
   .sqs-search-container-item .sqs-main-content {
     padding-right: 210px;
   }
+
 }
