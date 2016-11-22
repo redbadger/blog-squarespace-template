@@ -52,6 +52,8 @@
     <div class="blog-header-excerpt">
       <div class="entry-text">
         <div class="entry-content">
+          <span class="blog-meta-item blog-meta-category">{categories}</span>
+
           {.section author}<span class="blog-meta-item blog-meta-author"><a href="{collection.fullUrl}?author={author.id}" class="blog-author-name">{displayName}</a> </span>{.end}
 
           <time class="dt-published date-callout" datetime="{addedOn|date %F}" pubdate>
