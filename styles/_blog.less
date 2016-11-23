@@ -173,7 +173,7 @@ article {
 .sqs-search-container-item .sqs-title {
   font-family: "Sentinel A","Sentinel B",Georgia,serif;
   font-weight: 800;
-  color: #212121;
+  color: @badgerBlack;
   font-size: 30px;
   border-bottom: 2px solid transparent;
   display: inline-block;
@@ -181,11 +181,11 @@ article {
 
 
 .sqs-search-container-item .sqs-title:hover {
-  border-bottom: 2px solid #fc1d42;
+  border-bottom: 2px solid @badgerRed;
 }
 
 .sqs-search-container-item .sqs-content {
-  color: #212121;
+  color: @badgerBlack;
   font-family: "Sentinel A","Sentinel B",Georgia,serif;
   font-size: 20px;
 }
@@ -299,10 +299,6 @@ article {
   width: 12px;
 }
 
-.sqs-search-ui-button-wrapper .search-input::placeholder {
-  color: red;
-}
-
 .sqs-search-container-item .sqs-main-image-container {
   display: none;
 }
@@ -313,19 +309,19 @@ article {
 }
 
 input::-webkit-input-placeholder {
-  color: #a9a9a9 !important;
+  color: #a9a9a9;
 }
 
 input:-moz-placeholder { /* Firefox 18- */
-  color: #a9a9a9 !important;
+  color: #a9a9a9;
 }
 
 input::-moz-placeholder {  /* Firefox 19+ */
-  color: #a9a9a9 !important;
+  color: #a9a9a9;
 }
 
 input:-ms-input-placeholder {
-  color: #a9a9a9 !important;
+  color: #a9a9a9;
 }
 
 .sqs-search-page-input .spinner-wrapper {
@@ -338,8 +334,7 @@ input:-ms-input-placeholder {
   content:"";
   bottom: 0;
   left: 0;
-  margin-left: 65px;
-  margin-right: 65px;
+  margin: 0px 65px;
   right: 0;
   height: 0px;
   border-top: 1px solid #ccc;
@@ -412,8 +407,7 @@ input:-ms-input-placeholder {
 
 @media (min-width: 1200px) {
   .sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result {
-    margin-left: 95px;
-    margin-right: 95px;
+    margin: 0px 95px;
   }
   .sqs-search-container-item .sqs-main-content {
     padding-right: 210px;
