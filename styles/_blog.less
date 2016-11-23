@@ -261,7 +261,7 @@ article {
 .sqs-search-ui-button-wrapper .search-input {
   background: url(/assets/search-icon.svg) no-repeat 15px 50%;
   font-family: Sentinel A, Sentinel B;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 900;
   line-height: 1.4;
   padding: 12px 12px 12px 65px;
@@ -269,6 +269,7 @@ article {
   background-color: white;
   border: none;
   opacity: 1;
+  -webkit-appearance: none;
 }
 
 .sqs-search-container input {
@@ -280,6 +281,7 @@ article {
   color: @badgerBlack;
   border: none;
   opacity: 1;
+  -webkit-appearance: none;
 }
 
 .sqs-search-page-input {
@@ -289,6 +291,7 @@ article {
   border: none;
   background: url(/assets/search-icon.svg) no-repeat 15px 50%;
   background-color: white;
+  -webkit-appearance: none;
 }
 
 .sqs-spin.large {
@@ -310,19 +313,19 @@ article {
 }
 
 input::-webkit-input-placeholder {
-color: #a9a9a9 !important;
+  color: #a9a9a9 !important;
 }
 
 input:-moz-placeholder { /* Firefox 18- */
-color: #a9a9a9 !important;
+  color: #a9a9a9 !important;
 }
 
 input::-moz-placeholder {  /* Firefox 19+ */
-color: #a9a9a9 !important;
+  color: #a9a9a9 !important;
 }
 
 input:-ms-input-placeholder {
-color: #a9a9a9 !important;
+  color: #a9a9a9 !important;
 }
 
 .sqs-search-page-input .spinner-wrapper {
@@ -416,4 +419,7 @@ color: #a9a9a9 !important;
     padding-right: 210px;
   }
 
+  .sqs-search-ui-button-wrapper .search-input {
+    font-size: 40px;
+  }
 }
