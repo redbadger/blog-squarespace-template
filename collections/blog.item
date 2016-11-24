@@ -52,11 +52,31 @@
           {.end}
         </ul>
       {.end}
-      <a class="twitter-share-button"
-        href="https://twitter.com/intent/tweet">
-         Tweet
-      </a>
-      <div class="fb-share-button" data-href="http://www.google.com" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+      <div class="social-links">
+        <div class="social-links__title">Share this article</div>
+        <ul class="social-links__icons">
+            <li>
+              <a
+                 href="http://twitter.com/share?url={permalink}"
+                 title="Red Badger Twitter"
+                 class="social-links__icon"
+                 target="_blank"
+                 >
+                <img src="/assets/twitter_share.svg" title="Twitter">
+              </a>
+            </li>
+            <li>
+              <a
+                 href="http://www.facebook.com/sharer.php?u={permalink}"
+                 title="Red Badger Facebook"
+                 class="social-links__icon"
+                 target="_blank"
+                 >
+                <img src="/assets/facebook_share.svg" title="Facebook">
+              </a>
+            </li>
+        </ul>
+      </div>
       {.section tags}
         <ul class="tags-list boldSansSerif">
           {.repeated section @}
