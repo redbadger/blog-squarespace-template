@@ -2,7 +2,7 @@
 <div class="blog-article">
   <div class="blog-article__details">
     {.section author}
-    <a class="blog-article__author-name fontXS sansSerif" href="{collection.fullUrl}/blog/?author={author.id}">{displayName}</a>
+    <a class="blog-article__author-name fontXS sansSerif" href="/blog{collection.fullUrl}?author={author.id}">{displayName}</a>
     {.end}
 
     <time class="blog-article__time fontXS sansSerif" datetime="{addedOn|date %F}" pubdate>
