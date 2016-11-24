@@ -35,7 +35,7 @@
           <div class="author__bio sansSerif">
             {author.bio}
           </div>
-          <a href="/?author={author.id}" class="boldSansSerif author__profile">
+          <a href="/blog/?author={author.id}" class="boldSansSerif author__profile">
             <span>
               More from {author.firstName}
             </span>
