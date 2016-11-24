@@ -47,7 +47,7 @@
         <ul class="category-list boldSansSerif">
           {.repeated section @}
             <li>
-              <a href="/?tag={@|url-encode}">{@}</a>
+              <a href="/blog/?tag={@|url-encode}">{@}</a>
             </li>
           {.end}
         </ul>
@@ -56,7 +56,7 @@
         <ul class="tags-list boldSansSerif">
           {.repeated section @}
             <li>
-              <a href="/?tag={@|url-encode}">{@}</a>
+              <a href="/blog/?tag={@|url-encode}">{@}</a>
             </li>
           {.end}
         </ul>
