@@ -52,6 +52,15 @@
           {.end}
         </ul>
       {.end}
+      {.section tags}
+        <ul class="tags-list boldSansSerif">
+          {.repeated section @}
+            <li>
+              <a href="/blog/?tag={@|url-encode}">{@}</a>
+            </li>
+          {.end}
+        </ul>
+      {.end}
       <div class="social-links">
         <div class="social-links__title">Share this article</div>
         <ul class="social-links__icons">
@@ -77,15 +86,6 @@
             </li>
         </ul>
       </div>
-      {.section tags}
-        <ul class="tags-list boldSansSerif">
-          {.repeated section @}
-            <li>
-              <a href="/blog/?tag={@|url-encode}">{@}</a>
-            </li>
-          {.end}
-        </ul>
-      {.end}
     </div>
   </div>
 
