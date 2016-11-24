@@ -27,7 +27,7 @@
       {.section author}
         <div class="author">
           <div class="author__name">
-            <a href="/?author={author.id}" class="boldSansSerif">
+            <a href="/blog/?author={author.id}" class="boldSansSerif">
               <span>{author.firstName}</span>
               <span>{author.lastName}</span>
             </a>
