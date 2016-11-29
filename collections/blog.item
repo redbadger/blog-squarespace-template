@@ -64,7 +64,7 @@
         <ul class="social-links__icons">
             <li>
               <a
-                 href="http://twitter.com/share?url={permalink}"
+                 href="http://twitter.com/share?url={website.baseUrl}{fullUrl}"
                  title="Share this article on Twitter"
                  class="social-links__icon"
                  target="_blank"
@@ -74,7 +74,7 @@
             </li>
             <li>
               <a
-                 href="http://www.facebook.com/sharer.php?u={permalink}"
+                 href="http://www.facebook.com/sharer.php?u={website.baseUrl}{fullUrl}"
                  title="Share this article on Facebook"
                  class="social-links__icon"
                  target="_blank"
