@@ -30,12 +30,11 @@
     <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-192x192.png" type="image/png" sizes="192x192">
     <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" />
+    {squarespace-headers}
     <script type="text/javascript" src="https://secure.leadforensics.com/js/77932.js" />
     <noscript>
       <img src="https://secure.leadforensics.com/77932.png" style="display: none;" />
     </noscript>
-    <title>Red Badger</title>
-    {squarespace-headers}
   </head>
   <body>
 
