@@ -95,22 +95,22 @@
           <nav role="navigation" class="site-footer__section site-footer__footerLinks">
             <ul class="boldSerif site-footer__nav">
               <li>
-                <a href="/">Home</a>
+                <a href="https://red-badger.com/">Home</a>
               </li>
               <li>
-                <a href="/about-us/">About us</a>
+                <a href="https://red-badger.com/about-us/">About us</a>
               </li>
               <li>
-                <a href="/what-we-do/">What we do</a>
+                <a href="https://red-badger.com/what-we-do/">What we do</a>
               </li>
               <li>
-                <a href="/blog/">Blog</a>
+                <a href="https://red-badger.com/blog/">Blog</a>
               </li>
               <li>
-                <a href="/about-us/events/">Events</a>
+                <a href="https://red-badger.com/about-us/events/">Events</a>
               </li>
               <li>
-                <a href="/about-us/join-us/">Jobs</a>
+                <a href="https://red-badger.com/about-us/join-us/">Jobs</a>
               </li>
             </ul>
           </nav>
