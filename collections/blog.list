@@ -114,14 +114,14 @@
   <div class="pagination-buttons">
     {.if pagination.prevPage}
       <div class="load-more-wrapper">
-        <a class="prev-page boldSansSerif fontStaticM" href="/blog/{pagination.prevPageUrl}">
+        <a class="prev-page boldSansSerif fontS" href="/blog/{pagination.prevPageUrl}">
           Previous
         </a>
       </div>
     {.end}
     {.if pagination.nextPage}
       <div class="load-more-wrapper">
-        <a class="load-more boldSansSerif fontStaticM" href="/blog/{pagination.nextPageUrl}">
+        <a class="load-more boldSansSerif fontS" href="/blog/{pagination.nextPageUrl}">
           Next page
         </a>
       </div>
