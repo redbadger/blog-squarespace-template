@@ -18,6 +18,10 @@ article {
   margin-bottom: 30px;
 }
 
+ul {
+  margin-top: 10px;
+}
+
 .sqs-search-container-item em {
   color: @badgerRed;
   font-style: normal;
@@ -75,7 +79,7 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
 }
 
 .entry-title {
-  line-height: 1.8rem;
+  line-height: 2.1rem;
   margin: 15px 0 20px 0;
 }
 
@@ -200,6 +204,14 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
 
 .sqs-search-container-item .sqs-title:hover {
   border-bottom: 2px solid @badgerRed;
+}
+
+.sqs-title:hover {
+  display: inline;
+}
+
+.sqs-title:hover ~ .sqs-content {
+  margin-top: 14px;
 }
 
 .sqs-search-container-item .sqs-content {
