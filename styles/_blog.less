@@ -198,7 +198,7 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
   color: @badgerBlack;
   font-size: 30px;
   border-bottom: 2px solid transparent;
-  display: inline-block;
+  display: inline;
 }
 
 
@@ -206,12 +206,8 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
   border-bottom: 2px solid @badgerRed;
 }
 
-.sqs-title:hover {
-  display: inline;
-}
-
-.sqs-title:hover ~ .sqs-content {
-  margin-top: 14px;
+.sqs-title ~ .sqs-content {
+  margin-top: 15px;
 }
 
 .sqs-search-container-item .sqs-content {
