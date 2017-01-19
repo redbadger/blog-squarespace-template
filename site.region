@@ -52,7 +52,7 @@
       </nav>
       <div class="site-header__smallScreenNavComponent">
         <div class="site-header__triggerContainer">
-          <label for="burger" class="site-header__triggerLabel fontXS boldSansSerif">
+          <label for="burger" id="openBurger" class="site-header__triggerLabel fontXS boldSansSerif">
              MENU
           </label>
         </div>
@@ -65,7 +65,7 @@
         <div class="site-header__overlay">
           <div class="site-header__smallScreenNavMargin" id="smallScreenNavMargin"></div>
           <div class="site-header__smallScreenNavWrapper">
-            <label for="burger" class="site-header__menuCloseButton fontXS boldSansSerif">Close</label>
+            <label for="burger" id="closeBurger" class="site-header__menuCloseButton fontXS boldSansSerif">Close</label>
             <nav class="site-header__smallScreenNavContainer" role="navigation">
               <ul role="listbox" class="boldSerif site-header__smallScreenNav">
                 <li><a class="fontM2" href="https://red-badger.com/" tabindex="-1">Home</a></li>
@@ -248,6 +248,7 @@
         </div>
       </div>
     </footer>
+    <squarespace:script src="index.js" combo="true" />
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
