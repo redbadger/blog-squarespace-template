@@ -52,16 +52,6 @@
   {.repeated section items}
     <article class="entry entry--list h-entry grid-hidden {.main-image?} has-main-image {.end}{@|item-classes}" id="article-{id}" label="Blog Post" data-item-id="{id}" data-offset="{addedOn}"{.if pagination.nextPage}{.or} data-last-page{.end}>
 
-    <div class="thumbnail-title-wrapper medium-large-screen">
-      {.main-image?}
-      <div class="excerpt-thumb">
-        <a href="{fullUrl}" class="excerpt-image content-fill">
-          <img src="{assetUrl}?format=500w" />
-        </a>
-      </div>
-      {.end}
-    </div>
-
     <div class="blog-header-excerpt">
       <div class="entry-text">
         <div class="entry-content">
@@ -87,6 +77,16 @@
         </h2>
       </header>
 
+      <div class="thumbnail-title-wrapper small-screen">
+        {.main-image?}
+        <div class="excerpt-thumb">
+          <a href="{fullUrl}" class="excerpt-image content-fill">
+            <img src="{assetUrl}?format=500w" />
+          </a>
+        </div>
+        {.end}
+      </div>
+
       <div class="entry-text">
         <div class="entry-content">
           {.excerpt?}
@@ -98,13 +98,13 @@
       </div>
     </div>
 
-    <div class="thumbnail-title-wrapper small-screen">
+    <div class="thumbnail-title-wrapper medium-large-screen">
       {.main-image?}
-      <div class="excerpt-thumb">
-        <a href="{fullUrl}" class="excerpt-image content-fill">
-          <img src="{assetUrl}?format=500w" />
-        </a>
-      </div>
+        <div class="excerpt-thumb">
+          <a href="{fullUrl}" class="excerpt-image content-fill">
+            <img src="{assetUrl}?format=500w" />
+          </a>
+        </div>
       {.end}
     </div>
   </article>{.end}

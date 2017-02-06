@@ -63,6 +63,7 @@
   bottom: 0;
   right: 0;
   left: 54px;
+  display: none;
 }
 
 .site-header__overlay .site-header__mediumScreenNav {
@@ -77,10 +78,8 @@
 .site-header__smallScreenNav {
   width: 150px;
   display: inline-block;
-  padding: 0px;
   text-align: left;
   margin: 10px 0 0 20px;
-  list-style-type:none
 }
 
 .site-header__smallScreenNav li {
@@ -88,7 +87,7 @@
 }
 
 .site-header__smallScreenNav li a {
-  color: white;
+  color: @badgerWhite;
   text-decoration: none;
 }
 
@@ -96,13 +95,13 @@
   position: absolute;
   top: 5px;
   left: 10px;
-  color: white;
+  color: @badgerWhite;
   text-decoration: none;
   cursor: pointer;
 }
 
 .site-header__smallScreenNavComponent {
-  width: 100%;
+  flex: 1;
 }
 
 .site-header__triggerContainer {
@@ -115,7 +114,7 @@
 
 .site-header__triggerLabel {
   color: @badgerBlack;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid @badgerRed;
   line-height: 1em;
   cursor: pointer;
   margin-bottom: 6px;
@@ -131,6 +130,10 @@
 .site-header__trigger:checked + .site-header__overlay {
   left: 0;
   right: 0;
+}
+
+.site-header__trigger:checked + .site-header__overlay .site-header__smallScreenNavWrapper {
+  display: block;
 }
 
 @media screen and (min-width: 690px) {
