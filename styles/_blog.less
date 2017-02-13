@@ -99,7 +99,13 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
 
 .entry-excerpt a {
   color: @badgerBlack;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid @badgerRed;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: @badgerRed;
+  }
 }
 
 .pagination-buttons {
