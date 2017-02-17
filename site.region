@@ -47,7 +47,7 @@
       </nav>
       <div class="site-header__smallScreenNavComponent">
         <div class="site-header__triggerContainer">
-          <label for="burger" class="site-header__triggerLabel fontXS boldSansSerif">
+          <label id="menuOpenTrigger" for="burger" class="site-header__triggerLabel fontXS boldSansSerif">
              MENU
           </label>
         </div>
@@ -59,8 +59,8 @@
              />
         <div class="site-header__overlay">
           <div class="site-header__smallScreenNavMargin" id="smallScreenNavMargin"></div>
-          <div class="site-header__smallScreenNavWrapper">
-            <label for="burger" class="site-header__menuCloseButton fontXS boldSansSerif">Close</label>
+          <div class="site-header__smallScreenNavWrapper" id="smallScreenNavWrapper">
+            <label id="menuCloseTrigger" for="burger" class="site-header__menuCloseButton fontXS boldSansSerif">Close</label>
             <nav class="site-header__smallScreenNavContainer" role="navigation">
               <ul role="listbox" class="boldSerif site-header__smallScreenNav">
                 <li><a class="fontM2" href="https://red-badger.com/" tabindex="-1">Home</a></li>
@@ -243,5 +243,6 @@
         </div>
       </div>
     </footer>
+    <squarespace:script src="index.js" combo="true" />
   </body>
 </html>
