@@ -6,6 +6,10 @@ function scrollRelease() {
   document.body.style.position = "static";
 }
 
+if (document.getElementById("smallScreenNavWrapper").offsetParent !== null) {
+  scrollLock();
+}
+
 document.getElementById("smallScreenNavMargin").addEventListener("click", function() {
   if (document.body.style.position === "fixed") {
     scrollRelease();
