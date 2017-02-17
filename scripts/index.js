@@ -1,12 +1,28 @@
-document.getElementById('smallScreenNavMargin').addEventListener('click', function(){
+function scrollLock() {
+  document.body.style.position = "fixed";
+}
+
+function scrollRelease() {
+  document.body.style.position = "static";
+}
+
+document.getElementById("smallScreenNavMargin").addEventListener("click", function() {
+  if (document.body.style.position === "fixed") {
+    scrollRelease();
+  } else {
+    scrollLock();
+  }
   document.getElementById('burger').click();
-  document.getElementsByTagName('html')[0].setAttribute('style', 'overflow-y: auto');
 });
 
-document.getElementById('openBurger').addEventListener('click', function(){
-  document.getElementsByTagName('html')[0].setAttribute('style', 'overflow-y: hidden');
+document.getElementById("menuOpenTrigger").addEventListener("click", function() {
+  scrollLock();
 });
 
-document.getElementById('closeBurger').addEventListener('click', function(){
-  document.getElementsByTagName('html')[0].setAttribute('style', 'overflow-y: auto');
+document.getElementById("menuCloseTrigger").addEventListener("click", function() {
+  scrollRelease();
+});
+
+document.getElementById("burger").addEventListener("click", function() {
+  document.getElementById('smallScreenNavWrapper').scrollTop = 0;
 });
