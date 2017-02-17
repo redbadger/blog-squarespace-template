@@ -64,7 +64,7 @@
         <ul class="social-links__icons">
             <li>
               <a
-                 href="http://twitter.com/share?url={website.baseUrl}{fullUrl}"
+                 href="http://twitter.com/share?url={website.baseUrl}{fullUrl}&via=redbadgerteam&text={title}"
                  title="Share this article on Twitter"
                  class="social-links__icon"
                  target="_blank"
