@@ -34,6 +34,10 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
   font-size: 30px;
   line-height: 1.2em;
   font-family: 'ProximaNova-Bold',sans-serif;
+
+  &:hover {
+    background-color: @scorpian;
+  }
 }
 
 .sqs-search-page-more-wrapper {
@@ -138,11 +142,20 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
   border: 3px solid @badgerRed;
 }
 
+.load-more:hover {
+  background-color: @scorpian;
+  border: 3px solid @scorpian;
+}
 
 .prev-page {
   background-color: @badgerWhite;
   color: @badgerBlack;
   border: 3px solid @badgerBlack;
+
+  &:hover {
+    background-color: @badgerBlack;
+    color: @badgerWhite;
+  }
 }
 
 .medium-large-screen {
@@ -178,6 +191,11 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
       text-decoration: none;
       font-size: 12px;
       color: @badgerRed;
+
+      &:hover {
+        background-color: @badgerRed !important;
+        color: @badgerWhite !important;
+      }
 
       &.all-items {
         .active-category();
