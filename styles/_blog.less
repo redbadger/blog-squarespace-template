@@ -70,8 +70,9 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
 }
 
 .blog-author-name {
-  color: @badgerRed;
-  text-decoration: underline;
+  color: @badgerRedOnWhite;
+  text-decoration: none;
+  border-bottom: 2px solid @badgerRedOnWhite;
   font-family: 'ProximaNova-Bold', sans-serif;
 }
 
@@ -195,6 +196,7 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
       border: 2px solid @badgerRed;
       text-decoration: none;
       font-size: 16px;
+      font-weight: bold;
       line-height: 1.5em;
       color: @badgerBlack;
 
@@ -311,6 +313,10 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
 
   .blog-meta-category {
     display: inline;
+  }
+
+  .category-list li a {
+    font-size: 18.66px;
   }
 }
 
