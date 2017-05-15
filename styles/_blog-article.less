@@ -16,7 +16,7 @@
 }
 
 .blog-article__author-name {
-  color: @badgerRed;
+  color: @badgerRedOnWhite;
   font-weight: bold;
   margin-right: 5px;
 }
@@ -64,7 +64,7 @@
   a {
     color: @badgerBlack;
     text-decoration: none;
-    border-bottom: 1px solid @badgerRed;
+    border-bottom: 1px solid @badgerRedOnWhite;
     transition: all 0.2s ease;
 
     &:hover {
@@ -167,6 +167,7 @@
     img.arrow {
       width: 28px;
       height: 16px;
+      color: @badgerRedOnWhite;
       position: absolute;
     }
   }
@@ -181,7 +182,7 @@
 .tags-list {
   text-transform: capitalize;
   padding: 20px 0px;
-  border-bottom: 1px solid @linesOnWhite;
+  border-bottom: 1px solid @badgerRedOnWhite;
 
   li {
     margin-bottom: 8px;
@@ -191,7 +192,7 @@
     }
 
     a {
-      color: @badgerRed;
+      color: @badgerRedOnWhite;
     }
   }
 }
