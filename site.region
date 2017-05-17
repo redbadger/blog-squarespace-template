@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="accessibilityDay">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
@@ -30,9 +30,90 @@
     <noscript>
       <img src="https://secure.leadforensics.com/77932.png" style="display: none;" />
     </noscript>
-  </head>
-  <body>
+    <script>
+      var colourOnButtonText = 'Make my day accessible';
+      var colourOffButtonText = 'Switch back to colour';
 
+      function initialiseAccessibilityBar() {
+        document.getElementById('accessibilityDayButton').style.display = 'block';
+      }
+
+      function toggleGreyscale() {
+        document.documentElement.classList.toggle('accessibilityDay');
+
+        var button = document.getElementById('accessibilityDayButton');
+        if (button.innerHTML == colourOffButtonText) {
+          button.innerHTML = colourOnButtonText;
+        } else {
+          button.innerHTML = colourOffButtonText;
+        }
+      }
+    </script>
+    <style>
+      .accessibilityDay {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+      }
+
+      .accessibilityBar {
+        padding: 20px;
+        background-color: #22d59b;
+        text-align: center;
+      }
+
+      .accessibilityBar button {
+        display: none;
+        font-family: 'ProximaNova-Bold', sans-serif;
+        font-weight: 800px;
+        font-size: 16px;
+        padding: 0 10px;
+        min-width: 200px;
+        height: 40px;
+        background-color: #212121;
+        color: #f8f8f8;
+        border: none;
+        margin: 0 auto 20px;
+      }
+
+      .accessibilityBar button:hover {
+        background-color: #606060;
+      }
+
+      .accessibilityBar p {
+        font-family: 'ProximaNova-Bold', sans-serif;
+        font-weight: 800px;
+        display: block;
+      }
+
+      @media screen and (min-width: 690px) {
+        .accessibilityBar {
+          width: 100%;
+          text-align: left;
+          position: fixed;
+          z-index: 9999;
+          top: 0;
+          display: flex;
+          align-items: center;
+        }
+
+        .accessibilityBar button {
+          margin: 0 20px 0 0;
+        }
+
+        .site-header__header {
+          padding-top: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body onload="initialiseAccessibilityBar()">
+    <div class="accessibilityBar">
+      <button id="accessibilityDayButton" onClick="toggleGreyscale()">Switch back to colour</button>
+      <p id="accessibilityDayDescription">What’s black and white and read all over? Us. We’re greyscale to promote Global Accessibility Awareness Day.</p>
+    </div>
     <header class="site-header__header" role="banner">
       <a href="https://red-badger.com" title="Red Badger Homepage">
         <img src="/assets/logo.svg" class="site-header__logo" title="Red Badger logo" />
