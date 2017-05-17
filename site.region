@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="accessibilityDay">
+<html lang="en">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
@@ -59,6 +59,7 @@
       }
 
       .accessibilityBar {
+        display: none;
         padding: 20px;
         background-color: #22d59b;
         text-align: center;
@@ -95,7 +96,7 @@
           position: fixed;
           z-index: 9999;
           top: 0;
-          display: flex;
+          display: none;
           align-items: center;
         }
 
@@ -104,7 +105,7 @@
         }
 
         .site-header__header {
-          padding-top: 100px;
+          padding-top: 20px;
         }
       }
     </style>
