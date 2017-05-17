@@ -45,7 +45,7 @@
       }
 
       function toggleGreyscale() {
-        document.documentElement.classList.toggle('accessibilityDay');
+        document.body.classList.toggle('accessibilityDay');
 
         var button = document.getElementById('accessibilityDayButton');
         if (button.innerHTML == colourOffButtonText) {
@@ -65,7 +65,6 @@
       }
 
       .accessibilityBar {
-        display: none;
         padding: 20px;
         background-color: #22d59b;
         text-align: center;
@@ -102,7 +101,7 @@
           position: fixed;
           z-index: 9999;
           top: 0;
-          display: none;
+          display: flex;
           align-items: center;
         }
 
@@ -111,12 +110,12 @@
         }
 
         .site-header__header {
-          padding-top: 20px;
+          padding-top: 100px;
         }
       }
     </style>
   </head>
-  <body onload="initialiseAccessibilityBar()">
+  <body class="accessibilityDay" onload="initialiseAccessibilityBar()">
     <div class="accessibilityBar">
       <button id="accessibilityDayButton" onClick="toggleGreyscale()">Switch back to colour</button>
       <p id="accessibilityDayDescription">What’s black and white and read all over? Us. We’re greyscale to promote Global Accessibility Awareness Day.</p>
