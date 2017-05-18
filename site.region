@@ -26,10 +26,6 @@
     <link rel="icon" href="https://red-badger.com/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" />
     {squarespace-headers}
-    <script type="text/javascript" src="https://secure.leadforensics.com/js/77932.js" /></script>
-    <noscript>
-      <img src="https://secure.leadforensics.com/77932.png" style="display: none;" />
-    </noscript>
     <script>
       var colourOnButtonText = 'Make my day accessible';
       var colourOffButtonText = 'Switch back to colour';
@@ -82,6 +78,10 @@
         }
       }
     </script>
+    <script type="text/javascript" src="https://secure.leadforensics.com/js/77932.js" /></script>
+    <noscript>
+      <img src="https://secure.leadforensics.com/77932.png" style="display: none;" />
+    </noscript>
     <style>
       .accessibilityDay {
         filter: grayscale(100%);
