@@ -29,7 +29,7 @@ const headers = {
   Authorization: `Basic ${auth}`,
 };
 
-const baseUrl = 'https://api.github.com/repos/redbadger/website-honestly';
+const baseUrl = 'https://api.github.com/repos/redbadger/blog-squarespace-template';
 
 const assertStatusOK = response => {
   if (response.status >= 200 && response.status < 300) {
