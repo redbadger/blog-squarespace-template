@@ -8,7 +8,7 @@ test:
 
 deployment:
   prod:
-    branch: circle-ci
+    branch: master
     commands:
       - >
         if [ -z "${PRODUCTION}" ]; then
