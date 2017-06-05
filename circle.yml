@@ -16,5 +16,5 @@ deployment:
         else
           git remote add squarespace https://$SQ_USERNAME:$SQ_PASSWORD@redbadger-blog.squarespace.com/template.git
           git push squarespace master
-          ./bin/register-github-release.js live
+          npm install node-fetch && ./bin/register-github-release.js live
         fi
