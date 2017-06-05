@@ -10,5 +10,10 @@ deployment:
   prod:
     branch: circle-ci
     commands:
-      - git remote add squarespace https://$SQ_USERNAME:$SQ_PASSWORD@redbadger-blog.squarespace.com/template.git
-      - git push squarespace master
+      - >
+        if [ -z "${PRODUCTION}" ]; then
+          echo "Skipping deployment"
+        else
+          git remote add squarespace https://$SQ_USERNAME:$SQ_PASSWORD@redbadger-blog.squarespace.com/template.git
+          git push squarespace master
+        fi
