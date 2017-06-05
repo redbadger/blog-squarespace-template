@@ -1,0 +1,10 @@
+dependencies:
+  override:
+    - echo "\n" | npm install
+
+deployment:
+  prod:
+    branch: circle-ci
+    commands:
+      - git remote add squarespace https://$SQ_USERNAME:$SQ_PASSWORD@redbadger-blog.squarespace.com/template.git
+      - git push squarespace master
