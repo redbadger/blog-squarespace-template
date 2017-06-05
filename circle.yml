@@ -2,6 +2,10 @@ dependencies:
   override:
     - echo "\n" | npm install
 
+test:
+  override:
+    - echo "No tests yet..."
+
 deployment:
   prod:
     branch: circle-ci
