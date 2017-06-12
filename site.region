@@ -116,11 +116,13 @@
             </a>
             <span class="site-footer__screenReaderText">Call us on</span>
             <a href="tel:+442035670555" class="site-footer__telLink">
-              <span>+</span><span>4</span><span>4</span>
-              <span>(</span><span>0</span><span>)</span>
-              <span>2</span><span>0</span>
-              <span>3</span><span>5</span><span>6</span><span>7</span>
-              <span>0</span><span>5</span><span>5</span><span>5</span>
+              <span class="site-footer_telLinkText">
+                <span>+</span><span>4</span><span>4</span>
+                <span>(</span><span>0</span><span>)</span>
+                <span>2</span><span>0</span>
+                <span>3</span><span>5</span><span>6</span><span>7</span>
+                <span>0</span><span>5</span><span>5</span><span>5</span>
+              </span>
             </a>
             <span class="site-footer__screenReaderText">Find us on social media</span>
             <ul class="site-footer__socialLinks">
