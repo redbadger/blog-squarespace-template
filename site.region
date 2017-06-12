@@ -112,15 +112,17 @@
           <div class="boldSerif site-footer__section site-footer__social">
             <span class="site-footer__screenReaderText">Email us at</span>
             <a href="mailto:hello@red-badger.com" class="site-footer__mailtoLink">
-              hello@red-badger.com
+              <span class="site-footer__mailtoLinkText">hello@red-badger.com</span>
             </a>
             <span class="site-footer__screenReaderText">Call us on</span>
             <a href="tel:+442035670555" class="site-footer__telLink">
-              <span>+</span><span>4</span><span>4</span>
-              <span>(</span><span>0</span><span>)</span>
-              <span>2</span><span>0</span>
-              <span>3</span><span>5</span><span>6</span><span>7</span>
-              <span>0</span><span>5</span><span>5</span><span>5</span>
+              <span class="site-footer__telLinkText">
+                <span>+</span><span>4</span><span>4</span>
+                <span>(</span><span>0</span><span>)</span>
+                <span>2</span><span>0</span>
+                <span>3</span><span>5</span><span>6</span><span>7</span>
+                <span>0</span><span>5</span><span>5</span><span>5</span>
+              </span>
             </a>
             <span class="site-footer__screenReaderText">Find us on social media</span>
             <ul class="site-footer__socialLinks">

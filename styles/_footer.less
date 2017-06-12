@@ -46,9 +46,12 @@
 }
 
 .site-footer__nav li a {
-  border-bottom: 2px solid @badgerRedOnBlack;
   color: @badgerWhite;
   text-decoration: none;
+}
+
+.site-footer__nav li a:hover {
+  border-bottom: 2px solid @badgerRedOnBlack;
 }
 
 .site-footer__section {
@@ -70,10 +73,12 @@
   color: @badgerWhite;
   display: block;
   text-decoration: none;
+  margin-bottom: 30px;
 }
 
-.site-footer__telLink {
-  margin-bottom: 30px;
+.site-footer__telLinkText:hover,
+.site-footer__mailtoLinkText:hover {
+  border-bottom: 2px solid @badgerRedOnBlack;
 }
 
 .site-footer__socialLinks {
