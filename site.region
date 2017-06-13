@@ -89,22 +89,22 @@
           <nav role="navigation" class="site-footer__section site-footer__footerLinks">
             <ul class="boldSerif site-footer__nav">
               <li>
-                <a href="https://red-badger.com/">Home</a>
+                <a href="https://red-badger.com/" onclick="ga('send', 'event', 'FooterNavigation', 'Home', 'From: /blog')">Home</a>
               </li>
               <li>
-                <a href="https://red-badger.com/about-us/">About us</a>
+                <a href="https://red-badger.com/about-us/" onclick="ga('send', 'event', 'FooterNavigation', 'About us', 'From: /blog')">About us</a>
               </li>
               <li>
-                <a href="https://red-badger.com/what-we-do/">What we do</a>
+                <a href="https://red-badger.com/what-we-do/" onclick="ga('send', 'event', 'FooterNavigation', 'What we do', 'From: /blog')">What we do</a>
               </li>
               <li>
-                <a href="https://red-badger.com/blog/">Blog</a>
+                <a href="https://red-badger.com/blog/" onclick="ga('send', 'event', 'FooterNavigation', 'Blog', 'From: /blog')">Blog</a>
               </li>
               <li>
-                <a href="https://red-badger.com/about-us/events/">Events</a>
+                <a href="https://red-badger.com/about-us/events/" onclick="ga('send', 'event', 'FooterNavigation', 'Events', 'From: /blog')">Events</a>
               </li>
               <li>
-                <a href="https://red-badger.com/about-us/join-us/">Jobs</a>
+                <a href="https://red-badger.com/about-us/join-us/" onclick="ga('send', 'event', 'FooterNavigation', 'Jobs', 'From: /blog')">Jobs</a>
               </li>
             </ul>
           </nav>
