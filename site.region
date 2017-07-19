@@ -62,13 +62,41 @@
             <label id="menuCloseTrigger" for="burger" class="site-header__menuCloseButton fontXS boldSansSerif">Close</label>
             <nav class="site-header__smallScreenNavContainer" role="navigation">
               <ul role="listbox" class="boldSerif site-header__smallScreenNav">
-                <li><a class="fontM2" href="https://red-badger.com/" tabindex="-1">Home</a></li>
-                <li><a class="fontM2" href="https://red-badger.com/about-us/" tabindex="-1">About us</a></li>
-                <li><a class="fontM2" href="https://red-badger.com/what-we-do/" tabindex="-1">What we do</a></li>
-                <li><a class="fontM2" href="http://red-badger.com/blog/" tabindex="-1">Blog</a></li>
-                <li><a class="fontM2" href="https://red-badger.com/about-us/events/" tabindex="-1">Events</a></li>
-                <li><a class="fontM2" href="https://red-badger.com/about-us/join-us/" tabindex="-1">Jobs</a></li>
-                <li><a class="fontM2" href="https://red-badger.com/#contactUs" tabindex="-1">Contact us</a></li>
+                <li>
+                  <a class="fontM2" href="https://red-badger.com/" tabindex="-1">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="fontM2" href="https://red-badger.com/about-us/" tabindex="-1">
+                    <span>About us</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="fontM2" href="https://red-badger.com/what-we-do/" tabindex="-1">
+                    <span>What we do</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="fontM2" href="http://red-badger.com/blog/" tabindex="-1">
+                    <span>Blog</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="fontM2" href="https://red-badger.com/about-us/events/" tabindex="-1">
+                    <span>Events</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="fontM2" href="https://red-badger.com/about-us/join-us/" tabindex="-1">
+                    <span>Jobs</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="fontM2" href="https://red-badger.com/#contactUs" tabindex="-1">
+                    <span>Contact us</span>
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
