@@ -76,21 +76,33 @@
   text-align: center;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 .site-header__smallScreenNav {
-  width: 150px;
+  width: 100%;
+  padding-left: 20%;
   display: inline-block;
   text-align: left;
   margin: 10px 0 0 20px;
 }
 
 .site-header__smallScreenNav li {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .site-header__smallScreenNav li a {
   color: @badgerWhite;
   text-decoration: none;
   border: none;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.site-header__smallScreenNav li a:focus {
+  outline: none;
 }
 
 .site-header__smallScreenNav li a:hover {
@@ -138,7 +150,8 @@
   right: 0;
 }
 
-.site-header__trigger:checked + .site-header__overlay .site-header__smallScreenNavWrapper {
+.site-header__trigger:checked
+  + .site-header__overlay .site-header__smallScreenNavWrapper {
   display: block;
 }
 
