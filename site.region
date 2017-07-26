@@ -38,10 +38,35 @@
       </a>
       <nav class="site-header__mediumScreenNavContainer" role="navigation">
         <ul role="listbox" class="site-header__mediumScreenNav boldSansSerif">
-          <li><a href="https://red-badger.com/what-we-do/" onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'What we do', 'From: /blog')">What we do</a></li>
-          <li><a href="https://red-badger.com/about-us/" onclick="ga('send', 'event', 'DesktopHeaderNavigaion', 'About us', 'From: /blog')">About us</a></li>
-          <li><a class="activeNavLink" href="http://red-badger.com/blog/" onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'Blog', 'From: /blog')">Blog</a></li>
-          <li><a href="https://red-badger.com/about-us/events/" onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'Events', 'From: /blog')">Events</a></li>
+          <li>
+            <a
+              href="https://red-badger.com/what-we-do/"
+              onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'What we do', 'From: /blog')">
+              What we do
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://red-badger.com/about-us/"
+              onclick="ga('send', 'event', 'DesktopHeaderNavigaion', 'About us', 'From: /blog')">
+              About us
+            </a>
+          </li>
+          <li>
+            <a
+              class="activeNavLink"
+              href="http://red-badger.com/blog/"
+              onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'Blog', 'From: /blog')">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://red-badger.com/about-us/events/"
+              onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'Events', 'From: /blog')">
+              Events
+            </a>
+          </li>
         </ul>
       </nav>
       <div class="site-header__smallScreenNavComponent">
@@ -63,37 +88,65 @@
             <nav class="site-header__smallScreenNavContainer" role="navigation">
               <ul role="listbox" class="boldSerif site-header__smallScreenNav">
                 <li>
-                  <a class="fontM2" href="https://red-badger.com/" tabindex="-1" onclick="ga('send', 'event', 'MobileSideNavigation', 'Home', 'From: /blog')">
+                  <a
+                    class="fontM2"
+                    href="https://red-badger.com/"
+                    tabindex="-1"
+                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Home', 'From: /blog')">
                     <span>Home</span>
                   </a>
                 </li>
                 <li>
-                  <a class="fontM2" href="https://red-badger.com/about-us/" tabindex="-1" onclick="ga('send', 'event', 'MobileSideNavigation', 'About us', 'From: /blog')">
+                  <a
+                    class="fontM2"
+                    href="https://red-badger.com/about-us/"
+                    tabindex="-1"
+                    onclick="ga('send', 'event', 'MobileSideNavigation', 'About us', 'From: /blog')">
                     <span>About us</span>
                   </a>
                 </li>
                 <li>
-                  <a class="fontM2" href="https://red-badger.com/what-we-do/" tabindex="-1" onclick="ga('send', 'event', 'MobileSideNavigation', 'What we do', 'From: /blog')">
+                  <a
+                    class="fontM2"
+                    href="https://red-badger.com/what-we-do/"
+                    tabindex="-1"
+                    onclick="ga('send', 'event', 'MobileSideNavigation', 'What we do', 'From: /blog')">
                     <span>What we do</span>
                   </a>
                 </li>
                 <li>
-                  <a class="fontM2" href="http://red-badger.com/blog/" tabindex="-1" onclick="ga('send', 'event', 'MobileSideNavigation', 'Blog', 'From: /blog')">
+                  <a
+                    class="fontM2"
+                    href="http://red-badger.com/blog/"
+                    tabindex="-1"
+                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Blog', 'From: /blog')">
                     <span>Blog</span>
                   </a>
                 </li>
                 <li>
-                  <a class="fontM2" href="https://red-badger.com/about-us/events/" tabindex="-1" onclick="ga('send', 'event', 'MobileSideNavigation', 'Events', 'From: /blog')">
+                  <a
+                    class="fontM2"
+                    href="https://red-badger.com/about-us/events/"
+                    tabindex="-1"
+                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Events', 'From: /blog')">
                     <span>Events</span>
                   </a>
                 </li>
                 <li>
-                  <a class="fontM2" href="https://red-badger.com/about-us/join-us/" tabindex="-1" onclick="ga('send', 'event', 'MobileSideNavigation', 'Jobs', 'From: /blog')">
+                  <a
+                    class="fontM2"
+                    href="https://red-badger.com/about-us/join-us/"
+                    tabindex="-1"
+                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Jobs', 'From: /blog')">
                     <span>Jobs</span>
                   </a>
                 </li>
                 <li>
-                  <a class="fontM2" href="https://red-badger.com/#contactUs" tabindex="-1" onclick="ga('send', 'event', 'MobileSideNavigation', 'Contact us', 'From: /blog')">
+                  <a
+                    class="fontM2"
+                    href="https://red-badger.com/#contactUs"
+                    tabindex="-1"
+                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Contact us', 'From: /blog')">
                     <span>Contact us</span>
                   </a>
                 </li>
@@ -104,7 +157,12 @@
       </div>
     </header>
 
-    <main id="page" class="site-page loading  site-page--{collection.typeName}{.equal? collection.typeName "page"}{.or}-{.section item}item{.or}list{.end}{.end}" role="main" data-content-field="main-content" sqs-controller="FadeInContent">
+    <main
+      id="page"
+      class="site-page loading  site-page--{collection.typeName}{.equal? collection.typeName "page"}{.or}-{.section item}item{.or}list{.end}{.end}"
+      role="main"
+      data-content-field="main-content"
+      sqs-controller="FadeInContent">
       {squarespace.main-content}
     </main>
 
@@ -117,22 +175,45 @@
           <nav role="navigation" class="site-footer__section site-footer__footerLinks">
             <ul class="boldSerif site-footer__nav">
               <li>
-                <a href="https://red-badger.com/" onclick="ga('send', 'event', 'FooterNavigation', 'Home', 'From: /blog')">Home</a>
+                <a
+                  href="https://red-badger.com/"
+                  onclick="ga('send', 'event', 'FooterNavigation', 'Home', 'From: /blog')">
+                  Home
+                </a>
               </li>
               <li>
-                <a href="https://red-badger.com/about-us/" onclick="ga('send', 'event', 'FooterNavigation', 'About us', 'From: /blog')">About us</a>
+                <a
+                  href="https://red-badger.com/about-us/"
+                  onclick="ga('send', 'event', 'FooterNavigation', 'About us', 'From: /blog')">
+                  About us
+                </a>
               </li>
               <li>
-                <a href="https://red-badger.com/what-we-do/" onclick="ga('send', 'event', 'FooterNavigation', 'What we do', 'From: /blog')">What we do</a>
+                <a
+                  href="https://red-badger.com/what-we-do/"
+                  onclick="ga('send', 'event', 'FooterNavigation', 'What we do', 'From: /blog')">
+                  What we do</a>
               </li>
               <li>
-                <a href="https://red-badger.com/blog/" onclick="ga('send', 'event', 'FooterNavigation', 'Blog', 'From: /blog')">Blog</a>
+                <a
+                  href="https://red-badger.com/blog/"
+                  onclick="ga('send', 'event', 'FooterNavigation', 'Blog', 'From: /blog')">
+                  Blog
+                </a>
               </li>
               <li>
-                <a href="https://red-badger.com/about-us/events/" onclick="ga('send', 'event', 'FooterNavigation', 'Events', 'From: /blog')">Events</a>
+                <a
+                  href="https://red-badger.com/about-us/events/"
+                  onclick="ga('send', 'event', 'FooterNavigation', 'Events', 'From: /blog')">
+                  Events
+                </a>
               </li>
               <li>
-                <a href="https://red-badger.com/about-us/join-us/" onclick="ga('send', 'event', 'FooterNavigation', 'Jobs', 'From: /blog')">Jobs</a>
+                <a
+                  href="https://red-badger.com/about-us/join-us/"
+                  onclick="ga('send', 'event', 'FooterNavigation', 'Jobs', 'From: /blog')">
+                  Jobs
+                </a>
               </li>
             </ul>
           </nav>
