@@ -67,6 +67,13 @@
               Events
             </a>
           </li>
+          <li>
+            <a
+              href="https://red-badger.com/about-us/join-us/"
+              onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'Jobs', 'From: /blog')">
+              Jobs
+            </a>
+          </li>
         </ul>
       </nav>
       <div class="site-header__smallScreenNavComponent">
