@@ -153,7 +153,7 @@
                     class="fontM2"
                     href="https://red-badger.com/#contactUs"
                     tabindex="-1"
-                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Contact us', 'From: /blog')">
+                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Contact us - HomePage', 'From: /blog')">
                     <span>Contact us</span>
                   </a>
                 </li>
