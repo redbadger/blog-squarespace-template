@@ -9,6 +9,17 @@ npm install
 make start
 ```
 
+## Advanced use
+
+Start squarespace local server with options:
+```
+npm run dev -- --auto-reload
+```
+
+You can view all the options with the command:
+```npm run help```
+
+
 ## Issue Tracking
 
 Please log any issues at https://github.com/redbadger/website-honestly/issues prepending `[Blog]` to the issue title.
