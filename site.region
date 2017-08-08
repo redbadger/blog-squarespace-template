@@ -34,7 +34,7 @@
   <body>
     <header class="site-header__header" role="banner">
       <a href="https://red-badger.com" title="Red Badger Homepage">
-        <img src="/assets/logo.svg" class="site-header__logo" title="Red Badger logo" />
+        <img src="/assets/logo.svg" class="site-header__logo" title="Red Badger logo" alt="Red Badger company logo with text"/>
       </a>
       <nav class="site-header__mediumScreenNavContainer" role="navigation">
         <ul role="listbox" class="site-header__mediumScreenNav boldSansSerif">
@@ -248,7 +248,7 @@
                    title="Red Badger Github"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/github.svg" title="Github" >
+                  <img src="/assets/github.svg" title="Github" alt="Github logo">
                 </a>
               </li>
               <li>
@@ -257,7 +257,7 @@
                    title="Red Badger Twitter"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/twitter.svg" title="Twitter">
+                  <img src="/assets/twitter.svg" title="Twitter" alt="Twitter logo">
                 </a>
               </li>
               <li>
@@ -266,7 +266,7 @@
                    title="Red Badger Slack"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/slack.svg" title="Slack">
+                  <img src="/assets/slack.svg" title="Slack" alt="Slack" alt="Slack logo">
                 </a>
               </li>
               <li>
@@ -275,7 +275,7 @@
                    title="Red Badger Linkedin"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/linked-in.svg" title="Linkedin">
+                  <img src="/assets/linked-in.svg" title="Linkedin" alt="LinkedIn logo">
                 </a>
               </li>
 
@@ -285,7 +285,7 @@
                    title="Red Badger Instagram"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/instagram.svg" title="Instagram">
+                  <img src="/assets/instagram.svg" title="Instagram" alt="Instagram logo">
                 </a>
               </li>
               <li>
@@ -294,7 +294,7 @@
                    title="Red Badger Facebook"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/facebook.svg" title="Facebook">
+                  <img src="/assets/facebook.svg" title="Facebook" alt="Facebook logo">
                 </a>
               </li>
               <li>
@@ -303,7 +303,7 @@
                    title="Red Badger Youtube"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/youtube.svg" title="Youtube">
+                  <img src="/assets/youtube.svg" title="Youtube" alt="Youtube logo">
                 </a>
               </li>
               <li>
@@ -312,7 +312,7 @@
                    title="Red Badger Google Plus"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/g-plus.svg" title="Google Plus">
+                  <img src="/assets/g-plus.svg" title="Google Plus" alt="Google plus logo">
                 </a>
               </li>
             </ul>
