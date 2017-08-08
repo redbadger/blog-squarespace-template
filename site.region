@@ -176,7 +176,7 @@
     <footer role="contentinfo" class="site-footer__footer">
       <div class="site-footer__footerContainer">
         <div role="presentation" class="site-footer__footerMap">
-          <img src="/assets/map.svg">
+          <img src="/assets/map.svg" alt="Map of old street">
         </div>
         <div class="site-footer__footerSections">
           <nav role="navigation" class="site-footer__section site-footer__footerLinks">
@@ -321,7 +321,7 @@
         </div>
         <div class="site-footer__section site-footer__address boldSansSerif fontXS">
           <div role="presentation" class="site-footer__mapPin">
-            <img src="/assets/map-pin.svg">
+            <img src="/assets/map-pin.svg" alt="Red Badger office location pin on map">
           </div>
           <div class="site-footer__mapContainer">
             <address>
@@ -347,7 +347,7 @@
             </p>
           </div>
           <div class="site-footer__badgerIcon" title="Sally the Red Badger Badger">
-            <img src="/assets/badger-on-black.svg">
+            <img src="/assets/badger-on-black.svg" alt="Sally the badger image">
           </div>
         </div>
       </div>
