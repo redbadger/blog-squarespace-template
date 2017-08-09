@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
+  "scripts": {
+    "dev": "squarespace-server https://redbadger-blog.squarespace.com",
+    "help": "squarespace-server --help"
   },
+  "dependencies": {},
   "devDependencies": {
     "@squarespace/server": "^1.0.6"
   },
