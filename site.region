@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-TileColor" content="#212121">
     <meta name="theme-color" content="#212121">
@@ -430,7 +430,7 @@
             </div>
             <div class="site-footer__section site-footer__address site-footer__underline boldSansSerif fontXS">
               <div role="presentation" class="site-footer__mapPin">
-                <img src="/assets/map-pin.svg">
+                <img src="/assets/map-pin.svg" alt="">
               </div>
               <div class="site-footer__mapContainer">
                 <address>
