@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-TileColor" content="#212121">
     <meta name="theme-color" content="#212121">
@@ -34,7 +34,7 @@
   <body>
     <header class="site-header__header" role="banner">
       <a href="https://red-badger.com" title="Red Badger Homepage">
-        <img src="/assets/logo.svg" class="site-header__logo" title="Red Badger logo" alt="Red Badger company logo with text"/>
+        <img src="/assets/logo.svg" class="site-header__logo" title="Red Badger company logo"  alt="Red Badger company logo"/>
       </a>
       <nav class="site-header__mediumScreenNavContainer" role="navigation">
         <ul role="listbox" class="site-header__mediumScreenNav boldSansSerif">
@@ -359,7 +359,7 @@
                    title="Red Badger Github"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/github.svg" title="Github" alt="Github logo">
+                  <img src="/assets/github.svg" title="Github" alt="Github">
                 </a>
               </li>
               <li>
@@ -368,7 +368,7 @@
                    title="Red Badger Twitter"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/twitter.svg" title="Twitter" alt="Twitter logo">
+                  <img src="/assets/twitter.svg" title="Twitter" alt="Twitter">
                 </a>
               </li>
               <li>
@@ -377,7 +377,7 @@
                    title="Red Badger Slack"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/slack.svg" title="Slack" alt="Slack" alt="Slack logo">
+                  <img src="/assets/slack.svg" title="Slack" alt="Slack" alt="Slack">
                 </a>
               </li>
               <li>
@@ -386,7 +386,7 @@
                    title="Red Badger Linkedin"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/linked-in.svg" title="Linkedin" alt="LinkedIn logo">
+                  <img src="/assets/linked-in.svg" title="Linkedin" alt="Linkedin">
                 </a>
               </li>
 
@@ -396,7 +396,7 @@
                    title="Red Badger Instagram"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/instagram.svg" title="Instagram" alt="Instagram logo">
+                  <img src="/assets/instagram.svg" title="Instagram" alt="Instagram">
                 </a>
               </li>
               <li>
@@ -405,7 +405,7 @@
                    title="Red Badger Facebook"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/facebook.svg" title="Facebook" alt="Facebook logo">
+                  <img src="/assets/facebook.svg" title="Facebook" alt="Facebook">
                 </a>
               </li>
               <li>
@@ -414,7 +414,7 @@
                    title="Red Badger Youtube"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/youtube.svg" title="Youtube" alt="Youtube logo">
+                  <img src="/assets/youtube.svg" title="Youtube" alt="Youtube">
                 </a>
               </li>
               <li>
@@ -423,14 +423,14 @@
                    title="Red Badger Google Plus"
                    class="site-footer__socialIcon"
                    >
-                  <img src="/assets/g-plus.svg" title="Google Plus" alt="Google plus logo">
+                  <img src="/assets/g-plus.svg" title="Google Plus" alt="Google Plus">
                 </a>
               </li>
             </ul>
             </div>
             <div class="site-footer__section site-footer__address site-footer__underline boldSansSerif fontXS">
               <div role="presentation" class="site-footer__mapPin">
-                <img src="/assets/map-pin.svg">
+                <img src="/assets/map-pin.svg" alt="">
               </div>
               <div class="site-footer__mapContainer">
                 <address>

@@ -15,7 +15,7 @@
   </h1>
 
   {.main-image?}
-  <img class="blog-article__main-image" src="{assetUrl}?w=1000w">
+  <img class="blog-article__main-image" alt="" role="presentation" src="{assetUrl}?w=1000w">
   {.or}
   {.end}
 
@@ -42,7 +42,7 @@
             <span>
               More from {author.firstName}
             </span>
-            <img class="arrow" src="/assets/arrow.svg" />
+            <img class="arrow" role="presentation" alt="" src="/assets/arrow.svg" />
           </a>
         </div>
       {.end}

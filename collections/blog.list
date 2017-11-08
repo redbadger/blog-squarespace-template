@@ -5,7 +5,13 @@
       <div class="sqs-block-content">
         <div class="sqs-search-ui-text-input sqs-search-ui-button-wrapper badger-glass" data-source="block" data-preview="true">
           <div class="spinner-wrapper" hidden="hidden"></div>
-          <input type="search" class="search-input hover-effect" value placeholder="Search our Blog">
+          <input
+            type="search"
+            class="search-input hover-effect"
+            value
+            aria-label="Search our Blog"
+            placeholder="Search our Blog"
+          >
           <div class="yui3-widget sqs-widget sqs-search-preview">
             <div class="sqs-search-preview-content"></div>
           </div>
@@ -81,7 +87,7 @@
         {.main-image?}
         <div class="excerpt-thumb">
           <a href="{fullUrl}" class="excerpt-image content-fill">
-            <img src="{assetUrl}?format=500w" />
+            <img src="{assetUrl}?format=500w" alt="{title}" />
           </a>
         </div>
         {.end}
@@ -102,7 +108,7 @@
       {.main-image?}
         <div class="excerpt-thumb">
           <a href="{fullUrl}" class="excerpt-image content-fill">
-            <img src="{assetUrl}?format=500w" />
+            <img src="{assetUrl}?format=500w" alt="{title}" />
           </a>
         </div>
       {.end}

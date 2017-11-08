@@ -26,7 +26,7 @@
         class="social-links__icon"
         target="_blank"
       >
-        <img src="/assets/twitter_share.svg" title="Twitter">
+        <img src="/assets/twitter_share.svg" title="Twitter" alt="Twitter">
       </a>
     </li>
     <li>
@@ -36,7 +36,7 @@
         class="social-links__icon"
         target="_blank"
       >
-        <img src="/assets/facebook_share.svg" title="Facebook">
+        <img src="/assets/facebook_share.svg" title="Facebook" alt="Facebook">
       </a>
     </li>
   </ul>
