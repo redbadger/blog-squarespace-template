@@ -65,9 +65,7 @@
   position: absolute;
   margin: 0;
   padding: 1em 0;
-  background-color: transparent;
   display: none;
-  background: @badgerWhite;
   font-size: 15px;
 }
 
@@ -78,7 +76,6 @@
   top: 0;
   bottom: 0;
   position: absolute;
-  background: @badgerWhite;
   z-index: -1;
 }
 
@@ -102,6 +99,12 @@
 
 .site-header__navItemWithChild:hover > .site-header__mediumScreenChildList {
   z-index: 10;
+  background: @badgerWhite;
+}
+
+.site-header__navItemWithChild:hover > .site-header__mediumScreenChildList::before,
+.site-header__navItemWithChild:hover > .site-header__mediumScreenChildList::after {
+  background: @badgerWhite;
 }
 
 .site-header__overlay {
