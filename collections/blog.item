@@ -10,7 +10,7 @@
     </time>
   </div>
 
-  <h2 class="blog-article__title fontL boldSerif" data-content-field="title">
+  <h1 class="blog-article__title fontL boldSerif" data-content-field="title">
     {title}
   </h1>
 
