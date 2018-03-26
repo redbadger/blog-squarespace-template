@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -27,13 +28,14 @@ ul {
   font-style: normal;
 }
 
-body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-default) .sqs-editable-button-font {
+body:not(.button-style-default) .sqs-editable-button,
+body:not(.button-style-default) .sqs-editable-button-font {
   background-color: @badgerRed;
   border: 3px solid @badgerRed;
   padding: 15px 20px;
   font-size: 30px;
   line-height: 1.2em;
-  font-family: 'ProximaNova-Bold',sans-serif;
+  font-family: 'ProximaNova-Bold', sans-serif;
 
   &:hover {
     background-color: @scorpian;
@@ -130,7 +132,8 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
   }
 }
 
-.load-more, .prev-page {
+.load-more,
+.prev-page {
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
@@ -212,27 +215,47 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
   }
 }
 
-.category-list.badger-life li a.badger-life, .category-list.blog li a.blog, .category-list.leadership li a.leadership, .category-list.news li a.news, .category-list.process li a.process, .category-list.strategy li a.strategy, .category-list.technology li a.technology, .category-list.ux-amp-design li a.ux-design, .category-list.opinion li a.opinion {
+.category-list.badger-life li a.badger-life,
+.category-list.blog li a.blog,
+.category-list.delivery li a.delivery,
+.category-list.leadership li a.leadership,
+.category-list.news li a.news,
+.category-list.process li a.process,
+.category-list.strategy li a.strategy,
+.category-list.technology li a.technology,
+.category-list.ux-amp-design li a.ux-design,
+.category-list.opinion li a.opinion {
   .active-category();
 }
 
-.category-list.badger-life li a.all-items, .category-list.blog li a.all-items, .category-list.leadership li a.all-items, .category-list.news li a.all-items, .category-list.process li a.all-items, .category-list.strategy li a.all-items, .category-list.technology li a.all-items, .category-list.ux-amp-design li a.all-items, .category-list.opinion li a.all-items {
+.category-list.badger-life li a.all-items,
+.category-list.blog li a.all-items,
+.category-list.delivery li a.all-items,
+.category-list.leadership li a.all-items,
+.category-list.news li a.all-items,
+.category-list.process li a.all-items,
+.category-list.strategy li a.all-items,
+.category-list.technology li a.all-items,
+.category-list.ux-amp-design li a.all-items,
+.category-list.opinion li a.all-items {
   .non-active-category();
 }
 
-.sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result {
+.sqs-search-preview-ui
+  .sqs-search-ui-result
+  .sqs-search-ui-list
+  .search-result {
   border: none;
 }
 
 .sqs-search-container-item .sqs-title {
-  font-family: "Sentinel A","Sentinel B",Georgia,serif;
+  font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
   font-weight: 800;
   color: @badgerBlack;
   font-size: 30px;
   border-bottom: 2px solid transparent;
   display: inline;
 }
-
 
 .sqs-search-container-item .sqs-title:hover {
   border-bottom: 2px solid @badgerRed;
@@ -244,7 +267,7 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
 
 .sqs-search-container-item .sqs-content {
   color: @badgerBlack;
-  font-family: "Sentinel A","Sentinel B",Georgia,serif;
+  font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
   font-size: 20px;
 }
 
@@ -308,7 +331,7 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
   }
 
   .entry-excerpt {
-    max-width: 800px
+    max-width: 800px;
   }
 
   .blog-meta-category {
@@ -320,7 +343,7 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
   }
 }
 
-[class*=sqs-col] .front-page-search {
+[class*='sqs-col'] .front-page-search {
   padding: 0;
 }
 
@@ -369,7 +392,10 @@ body:not(.button-style-default) .sqs-editable-button, body:not(.button-style-def
   display: none;
 }
 
-.sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result.clear {
+.sqs-search-preview-ui
+  .sqs-search-ui-result
+  .sqs-search-ui-list
+  .search-result.clear {
   margin: 0px;
   padding: 0px;
 }
@@ -378,11 +404,13 @@ input::-webkit-input-placeholder {
   color: #a9a9a9;
 }
 
-input:-moz-placeholder { /* Firefox 18- */
+input:-moz-placeholder {
+  /* Firefox 18- */
   color: #a9a9a9;
 }
 
-input::-moz-placeholder {  /* Firefox 19+ */
+input::-moz-placeholder {
+  /* Firefox 19+ */
   color: #a9a9a9;
 }
 
@@ -395,9 +423,11 @@ input:-ms-input-placeholder {
   top: 40%;
 }
 
-
-.sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result.clear:after {
-  content:"";
+.sqs-search-preview-ui
+  .sqs-search-ui-result
+  .sqs-search-ui-list
+  .search-result.clear:after {
+  content: '';
   bottom: 0;
   left: 0;
   margin: 0px 65px;
@@ -408,7 +438,12 @@ input:-ms-input-placeholder {
   visibility: visible;
 }
 
-.sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result .sqs-search-ui-item .sqs-title {
+.sqs-search-preview-ui
+  .sqs-search-ui-result
+  .sqs-search-ui-list
+  .search-result
+  .sqs-search-ui-item
+  .sqs-title {
   font-family: Sentinel A, Sentinel B;
   font-weight: bold;
   font-size: 24px;
@@ -432,7 +467,12 @@ input:-ms-input-placeholder {
   padding-left: 0px;
 }
 
-.sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result .sqs-search-ui-item .sqs-content {
+.sqs-search-preview-ui
+  .sqs-search-ui-result
+  .sqs-search-ui-list
+  .search-result
+  .sqs-search-ui-item
+  .sqs-content {
   font-size: 20px;
 }
 
@@ -440,11 +480,16 @@ input:-ms-input-placeholder {
   border: none;
 }
 
-.sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result.selected, .sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result:hover
-{
+.sqs-search-preview-ui
+  .sqs-search-ui-result
+  .sqs-search-ui-list
+  .search-result.selected,
+.sqs-search-preview-ui
+  .sqs-search-ui-result
+  .sqs-search-ui-list
+  .search-result:hover {
   background-color: #eee;
 }
-
 
 .sqs-search-container-item .sqs-main-content {
   padding-left: 65px;
@@ -463,16 +508,17 @@ input:-ms-input-placeholder {
 
 .sqs-search-page-notice {
   font-size: 16px;
-  font-family: 'ProximaNova-Light',sans-serif;
+  font-family: 'ProximaNova-Light', sans-serif;
   font-weight: bold;
   padding-top: 10px;
   padding-left: 0px;
 }
 
-
-
 @media (min-width: 1200px) {
-  .sqs-search-preview-ui .sqs-search-ui-result .sqs-search-ui-list .search-result {
+  .sqs-search-preview-ui
+    .sqs-search-ui-result
+    .sqs-search-ui-list
+    .search-result {
     margin: 0px 95px;
   }
   .sqs-search-container-item .sqs-main-content {
