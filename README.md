@@ -31,8 +31,8 @@ All Squarespace block elements are tested and should work as expected. You will 
 ## Deployment
 
 Squarespace provides us with git endpoint. Deployment is happening by pushing current master branch to that endpoint.
-You can now deploy to squarespace using BadgerBot. Run `@badgerbot blog` in Slack: #internal-projects. Badgerbot uses the `hello@red-badger.com` squarespace account to deploy.
+You can now deploy to squarespace using BadgerBot. Run `@badgerbot2 blog` in Slack: #internal-projects. Badgerbot uses the `hello@red-badger.com` squarespace account to deploy.
 
-`@badgerbot blog deploy` to deploy
+`@badgerbot2 blog deploy` to deploy
 
 There is currently no staging environment.
