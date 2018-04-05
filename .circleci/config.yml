@@ -20,31 +20,30 @@ jobs:
             - ./node_modules
 
   deploy_production:            
-    build:
-      docker:
-        - image: redbadger/blog-squarespace-template:1
+    docker:
+      - image: redbadger/blog-squarespace-template:1
 
-          steps:
-            - checkout
-            - restore_cache:
-                keys:
-                  - node_modules-{{ checksum "package-lock.json" }}
+        steps:
+          - checkout
+          - restore_cache:
+              keys:
+                - node_modules-{{ checksum "package-lock.json" }}
 
-            - run:
-                name: Add squarespace as remote
-                command: git remote add squarespace https://$SQ_USERNAME:$SQ_PASSWORD@redbadger-blog.squarespace.com/template.git
+          - run:
+              name: Add squarespace as remote
+              command: git remote add squarespace https://$SQ_USERNAME:$SQ_PASSWORD@redbadger-blog.squarespace.com/template.git
 
-            - run:
-                name: Push to squarespace
-                command: git push squarespace master 
+          - run:
+              name: Push to squarespace
+              command: git push squarespace master 
 
-            - run:
-                name: Install node-fetch
-                command: npm install node-fetch
+          - run:
+              name: Install node-fetch
+              command: npm install node-fetch
 
-            - run:
-                name: Register github release
-                command: ./bin/register-github-release.js live
+          - run:
+              name: Register github release
+              command: ./bin/register-github-release.js live
 
-                      
+                    
 
