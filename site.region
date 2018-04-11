@@ -158,7 +158,11 @@
     </style>
 
   </head>
-  <body>
+   <body class="accessibilityDay" onload="initialiseAccessibilityBar()">
+    <div class="accessibilityBar">
+      <button id="accessibilityDayButton" onClick="toggleGreyscale()">Switch back to colour</button>
+      <p id="accessibilityDayDescription">What’s black and white and ‘read’ all over? Us! We’re greyscale to promote Global Accessibility Awareness Day.</p>
+    </div>
     <header class="site-header__header" role="banner">
       <a href="https://red-badger.com" class="site-header__logo" title="Red Badger Homepage">
         <img src="/assets/logo.svg" title="Red Badger company logo"  alt="Red Badger company logo"/>
