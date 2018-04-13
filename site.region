@@ -154,6 +154,9 @@
           margin: 0 20px 0 0;
         }
 
+        .site-header__header {	
+          padding-top: 100px;	
+        }
       }
     </style>
 
