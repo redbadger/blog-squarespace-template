@@ -1,3 +1,8 @@
+/*
+ * Script to show and enable "greyscale" mode on the site for global a11y day.
+ * See https://github.com/redbadger/website-honestly/pull/750 for screenshots.
+ */
+
 var colourOnButtonText = 'Make my day accessible';
 var colourOffButtonText = 'Switch back to colour';
 
