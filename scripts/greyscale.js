@@ -87,5 +87,5 @@ function initGreyscaleModeBar() {
 }
 
 // Uncomment this to enable the a11y-day bar
-// initGreyscaleModeBar();
+initGreyscaleModeBar();
 
