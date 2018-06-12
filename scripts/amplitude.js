@@ -49,3 +49,11 @@ for (var i = 0; i < socialLinks.length; i++) {
 
   socialLinks[i].addEventListener('click', logSocialShareClick(socialNetwork, linkLocation));
 }
+
+document.getElementsByClassName('site-footer__telLink')[0].addEventListener('click', function () {
+  logAmplitudeEvent('CLICK CONTACT US', {type: 'phone', subject: 'footer'});
+});
+
+document.getElementsByClassName('site-footer__mailtoLink')[0].addEventListener('click', function () {
+  logAmplitudeEvent('CLICK CONTACT US', {type: 'email', subject: 'footer'});
+});
