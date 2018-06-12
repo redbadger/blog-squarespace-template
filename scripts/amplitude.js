@@ -61,11 +61,17 @@ function logSocialShareClick (socialNetwork, subject) {
   }
 }
 
+function logScrollDepth (scrollDepth) {
+  var publishDate = new Date(document.getElementsByClassName('blog-article__time')[0].attributes.datetime.value);
+  var daysSincePublished = Math.round((new Date - publishDate) / (1000 * 60 * 60 *24));
+  logAmplitudeEvent('SCROLL', { daysSincePublished, scrollPercentage: scrollDepth });
+}
+
 var log100ScrollDepth = function () {
   var scrollPercentage = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight))* 100);
 
   if (scrollPercentage >= 100) {
-    logAmplitudeEvent('SCROLL', { scrollPercentage: 100 });
+    logScrollDepth(100);
     window.removeEventListener('scroll', log100ScrollDepth);
   }
 };
@@ -74,7 +80,7 @@ var log75ScrollDepth = function () {
   var scrollPercentage = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight))* 100);
 
   if (scrollPercentage >= 75 && scrollPercentage < 100) {
-    logAmplitudeEvent('SCROLL', { scrollPercentage: 75 });
+    logScrollDepth(75);
     window.removeEventListener('scroll', log75ScrollDepth);
     window.addEventListener('scroll', log100ScrollDepth);
   }
@@ -84,7 +90,7 @@ var log50ScrollDepth = function () {
   var scrollPercentage = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight))* 100);
 
   if (scrollPercentage >= 50 && scrollPercentage < 75) {
-    logAmplitudeEvent('SCROLL', { scrollPercentage: 50 });
+    logScrollDepth(50);
     window.removeEventListener('scroll', log50ScrollDepth);
     window.addEventListener('scroll', log75ScrollDepth);
   }
@@ -94,7 +100,7 @@ var log25ScrollDepth = function () {
   var scrollPercentage = Math.round(((window.scrollY ? window.scrollY : window.pageYOffset) / (document.documentElement.scrollHeight - window.innerHeight))* 100);
 
   if (scrollPercentage >= 25 && scrollPercentage < 50) {
-    logAmplitudeEvent('SCROLL', { scrollPercentage: 25 });
+    logScrollDepth(25);
     window.removeEventListener('scroll', log25ScrollDepth);
     window.addEventListener('scroll', log50ScrollDepth);
   }
@@ -115,7 +121,7 @@ if (document.getElementsByClassName('blog-article').length > 0) {
   // Blog page tracking
   document.addEventListener('DOMContentLoaded', function () {
     logAmplitudeEvent('PAGE LOADED');
-    logAmplitudeEvent('SCROLL', { scrollPercentage: 0 });
+    logScrollDepth(0);
   });
 
   var socialLinks = document.getElementsByClassName('social-links__icon');
