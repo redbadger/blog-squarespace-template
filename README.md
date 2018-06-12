@@ -28,6 +28,13 @@ Please log any issues at https://github.com/redbadger/website-honestly/issues pr
 
 All Squarespace block elements are tested and should work as expected. You will need JS enabled client for some of the interactive elements.
 
+## Amplitude Tracking
+Amplitude is an analytics tool. Currently this squarespace site is using the production Amplitude apiKey in local development as squarespace does not allow for configuration for this. This could be improved upon in the future.
+
+If you plan on adding more event tracking to Amplitude then please change the apiKey you are using in local development to the Amplitude development project `d246f18b3c6f5dd21660ba24e1af2919` (this is exposed in the website html and can be public) found in `site.region` where the Amplitude instance is initiated `amplitude.getInstance().init(<APIKEY HERE>);`.
+
+For access to Amplitude contact Andrew Cumine, Dominik Piatek, James Muldoon, or Nathalie Goepel.
+
 ## Deployment
 
 Squarespace provides us with git endpoint. Deployment is happening by pushing current master branch to that endpoint.
