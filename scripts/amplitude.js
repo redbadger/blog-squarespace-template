@@ -2,8 +2,6 @@ function getBlogInfo () {
   var blogTitle = document.getElementsByClassName('blog-article__title')[0].innerText;
   var author = document.getElementsByClassName('author__name')[0].innerText;
   var categoryListCollection = document.getElementsByClassName('category-list')[0]; 
-  categoryListCollection.innerText;
-  categoryListCollection.innerText.split("\n");
   var categories = categoryListCollection.innerText.split("\n").filter(item => !!item);
 
   return {
