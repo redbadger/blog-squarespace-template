@@ -29,6 +29,7 @@ function logAmplitudeEvent (eventType, eventProperties, test = false) {
 
 document.addEventListener('DOMContentLoaded', function () {
   logAmplitudeEvent('PAGE LOADED', { pageType: 'blog' });
+  logAmplitudeEvent('SCROLL', { scrollPercentage: 0 }, true);
 });
 
 function logSocialShareClick (socialNetwork, subject) {
@@ -57,3 +58,44 @@ document.getElementsByClassName('site-footer__telLink')[0].addEventListener('cli
 document.getElementsByClassName('site-footer__mailtoLink')[0].addEventListener('click', function () {
   logAmplitudeEvent('CLICK CONTACT US', {type: 'email', subject: 'footer'});
 });
+
+var log100ScrollDepth = function () {
+  var scrollPercentage = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight))* 100);
+
+  if (scrollPercentage >= 100) {
+    logAmplitudeEvent('SCROLL', { scrollPercentage: 100 });
+    window.removeEventListener('scroll', log100ScrollDepth);
+  }
+};
+
+var log75ScrollDepth = function () {
+  var scrollPercentage = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight))* 100);
+
+  if (scrollPercentage >= 75 && scrollPercentage < 100) {
+    logAmplitudeEvent('SCROLL', { scrollPercentage: 75 });
+    window.removeEventListener('scroll', log75ScrollDepth);
+    window.addEventListener('scroll', log100ScrollDepth);
+  }
+};
+
+var log50ScrollDepth = function () {
+  var scrollPercentage = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight))* 100);
+
+  if (scrollPercentage >= 50 && scrollPercentage < 75) {
+    logAmplitudeEvent('SCROLL', { scrollPercentage: 50 });
+    window.removeEventListener('scroll', log50ScrollDepth);
+    window.addEventListener('scroll', log75ScrollDepth);
+  }
+};
+
+var log25ScrollDepth = function () {
+  var scrollPercentage = Math.round(((window.scrollY ? window.scrollY : window.pageYOffset) / (document.documentElement.scrollHeight - window.innerHeight))* 100);
+
+  if (scrollPercentage >= 25 && scrollPercentage < 50) {
+    logAmplitudeEvent('SCROLL', { scrollPercentage: 25 });
+    window.removeEventListener('scroll', log25ScrollDepth);
+    window.addEventListener('scroll', log50ScrollDepth);
+  }
+};
+
+window.addEventListener('scroll', log25ScrollDepth);
