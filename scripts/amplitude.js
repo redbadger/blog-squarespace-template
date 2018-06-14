@@ -99,7 +99,7 @@ function logScrollDepth(scrollDepth) {
 
 var log100ScrollDepth = function log100ScrollDepth() {
   var scrollPercentage = Math.round(
-    (window.scrollY /
+    ((window.scrollY ? window.scrollY : window.pageYOffset) /
       (document.documentElement.scrollHeight - window.innerHeight)) *
       100
   );
@@ -112,7 +112,7 @@ var log100ScrollDepth = function log100ScrollDepth() {
 
 var log75ScrollDepth = function log75ScrollDepth() {
   var scrollPercentage = Math.round(
-    (window.scrollY /
+    ((window.scrollY ? window.scrollY : window.pageYOffset) /
       (document.documentElement.scrollHeight - window.innerHeight)) *
       100
   );
@@ -126,7 +126,7 @@ var log75ScrollDepth = function log75ScrollDepth() {
 
 var log50ScrollDepth = function log50ScrollDepth() {
   var scrollPercentage = Math.round(
-    (window.scrollY /
+    ((window.scrollY ? window.scrollY : window.pageYOffset) /
       (document.documentElement.scrollHeight - window.innerHeight)) *
       100
   );
