@@ -68,21 +68,21 @@
           <li class="site-header__navItemWithChild">
             <a
               href="https://red-badger.com/what-we-do/"
-              onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'What we do', 'From: /blog')">
+            >
               What we do
             </a>
             <ul class="site-header__mediumScreenChildList sansSerif">
               <li>
                 <a
                   href="https://red-badger.com/technology/"
-                  onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'Technology', 'From: /blog')">
+                >
                   Technology
                 </a>
               </li>
               <li>
                 <a
                   href="https://red-badger.com/our-work/"
-                  onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'Our work', 'From: /blog')">
+                >
                   Our work
                 </a>
               </li>
@@ -91,14 +91,14 @@
           <li class="site-header__navItemWithChild">
             <a
               href="https://red-badger.com/about-us/"
-              onclick="ga('send', 'event', 'DesktopHeaderNavigaion', 'About us', 'From: /blog')">
+            >
               About us
             </a>
             <ul class="site-header__mediumScreenChildList sansSerif">
               <li>
                 <a
                   href="https://red-badger.com/people/"
-                  onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'Our team', 'From: /blog')">
+                >
                   Our team
                 </a>
               </li>
@@ -108,21 +108,21 @@
             <a
               class="activeNavLink"
               href="http://red-badger.com/blog/"
-              onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'Blog', 'From: /blog')">
+            >
               Blog
             </a>
           </li>
           <li>
             <a
               href="https://red-badger.com/about-us/events/"
-              onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'Events', 'From: /blog')">
+            >
               Events
             </a>
           </li>
           <li>
             <a
               href="https://red-badger.com/about-us/join-us/"
-              onclick="ga('send', 'event', 'DesktopHeaderNavigation', 'Jobs', 'From: /blog')">
+            >
               Jobs
             </a>
           </li>
@@ -150,7 +150,7 @@
                   <a
                     href="https://red-badger.com/"
                     tabindex="-1"
-                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Home', 'From: /blog')">
+                  >
                     <span>Home</span>
                   </a>
                 </li>
@@ -158,7 +158,7 @@
                   <a
                     href="https://red-badger.com/what-we-do/"
                     tabindex="-1"
-                    onclick="ga('send', 'event', 'MobileSideNavigation', 'What we do', 'From: /blog')">
+                  >
                     <span>What we do</span>
                   </a>
                   <ul class="site-header__childList sansSerif fontM2">
@@ -166,7 +166,7 @@
                       <a
                         href="https://red-badger.com/technology/"
                         tabindex="-1"
-                        onclick="ga('send', 'event', 'MobileSideNavigation', 'Technology', 'From: /blog')">
+                      >
                         <span>Technology</span>
                       </a>
                     </li>
@@ -174,7 +174,7 @@
                       <a
                         href="https://red-badger.com/our-work/"
                         tabindex="-1"
-                        onclick="ga('send', 'event', 'MobileSideNavigation', 'Our work', 'From: /blog')">
+                      >
                         <span>Our work</span>
                       </a>
                     </li>
@@ -184,7 +184,7 @@
                   <a
                     href="https://red-badger.com/about-us/"
                     tabindex="-1"
-                    onclick="ga('send', 'event', 'MobileSideNavigation', 'About us', 'From: /blog')">
+                  >
                     <span>About us</span>
                   </a>
                   <ul class="site-header__childList sansSerif fontM2">
@@ -192,7 +192,7 @@
                       <a
                         href="https://red-badger.com/people/"
                         tabindex="-1"
-                        onclick="ga('send', 'event', 'MobileSideNavigation', 'Our team', 'From: /blog')">
+                      >
                         <span>Our team</span>
                       </a>
                     </li>
@@ -202,7 +202,7 @@
                   <a
                     href="http://red-badger.com/blog/"
                     tabindex="-1"
-                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Blog', 'From: /blog')">
+                  >
                     <span>Blog</span>
                   </a>
                 </li>
@@ -210,7 +210,7 @@
                   <a
                     href="https://red-badger.com/about-us/events/"
                     tabindex="-1"
-                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Events', 'From: /blog')">
+                  >
                     <span>Events</span>
                   </a>
                 </li>
@@ -218,7 +218,7 @@
                   <a
                     href="https://red-badger.com/about-us/join-us/"
                     tabindex="-1"
-                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Jobs', 'From: /blog')">
+                  >
                     <span>Jobs</span>
                   </a>
                 </li>
@@ -226,7 +226,7 @@
                   <a
                     href="https://red-badger.com/#contactUs"
                     tabindex="-1"
-                    onclick="ga('send', 'event', 'MobileSideNavigation', 'Contact us - HomePage', 'From: /blog')">
+                  >
                     <span>Contact us</span>
                   </a>
                 </li>
@@ -367,41 +367,41 @@
               <li>
                 <a
                   href="https://red-badger.com/"
-                  onclick="ga('send', 'event', 'FooterNavigation', 'Home', 'From: /blog')">
+                >
                   Home
                 </a>
               </li>
               <li>
                 <a
                   href="https://red-badger.com/about-us/"
-                  onclick="ga('send', 'event', 'FooterNavigation', 'About us', 'From: /blog')">
+                >
                   About us
                 </a>
               </li>
               <li>
                 <a
                   href="https://red-badger.com/what-we-do/"
-                  onclick="ga('send', 'event', 'FooterNavigation', 'What we do', 'From: /blog')">
+                >
                   What we do</a>
               </li>
               <li>
                 <a
                   href="https://red-badger.com/blog/"
-                  onclick="ga('send', 'event', 'FooterNavigation', 'Blog', 'From: /blog')">
+                >
                   Blog
                 </a>
               </li>
               <li>
                 <a
                   href="https://red-badger.com/about-us/events/"
-                  onclick="ga('send', 'event', 'FooterNavigation', 'Events', 'From: /blog')">
+                >
                   Events
                 </a>
               </li>
               <li>
                 <a
                   href="https://red-badger.com/about-us/join-us/"
-                  onclick="ga('send', 'event', 'FooterNavigation', 'Jobs', 'From: /blog')">
+                >
                   Jobs
                 </a>
               </li>
