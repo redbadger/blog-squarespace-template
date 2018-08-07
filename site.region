@@ -561,6 +561,10 @@
         border-radius: 0 !important;
       }
 
+      div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button:hover {
+        background-color: #606060 !important;
+      }
+
       div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {
         font-family: 'ProximaNova-Bold', sans-serif;
         font-size: 16px !important;
