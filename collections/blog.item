@@ -51,4 +51,9 @@
   </div>
 
 </div>
+<script>
+  ampTracking.blogTitle = {title|json};
+  ampTracking.author = {author.displayName|json};
+  ampTracking.categories = {categories|json};
+</script>
 {.end}

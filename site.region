@@ -54,9 +54,12 @@
       ;if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]}
       ;e.amplitude=n})(window,document);
 
-      amplitude.getInstance().init("35216029dbd0aa8a0f10ee59a0255817");
+      amplitude.getInstance().init("d246f18b3c6f5dd21660ba24e1af2919");
     </script>
     <!-- End Amplitude Code -->
+    <script>
+      var ampTracking = {};
+    </script>
   </head>
   <body>
     <header class="site-header__header" role="banner">
