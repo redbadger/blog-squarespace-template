@@ -87,6 +87,12 @@
           }
         : {};
 
+    var categories = ampTracking.categories
+      ? {
+          categories: ampTracking.categories.map(cat => cat.toLowerCase())
+        }
+      : {};
+
     var eventProperties = Object.assign(
       {
         pageType: pageType,
@@ -95,7 +101,8 @@
       },
       getUtmProperties(),
       ampTracking,
-      daysSincePublished
+      daysSincePublished,
+      categories
     );
 
     return eventProperties;
