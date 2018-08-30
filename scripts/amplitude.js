@@ -1,197 +1,236 @@
-"use strict";
+// Amplitude Tracking
+// This script has been ported from the main app and as such
+// should be updated at the same time. This is not ideal,
+// so long-term wise the blog should be merged with the main site.
+// However, the blog might be migrated wholly into Hubspot, in which case
+// this script will still apply.
 
-var _extends =
-  Object.assign ||
-  function(target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-    return target;
-  };
+(function() {
+  "use strict";
 
-function getBlogInfo() {
-  var blogTitle = document.getElementsByClassName("blog-article__title")[0]
-    .innerText;
-  var author = document.getElementsByClassName("author__name")[0].innerText;
-  var categoryListCollection = document.getElementsByClassName(
-    "category-list"
-  )[0];
-  var categories = categoryListCollection.innerText
-    .split("\n")
-    .filter(function(item) {
-      return !!item;
-    });
+  var thresholds = [[0, 25], [25, 50], [50, 75], [75, 100], [100, 100]];
 
-  return {
-    blogTitle: blogTitle,
-    author: author,
-    categories: categories,
-    pageType: "blog"
-  };
-}
+  function removeTrailingSlash(str) {
+    return typeof str === "string" && str[str.length - 1] === "/"
+      ? str.slice(0, str.length - 1)
+      : str;
+  }
 
-function logAmplitudeEvent(eventType, eventProperties) {
-  var test =
-    arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+  function calcScrollPercentage() {
+    var scrollHeight = document.documentElement
+      ? document.documentElement.scrollHeight
+      : 0;
+    var scrollY = window.scrollY ? window.scrollY : window.pageYOffset;
 
-  var blogInfo =
-    document.getElementsByClassName("blog-article").length > 0
-      ? getBlogInfo()
-      : { pageType: "blogLanding" };
-  var query = window.location.search.substr(1);
+    return Math.round((scrollY / (scrollHeight - window.innerHeight)) * 100);
+  }
 
-  var referrerProperties = { referrer: "internal" };
-  if (query.indexOf("utm_source") >= 0) {
-    var utmProperties = {};
-    query.split("&").forEach(function(part) {
-      var item = part.split("=");
-      utmProperties[item[0]] = decodeURIComponent(item[1]);
-    });
+  function getCookieValue(a) {
+    var b = document.cookie.match("(^|;)\\s*" + a + "\\s*=\\s*([^;]+)");
+    return b ? b.pop() : "";
+  }
 
-    referrerProperties = {
-      referrer: utmProperties.utm_source,
-      utmContent: utmProperties.utm_content,
-      utmMedium: utmProperties.utm_medium
+  function getText(selector, index) {
+    var node = document.querySelector(selector);
+    return node ? node.innerText.toLowerCase() : "";
+  }
+
+  function getUrl() {
+    return removeTrailingSlash(window.location.href);
+  }
+
+  function getPageType() {
+    var href = window.location.href;
+
+    var pageTypes = {
+      blogLanding: /.*/,
+      blog: /\/blog\/\d+\/\d+\/\d+\/.+/,
+      blogTag: /\?tag=/,
+      blogCategory: /\?category=/,
+      blogAuthor: /\?author=/
     };
+
+    return Object.keys(pageTypes).reduce(function(prev, pageType) {
+      return pageTypes[pageType].test(href) ? pageType : prev;
+    });
   }
 
-  var urlProperties = _extends({}, referrerProperties, {
-    url: window.location.href
-  });
+  function getUtmProperties() {
+    var query = window.location.search.substr(1);
 
-  var customProperties = _extends({}, eventProperties, blogInfo, urlProperties);
+    var referrerProperties = { referrer: "internal" };
 
-  if (test == true) {
-    console.log(eventType, customProperties);
-  } else {
-    amplitude.getInstance().logEvent(eventType, customProperties);
+    if (query.indexOf("utm_source") >= 0) {
+      var utmProperties = {};
+      query.split("&").forEach(function(part) {
+        var item = part.split("=");
+        utmProperties[item[0]] = decodeURIComponent(item[1]);
+      });
+
+      referrerProperties = {
+        referrer: utmProperties.utm_source,
+        utmContent: utmProperties.utm_content,
+        utmMedium: utmProperties.utm_medium
+      };
+    }
+
+    return referrerProperties;
   }
-}
 
-function logSocialShareClick(socialNetwork, subject) {
-  return function() {
+  function getPageProperties() {
+    var pageType = getPageType();
+    var daysSincePublished =
+      pageType === "blog"
+        ? {
+            daysSincePublished: document.querySelector(".blog-article__time")
+              .innerText
+          }
+        : {};
+
+    var eventProperties = Object.assign(
+      {
+        pageType: pageType,
+        url: getUrl(),
+        pageTitle: document.title
+      },
+      getUtmProperties(),
+      ampTracking,
+      daysSincePublished
+    );
+
+    return eventProperties;
+  }
+
+  function logEvent(eventType, eventProperties) {
+    amplitude.getInstance().logEvent(eventType, eventProperties);
+  }
+
+  function logEventOnce(eventType, eventProperties) {
+    const event = eventType
+      .toLowerCase()
+      .split(" ")
+      .concat(["done"])
+      .join("-");
+
+    const doneCookie = getCookieValue(event);
+
+    if (doneCookie === "1") return;
+
+    document.cookie = event + "=1; path=/";
+    logEvent(eventType, eventProperties);
+  }
+
+  function logAmplitudeEvent(eventType, eventProperties, once) {
+    once
+      ? logEventOnce(eventType, eventProperties)
+      : logEvent(eventType, eventProperties);
+  }
+
+  function logPhoneContactUs() {
+    logAmplitudeEvent("CLICK CONTACT US", {
+      type: "phone",
+      subject: "footer",
+      url: getUrl()
+    });
+  }
+
+  function logEmailContactUs() {
+    logAmplitudeEvent("CLICK CONTACT US", {
+      type: "email",
+      subject: "footer",
+      url: getUrl()
+    });
+  }
+
+  function logPageLoaded() {
+    logAmplitudeEvent("PAGE LOADED", getPageProperties());
+  }
+
+  function logEntryPage() {
+    logAmplitudeEvent("ENTRY PAGE", getPageProperties(), true);
+  }
+
+  function logSocialShare(subject, type) {
     logAmplitudeEvent("CLICK SOCIAL SHARE", {
       subject: subject,
-      type: socialNetwork
+      url: getUrl(),
+      type: type
     });
+  }
+
+  function logScrollDepth(scrollPercentage) {
+    logAmplitudeEvent("SCROLL", {
+      url: removeTrailingSlash(window.location.href),
+      pageTitle: document.title,
+      scrollPercentage
+    });
+  }
+
+  var removeThreshold = i => {
+    var leftSlice = thresholds.slice(0, i);
+    var rightSlice = thresholds.slice(i + 1);
+    thresholds = leftSlice.concat(rightSlice);
   };
-}
 
-function logScrollDepth(scrollDepth) {
-  var publishDate = new Date(
-    document.getElementsByClassName(
-      "blog-article__time"
-    )[0].attributes.datetime.value
-  );
-  var daysSincePublished = Math.round(
-    (new Date() - publishDate) / (1000 * 60 * 60 * 24)
-  );
-  logAmplitudeEvent("SCROLL", {
-    daysSincePublished: daysSincePublished,
-    scrollPercentage: scrollDepth
-  });
-}
+  var ticking = false;
 
-var log100ScrollDepth = function log100ScrollDepth() {
-  var scrollPercentage = Math.round(
-    (window.scrollY /
-      (document.documentElement.scrollHeight - window.innerHeight)) *
-      100
-  );
+  function logFrame() {
+    var scrollPercentage = calcScrollPercentage();
+    ticking = false;
 
-  if (scrollPercentage >= 100) {
-    logScrollDepth(100);
-    window.removeEventListener("scroll", log100ScrollDepth);
-  }
-};
+    thresholds.forEach((threshold, i) => {
+      const [low, high] = threshold;
 
-var log75ScrollDepth = function log75ScrollDepth() {
-  var scrollPercentage = Math.round(
-    (window.scrollY /
-      (document.documentElement.scrollHeight - window.innerHeight)) *
-      100
-  );
-
-  if (scrollPercentage >= 75 && scrollPercentage < 100) {
-    logScrollDepth(75);
-    window.removeEventListener("scroll", log75ScrollDepth);
-    window.addEventListener("scroll", log100ScrollDepth);
-  }
-};
-
-var log50ScrollDepth = function log50ScrollDepth() {
-  var scrollPercentage = Math.round(
-    (window.scrollY /
-      (document.documentElement.scrollHeight - window.innerHeight)) *
-      100
-  );
-
-  if (scrollPercentage >= 50 && scrollPercentage < 75) {
-    logScrollDepth(50);
-    window.removeEventListener("scroll", log50ScrollDepth);
-    window.addEventListener("scroll", log75ScrollDepth);
-  }
-};
-
-var log25ScrollDepth = function log25ScrollDepth() {
-  var scrollPercentage = Math.round(
-    ((window.scrollY ? window.scrollY : window.pageYOffset) /
-      (document.documentElement.scrollHeight - window.innerHeight)) *
-      100
-  );
-
-  if (scrollPercentage >= 25 && scrollPercentage < 50) {
-    logScrollDepth(25);
-    window.removeEventListener("scroll", log25ScrollDepth);
-    window.addEventListener("scroll", log50ScrollDepth);
-  }
-};
-
-// All pages tracking
-
-document
-  .getElementsByClassName("site-footer__telLink")[0]
-  .addEventListener("click", function() {
-    logAmplitudeEvent("CLICK CONTACT US", { type: "phone", subject: "footer" });
-  });
-
-document
-  .getElementsByClassName("site-footer__mailtoLink")[0]
-  .addEventListener("click", function() {
-    logAmplitudeEvent("CLICK CONTACT US", { type: "email", subject: "footer" });
-  });
-
-if (document.getElementsByClassName("blog-article").length > 0) {
-  // Blog page tracking
-  document.addEventListener("DOMContentLoaded", function() {
-    logAmplitudeEvent("PAGE LOADED");
-    logScrollDepth(0);
-  });
-
-  var socialLinks = document.getElementsByClassName("social-links__icon");
-  for (var i = 0; i < socialLinks.length; i++) {
-    var socialNetwork = socialLinks[i].children[0].alt;
-    var linkLocation =
-      socialLinks[i].parentElement.parentElement.parentElement.parentElement
-        .className === "meta-block"
-        ? "sidebar"
-        : "contentFooter";
-
-    socialLinks[i].addEventListener(
-      "click",
-      logSocialShareClick(socialNetwork, linkLocation)
-    );
+      if (
+        (low < scrollPercentage && high >= scrollPercentage) ||
+        (low === scrollPercentage && high === scrollPercentage)
+      ) {
+        logScrollDepth(low);
+        removeThreshold(i);
+      }
+    });
   }
 
-  window.addEventListener("scroll", log25ScrollDepth);
-} else {
-  // Landing page tracking
-  document.addEventListener("DOMContentLoaded", function() {
-    logAmplitudeEvent("PAGE LOADED");
+  function scrollHandler() {
+    if (!ticking) {
+      requestAnimationFrame(logFrame);
+    }
+
+    ticking = true;
+  }
+
+  window.addEventListener("scroll", scrollHandler);
+
+  document.addEventListener("DOMContentLoaded", logPageLoaded);
+  document.addEventListener("DOMContentLoaded", logEntryPage);
+
+  document
+    .querySelector(".site-footer__telLink")
+    .addEventListener("click", logPhoneContactUs);
+
+  document
+    .querySelector(".site-footer__mailtoLink")
+    .addEventListener("click", logEmailContactUs);
+
+  var socialBlocks = {
+    contentFooter: ".meta-block--repeated",
+    sidebar: ".meta-block"
+  };
+
+  Object.keys(socialBlocks).forEach(function(subject) {
+    document
+      .querySelectorAll(
+        [socialBlocks[subject], ".social-links__icon"].join(" ")
+      )
+      .forEach(function(node) {
+        node.addEventListener(
+          "click",
+          logSocialShare.bind(
+            this,
+            subject,
+            node.querySelector("img").getAttribute("title")
+          )
+        );
+      });
   });
-}
+})();

@@ -38,6 +38,9 @@
     </div>
     {.end}
   </div>
+  <script>
+    ampTracking.author = "{author.displayName}";
+  </script>
   {.end}
   <div class="loading-spinner"></div>
 
@@ -54,6 +57,10 @@
         </li>
       {.end}
     </ul>
+  <script>
+    if ("{categoryFilter}") ampTracking.category = "{categoryFilter}";
+    if ("{tagFilter}") ampTracking.tag = "{tagFilter}";
+  </script>
   {.end}
   {.repeated section items}
     <article class="entry entry--list h-entry grid-hidden {.main-image?} has-main-image {.end}{@|item-classes}" id="article-{id}" label="Blog Post" data-item-id="{id}" data-offset="{addedOn}"{.if pagination.nextPage}{.or} data-last-page{.end}>

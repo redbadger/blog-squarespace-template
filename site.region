@@ -57,6 +57,9 @@
       amplitude.getInstance().init("35216029dbd0aa8a0f10ee59a0255817");
     </script>
     <!-- End Amplitude Code -->
+    <script>
+      var ampTracking = {};
+    </script>
   </head>
   <body>
     <header class="site-header__header" role="banner">
