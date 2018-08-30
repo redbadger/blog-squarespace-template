@@ -55,6 +55,28 @@
     });
   }
 
+  function getDaysSincePublished() {
+    return document.querySelector(".blog-article__time").innerText;
+  }
+
+  function lowerCase(string) {
+    return string.toLowerCase();
+  }
+
+  function lowerCaseAll(arr) {
+    return arr.map(item => lowerCase(item));
+  }
+
+  function maybeObj(name, prop, transform) {
+    var obj = {};
+
+    if (prop) {
+      obj[name] = transform ? transform(prop) : prop;
+    }
+
+    return obj;
+  }
+
   function getUtmProperties() {
     var query = window.location.search.substr(1);
 
@@ -79,13 +101,19 @@
 
   function getPageProperties() {
     var pageType = getPageType();
-    var daysSincePublished =
-      pageType === "blog"
-        ? {
-            daysSincePublished: document.querySelector(".blog-article__time")
-              .innerText
-          }
-        : {};
+    var daysSincePublished = maybeObj(
+      "daysSincePublished",
+      pageType === "blog",
+      getDaysSincePublished
+    );
+
+    var categories = maybeObj(
+      "categories",
+      ampTracking.categories,
+      lowerCaseAll
+    );
+    var category = maybeObj("category", ampTracking.category, lowerCase);
+    var tag = maybeObj("tag", ampTracking.tag, lowerCase);
 
     var eventProperties = Object.assign(
       {
@@ -95,7 +123,10 @@
       },
       getUtmProperties(),
       ampTracking,
-      daysSincePublished
+      daysSincePublished,
+      categories,
+      category,
+      tag
     );
 
     return eventProperties;
