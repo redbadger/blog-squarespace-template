@@ -58,8 +58,8 @@
       {.end}
     </ul>
   <script>
-    if ("{categoryFilter}") ampTracking.category = "{categoryFilter}";
-    if ("{tagFilter}") ampTracking.tag = "{tagFilter}";
+    if ("{categoryFilter}") ampTracking.filterCategory = "{categoryFilter}";
+    if ("{tagFilter}") ampTracking.filterTag = "{tagFilter}";
   </script>
   {.end}
   {.repeated section items}

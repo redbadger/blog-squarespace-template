@@ -108,12 +108,12 @@
     );
 
     var categories = maybeObj(
-      "categories",
-      ampTracking.categories,
+      "blogCategories",
+      ampTracking.blogCategories,
       lowerCaseAll
     );
-    var category = maybeObj("category", ampTracking.category, lowerCase);
-    var tag = maybeObj("tag", ampTracking.tag, lowerCase);
+    var category = maybeObj("category", ampTracking.filterCategory, lowerCase);
+    var tag = maybeObj("tag", ampTracking.filterTag, lowerCase);
 
     var eventProperties = Object.assign(
       {

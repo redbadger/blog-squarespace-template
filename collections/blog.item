@@ -53,7 +53,7 @@
 </div>
 <script>
   ampTracking.blogTitle = {title|json};
-  ampTracking.author = {author.displayName|json};
-  ampTracking.categories = {categories|json};
+  ampTracking.blogAuthor = {author.displayName|json};
+  ampTracking.blogCategories = {categories|json};
 </script>
 {.end}
