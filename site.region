@@ -548,9 +548,9 @@
         </div>
       </div>
     </footer>
-    <squarespace:script src="index.js" combo="true" />
-    <squarespace:script src="greyscale.js" combo="true" />
-    <squarespace:script src="amplitude.js" combo="true" />
+    <squarespace:script src="index.js" />
+    <squarespace:script src="greyscale.js" />
+    <squarespace:script src="amplitude.js" />
     <style>
       /* Start of HubSpot Cookie Banner CSS overrides */
       /* The banner is injected by the HB script, so this needs to be as far as possible in the DOM.
