@@ -1,4 +1,6 @@
-# Red Badger Blog Template for Squarespace
+# DEPRECATED - Red Badger Blog Template for Squarespace
+
+This project is officially deprecated. All functionality has been moved to Hubspot.
 
 Minimalistic Red Badger branded template. Universal. Works with and without JavaScript on the client.
 
